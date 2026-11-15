@@ -37,6 +37,26 @@
     { "sigla": "UPF", "pesi": {"esp": "C"}, "titolo": "Upffront, catalogo in spagnolo", "url": "https://www.upffront.com/" },
     { "sigla": "CAB", "pesi": {"esp": "C"}, "titolo": "Click&Boat, blog in spagnolo", "url": "https://blog.clickandboat.com/" },
     { "sigla": "NYV", "pesi": {"esp": "C"}, "titolo": "Tomás Ruiz, Navegando y Vela, blog", "url": "https://navegandoyvela.com/" },
-    { "sigla": "BARCOS", "pesi": {"esp": "C"}, "titolo": "Barcos Magazine, Cómo rizar una mayor (2023)", "url": "https://barcosmagazine.com/" }
+    { "sigla": "BARCOS", "pesi": {"esp": "C"}, "titolo": "Barcos Magazine, Cómo rizar una mayor (2023)", "url": "https://barcosmagazine.com/" },
+    { "sigla": "NAUTIK", "pesi": {"esp": "C"}, "titolo": "Nautik Magazine, rivista nautica spagnola", "url": "https://nautikmagazine.es/" },
+    { "sigla": "ESNG", "pesi": {"esp": "B"}, "titolo": "Escuela Naval de Guatemala, Unidad VI, Maniobra y navegación", "url": "https://pagos.infile.com/escuelanaval/unidad6.pdf" },
+    { "sigla": "RYA", "pesi": {"eng": "B"}, "titolo": "Royal Yachting Association, Med mooring stern-to", "url": "https://www.rya.org.uk/blog/med-mooring-stern-to" },
+    { "sigla": "EOC", "pesi": {"eng": "C"}, "titolo": "eOceanic, Taking a vessel alongside with just one dock line", "url": "https://eoceanic.com/sailing/tips/26/254/taking_a_vessel_alongside_and_holding_it_stationary_with_just_one_dock_line/" },
+    { "sigla": "ULL", "pesi": {"esp": "B"}, "titolo": "Universidad de La Laguna, guía docente de Navegación costera (2022-2023)", "url": "https://www.ull.es/apps/guias/guias/view_guide/34368/" },
+    { "sigla": "PBO", "pesi": {"eng": "C"}, "titolo": "Practical Boat Owner, Nav nutshell: know tidal vectors (Dick Everitt, 2012)", "url": "https://www.pbo.co.uk/seamanship/nav-nutshell-know-tidal-vectors-31938" },
+    { "sigla": "PER", "pesi": {"esp": "B"}, "titolo": "Gobierno Vasco, P.E.R. Patrón de Embarcaciones de Recreo (Ricardo Gaztelu-Iturri e Itsaso Ibáñez, 2007)", "url": "https://www.euskadi.eus/gobierno-vasco/contenidos/informacion/coleccion_itsaso/es_dapa/adjuntos/PER%202007.pdf" },
+    { "sigla": "MW", "pesi": {"eng": "A"}, "titolo": "Merriam-Webster Dictionary", "url": "https://www.merriam-webster.com/dictionary/" },
+    { "sigla": "BOW", "pesi": {"eng": "A"}, "titolo": "National Geospatial-Intelligence Agency, The American Practical Navigator (Bowditch), Glossary of Marine Navigation (2017)", "url": "https://thenauticalalmanac.com/2017_Bowditch-_American_Practical_Navigator/Volume-_2/11-%20Glossaries/Glossaries.pdf" },
+    { "sigla": "QS", "pesi": {"eng": "C"}, "titolo": "Quantum Sails, What each position wants you to know (2017)", "url": "https://www.quantumsails.com/en/resources-and-expertise/articles/what-each-position-wants-you-to-know" },
+    { "sigla": "CER", "pesi": {"fra": "C"}, "titolo": "C.E.R., documento di allenamento per equipaggi d'altura (1999), su hisse-et-oh.com", "url": "https://apps.hisse-et-oh.com/store/medias/tavern/5db/8a5/143/original/5db8a51439819f5e986e1302.pdf" },
+    { "sigla": "HEO", "pesi": {"fra": "C"}, "titolo": "Jean-Yves Le Deroff, Ligue Bretagne Voile, Les fondamentaux en voile, spécificités en habitable (2003)", "url": "https://www.hisse-et-oh.com/store/medias/sailing/5dd/2ba/913/original/5dd2ba9139819f3668e8a5fc.pdf" },
+    { "sigla": "BARTON", "pesi": {"eng": "B"}, "titolo": "Barton Marine, catalogo", "url": "https://bartonmarine.com/" },
+    { "sigla": "NKH", "pesi": {"eng": "C"}, "titolo": "Nautical Know How, Reefing Hook", "url": "https://nauticalknowhow.mysailingcourse.com/?p=2145" },
+    { "sigla": "ORC", "pesi": {"esp": "B"}, "titolo": "Offshore Racing Congress, Reglamento IMS 2023, traducción al castellano", "url": "https://orc2.orc.org/rules/IMS%202023%20ESP.pdf" },
+    { "sigla": "DECATHLON", "pesi": {"ita": "C"}, "titolo": "Decathlon Italia, catalogo vela", "url": "https://www.decathlon.it/" },
+    { "sigla": "GRANLASCO", "pesi": {"ita": "B"}, "titolo": "Granlasco, Scuola di vela d'altura FIV, dispensa del corso di regata (2009)", "url": "https://www.granlasco.it/wp-content/uploads/2017/04/Dispensacorsoregataed2009.pdf" },
+    { "sigla": "CELESTE", "pesi": {"ita": "C"}, "titolo": "Celeste Sailing Team, Ruoli a bordo", "url": "https://www.celestesailingteam.com/files/cambio_genoa_e_ruoli.pdf" },
+    { "sigla": "SELDEN", "pesi": {"fra": "B"}, "titolo": "Seldén, catalogo in francese, Systèmes de prise de ris, su hisse-et-oh.com", "url": "https://www.hisse-et-oh.com/" },
+    { "sigla": "YD", "pesi": {"ita": "C"}, "titolo": "Yacht Digest, rivista online", "url": "https://yachtdigest.com/" }
   ]
 }

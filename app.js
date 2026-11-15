@@ -18,7 +18,7 @@ const CATEGORIE = {
   equipaggio: "Equipaggio",
 };
 
-const GENERE = { m: "m.", f: "f.", loc: "loc." };
+const GENERE = { m: "m.", f: "f.", loc: "loc.", v: "v." };
 
 const PESI = { A: 0, B: 1, C: 2 };
 

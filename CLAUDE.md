@@ -5,7 +5,7 @@ Dizionario velico multilingue (ENG, ESP, FRA, ITA), sito statico pubblicato con 
 ## Aggiungere o correggere voci
 
 - Si modifica solo `data/voci.json`, rispettando lo schema del README. Ogni citazione in `fonti` ha la `sigla` di un'opera di `data/fonti.json`: una fonte nuova va aggiunta anche lì, con sigla, pesi per lingua, titolo e url.
-- Veliglotta è uno strumento pratico: si registrano i termini velici in uso oggi, non sensi storici o termini tradizionali in disuso. Le note servono a chi va in barca o traduce, quindi falsi amici, polisemie che creano errori, differenze d'uso tra paesi e avvisi di bassa confidenza, non commenti sulle fonti.
+- Veliglotta è uno strumento pratico: si registrano i termini velici in uso oggi, non sensi storici o termini tradizionali in disuso. Le note servono a chiarire il significato a chi va in barca o traduce: falsi amici, polisemie che creano errori, differenze d'uso tra paesi. Non commentano le fonti: niente "xxx viene da yyy", "poche fonti", "fonte debole", "senza fonte" o "bassa confidenza", perché si legge già dai pallini e dall'elenco delle fonti.
 - Il primo termine di ogni lingua è il preferito, gli altri sono sinonimi.
 - In ogni voce le chiavi delle lingue stanno in ordine alfabetico del codice: `eng`, `esp`, `fra`, `ita`. Lo stesso ordine vale nell'interfaccia. `scripts/valida.py` segnala un ordine diverso con un avviso, che non è un errore ma va corretto.
 - Prima di proporre le traduzioni, cerca fonti sul web. Preferisci dizionari monolingui con marca nautica, federazioni di vela, banche terminologiche come IATE e OQLF, cataloghi dei produttori. Considera i blog e i forum come fonti deboli.
@@ -15,7 +15,7 @@ Dizionario velico multilingue (ENG, ESP, FRA, ITA), sito statico pubblicato con 
 - Nel campo `termini` vanno i termini come li scrive la fonte, per esempio `{ "sigla": "TRE", "termini": "scotta", "url": "scotta1/" }`: il punteggio di verifica li confronta con i termini della voce. `python3 scripts/valida.py --punteggi` mostra il punteggio di ogni voce.
 - L'affidabilità di una voce è data solo dal punteggio di verifica (vedi `README.md`): non c'è un campo `stato`. Un sinonimo senza fonte o di bassa confidenza non va tra i termini, perché il punteggio conta qualsiasi termine della lingua: toglilo, oppure citalo nella nota.
 - Definizioni e note sono scritte da zero, mai copiate dalle fonti.
-- Segnala sempre i termini polisemici, i falsi amici e le traduzioni a bassa confidenza.
+- Segnala sempre nelle note i termini polisemici e i falsi amici.
 - Non cambiare mai un `id` esistente. Una nuova categoria va aggiunta in `app.js` (costante `CATEGORIE`) e in `scripts/valida.py`.
 
 ## Controlli prima di ogni commit

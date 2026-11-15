@@ -22,7 +22,7 @@ Ogni voce è un concetto, non una coppia di parole. Ogni lingua ha una lista di 
 ```
 id            slug stabile e univoco, in minuscolo, senza spazi (es. "bozzello")
 categoria     scafo | coperta | attrezzatura | vele | manovre | navigazione | meteo | equipaggio
-eng, esp, fra, ita  lista di { t: termine, g: "m" | "f" | "loc" (omesso in inglese; "loc" per le locuzioni senza genere, come au vent) }
+eng, esp, fra, ita  lista di { t: termine, g: "m" | "f" | "loc" | "v" (omesso in inglese tranne "v"; "loc" per le locuzioni senza genere, come au vent; "v" per i verbi, anche in inglese) }
 definizione   frase breve in italiano, scritta in modo originale
 nota          facoltativa: falsi amici, varianti regionali, differenze d'uso
 fonti         lista di { sigla, termini, url }: sigla dell'opera nel catalogo, termini citati dalla fonte, url solo se è una pagina specifica, scritto relativo all'indirizzo dell'opera nel catalogo (per esempio "scafo/" su https://www.treccani.it/vocabolario/)
@@ -77,7 +77,7 @@ Istruzioni per Claude:
 - Modificare solo `data/voci.json` e, per una fonte nuova, `data/fonti.json`, rispettando gli schemi qui sopra, senza toccare codice.
 - Inserire le nuove voci a fine file.
 - Eseguire `python3 scripts/valida.py` prima di ogni commit: controlla JSON, `id` univoci, categorie, generi, fonti e sigle del catalogo. Lo stesso controllo gira su GitHub a ogni push che tocca `data/` o `scripts/`.
-- Segnalare esplicitamente le traduzioni a bassa confidenza e i termini polisemici.
+- Segnalare nella nota i termini polisemici e i falsi amici. La confidenza si legge dal punteggio, non si commenta nella nota.
 
 ## Pubblicazione
 

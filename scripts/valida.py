@@ -186,10 +186,10 @@ def main(percorso, percorso_fonti, punteggi=False):
                 if t["t"] != t["t"].strip():
                     err(nome, f"lingua {l}: spazi superflui in {t['t']!r}")
                 g = t.get("g")
-                if l in LINGUE_CON_GENERE and g not in ("m", "f", "loc"):
+                if l in LINGUE_CON_GENERE and g not in ("m", "f", "loc", "v"):
                     err(nome, f"lingua {l}: genere mancante o non valido per {t['t']!r}")
-                if l not in LINGUE_CON_GENERE and g is not None:
-                    err(nome, f"lingua {l}: il genere non va indicato ({t['t']!r})")
+                if l not in LINGUE_CON_GENERE and g not in (None, "v"):
+                    err(nome, f"lingua {l}: il genere non va indicato, solo v per i verbi ({t['t']!r})")
                 termini[(l, t["t"].strip().lower())].append(nome)
 
         if not isinstance(v.get("definizione"), str) or not v["definizione"].strip():
