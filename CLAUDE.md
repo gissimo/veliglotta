@@ -1,0 +1,37 @@
+# Veliglotta, istruzioni per Claude
+
+Dizionario velico multilingue (ENG, ESP, FRA, ITA), sito statico pubblicato con GitHub Pages dal ramo `main`. Leggi `README.md` per lo schema dei dati e il flusso di aggiornamento.
+
+## Aggiungere o correggere voci
+
+- Si modifica solo `data/voci.json`, rispettando lo schema del README. Ogni citazione in `fonti` ha la `sigla` di un'opera di `data/fonti.json`: una fonte nuova va aggiunta anche lì, con sigla, pesi per lingua, titolo e url.
+- Veliglotta è uno strumento pratico: si registrano i termini velici in uso oggi, non sensi storici o termini tradizionali in disuso. Le note servono a chi va in barca o traduce, quindi falsi amici, polisemie che creano errori, differenze d'uso tra paesi e avvisi di bassa confidenza, non commenti sulle fonti.
+- Il primo termine di ogni lingua è il preferito, gli altri sono sinonimi.
+- In ogni voce le chiavi delle lingue stanno in ordine alfabetico del codice: `eng`, `esp`, `fra`, `ita`. Lo stesso ordine vale nell'interfaccia. `scripts/valida.py` segnala un ordine diverso con un avviso, che non è un errore ma va corretto.
+- Prima di proporre le traduzioni, cerca fonti sul web. Preferisci dizionari monolingui con marca nautica, federazioni di vela, banche terminologiche come IATE e OQLF, cataloghi dei produttori. Considera i blog e i forum come fonti deboli.
+- Consulta anche i documenti nella directory `fonti locali/`, che non è pubblicata. In `fonti` citali come `{ "sigla": "RL", "termini": "termine" }`, senza URL e senza nominare il file, e nelle note chiamali referenze locali.
+- Alcune fonti sono affidabili solo per una parte del vocabolario (per esempio UNIOVI per lo scafo, DEI per scafo e attrezzatura, DLE escluse le accezioni della nave a vele quadre): prima di citarle leggi la sezione "Fonti valide solo per una parte del vocabolario" di `FONTI.md`.
+- Inserisci in `fonti` solo ciò che hai letto davvero: sigla, termini citati e, se c'è, l'URL della pagina specifica, per esempio la scheda del termine. Scrivilo relativo all'indirizzo dell'opera nel catalogo, e se è proprio quello non ripeterlo. L'elenco delle fonti già usate e di quelle consigliate, con il loro peso, è in `FONTI.md`: aggiornalo ogni volta che usi una fonte nuova.
+- Nel campo `termini` vanno i termini come li scrive la fonte, per esempio `{ "sigla": "TRE", "termini": "scotta", "url": "scotta1/" }`: il punteggio di verifica li confronta con i termini della voce. `python3 scripts/valida.py --punteggi` mostra il punteggio di ogni voce.
+- L'affidabilità di una voce è data solo dal punteggio di verifica (vedi `README.md`): non c'è un campo `stato`. Un sinonimo senza fonte o di bassa confidenza non va tra i termini, perché il punteggio conta qualsiasi termine della lingua: toglilo, oppure citalo nella nota.
+- Definizioni e note sono scritte da zero, mai copiate dalle fonti.
+- Segnala sempre i termini polisemici, i falsi amici e le traduzioni a bassa confidenza.
+- Non cambiare mai un `id` esistente. Una nuova categoria va aggiunta in `app.js` (costante `CATEGORIE`) e in `scripts/valida.py`.
+
+## Controlli prima di ogni commit
+
+```
+python3 scripts/valida.py
+```
+
+Deve terminare senza errori. Lo stesso controllo gira su GitHub a ogni push che tocca `data/` o `scripts/`, ma non blocca la pubblicazione di Pages: un errore va corretto subito.
+
+Se si aggiunge o si rimuove un file elencato in `SHELL` dentro `sw.js`, incrementare la costante `CACHE`.
+
+## Prova in locale
+
+```
+python3 -m http.server
+```
+
+Poi aprire `http://localhost:8000`. Aprendo `index.html` direttamente i dati non si caricano.

@@ -1,0 +1,305 @@
+:root {
+  --sfondo: #f4f7fa;
+  --carta: #ffffff;
+  --testo: #14232f;
+  --tenue: #5a6b78;
+  --bordo: #d5dee6;
+  --accento: #0b3a5b;
+  --accento-testo: #ffffff;
+  --evidenza: #ffe58a;
+  --errore: #a4262c;
+  color-scheme: light dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --sfondo: #0e1a24;
+    --carta: #152633;
+    --testo: #e6eef4;
+    --tenue: #9db0be;
+    --bordo: #284154;
+    --accento: #5fb0e8;
+    --accento-testo: #0e1a24;
+    --evidenza: #6b5a14;
+    --errore: #ff8f94;
+  }
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--sfondo);
+  color: var(--testo);
+  font: 16px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+.visivamente-nascosto {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+.testata {
+  background: #0b3a5b;
+  color: #ffffff;
+  padding: 1.25rem 1rem 1rem;
+  text-align: center;
+}
+
+.testata h1 {
+  margin: 0;
+  font-size: 1.75rem;
+  letter-spacing: 0.02em;
+}
+
+.sottotitolo {
+  margin: 0.25rem 0 0;
+  font-size: 0.95rem;
+  opacity: 0.85;
+}
+
+main {
+  max-width: 52rem;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.controlli {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background: var(--sfondo);
+  padding: 0.5rem 0 0.75rem;
+}
+
+.ricerca { position: relative; }
+
+#q {
+  width: 100%;
+  padding: 0.75rem 3rem 0.75rem 1rem;
+  font: inherit;
+  font-size: 1.1rem;
+  color: var(--testo);
+  background: var(--carta);
+  border: 2px solid var(--bordo);
+  border-radius: 0.6rem;
+}
+
+#q:focus-visible,
+select:focus-visible,
+.chip:focus-visible,
+a:focus-visible {
+  outline: 3px solid var(--accento);
+  outline-offset: 2px;
+}
+
+/* Nasconde la X nativa di Chrome e Safari, sostituita dal pulsante proprio. */
+#q::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  appearance: none;
+  display: none;
+}
+
+.pulisci {
+  position: absolute;
+  top: 50%;
+  right: 0.45rem;
+  transform: translateY(-50%);
+  width: 2.25rem;
+  height: 2.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  font: inherit;
+  font-size: 1.5rem;
+  line-height: 1;
+  color: var(--tenue);
+  background: transparent;
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.pulisci[hidden] { display: none; }
+
+.pulisci:hover { color: var(--testo); background: var(--sfondo); }
+
+.pulisci:focus-visible { outline: 3px solid var(--accento); outline-offset: 1px; }
+
+.riga-filtri {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+  margin-top: 0.6rem;
+}
+
+.gruppo { display: flex; gap: 0.35rem; flex-wrap: wrap; }
+
+.chip {
+  font: inherit;
+  font-size: 0.9rem;
+  padding: 0.35rem 0.8rem;
+  color: var(--testo);
+  background: var(--carta);
+  border: 1px solid var(--bordo);
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.chip[aria-pressed="true"] {
+  background: var(--accento);
+  color: var(--accento-testo);
+  border-color: var(--accento);
+}
+
+select {
+  font: inherit;
+  font-size: 0.9rem;
+  padding: 0.35rem 0.6rem;
+  color: var(--testo);
+  background: var(--carta);
+  border: 1px solid var(--bordo);
+  border-radius: 0.5rem;
+  margin-left: auto;
+}
+
+.conteggio {
+  margin: 0.5rem 0 0;
+  font-size: 0.85rem;
+  color: var(--tenue);
+}
+
+.risultati { display: grid; gap: 0.75rem; }
+
+.scheda {
+  background: var(--carta);
+  border: 1px solid var(--bordo);
+  border-radius: 0.75rem;
+  padding: 0.9rem 1rem;
+}
+
+.scheda-testa {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.scheda-titolo { margin: 0; font-size: 1.15rem; }
+
+.scheda-meta { display: flex; gap: 0.4rem; align-items: center; }
+
+.categoria {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--tenue);
+}
+
+
+.lingue {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(9.5rem, 1fr));
+  gap: 0.6rem 1rem;
+  margin-top: 0.7rem;
+}
+
+.lingua-etichetta {
+  display: block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--tenue);
+}
+
+.livello {
+  margin-left: 0.2rem;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  opacity: 0.6;
+  cursor: help;
+}
+
+.termini { list-style: none; margin: 0.1rem 0 0; padding: 0; }
+
+.termine { font-weight: 600; }
+
+.genere {
+  margin-left: 0.35rem;
+  font-size: 0.8rem;
+  font-style: italic;
+  color: var(--tenue);
+}
+
+mark {
+  background: var(--evidenza);
+  color: inherit;
+  border-radius: 0.15rem;
+}
+
+.definizione { margin: 0.8rem 0 0; }
+
+.nota,
+.fonti {
+  margin: 0.5rem 0 0;
+  font-size: 0.88rem;
+  color: var(--tenue);
+}
+
+.fonti a,
+.elenco-fonti a { color: var(--accento); }
+
+.sigla { white-space: nowrap; }
+
+span.sigla { cursor: help; }
+
+.elenco-fonti {
+  margin-top: 1.5rem;
+  font-size: 0.88rem;
+  color: var(--tenue);
+}
+
+.elenco-fonti summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--testo);
+}
+
+.elenco-fonti dl {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 0.3rem 1rem;
+  margin: 0.75rem 0 0;
+}
+
+.elenco-fonti dt { font-weight: 600; }
+
+.elenco-fonti dd { margin: 0; overflow-wrap: anywhere; }
+
+.vuoto, .errore { text-align: center; padding: 2rem 1rem; }
+.errore { color: var(--errore); }
+.vuoto { color: var(--tenue); }
+
+.piede {
+  max-width: 52rem;
+  margin: 1rem auto 2rem;
+  padding: 0 1rem;
+  font-size: 0.85rem;
+  color: var(--tenue);
+  text-align: center;
+}
+
+.piede a { color: var(--accento); }
+
+@media (max-width: 30rem) {
+  select { margin-left: 0; width: 100%; }
+}

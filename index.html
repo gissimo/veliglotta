@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Veliglotta, dizionario velico multilingue</title>
+  <meta name="description" content="Dizionario di termini velici in inglese, italiano, francese e spagnolo, con ricerca e uso offline.">
+  <meta name="theme-color" content="#0b3a5b">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="testata">
+    <h1>Veliglotta</h1>
+    <p class="sottotitolo">Dizionario velico in inglese, italiano, francese e spagnolo</p>
+  </header>
+
+  <main>
+    <section class="controlli" aria-label="Ricerca e filtri">
+      <label for="q" class="visivamente-nascosto">Cerca un termine</label>
+      <div class="ricerca">
+        <input id="q" type="search" placeholder="Cerca un termine in qualsiasi lingua" autocomplete="off" autocapitalize="off" spellcheck="false">
+        <button id="pulisci" class="pulisci" type="button" aria-label="Cancella la ricerca" hidden>&times;</button>
+      </div>
+
+      <div class="riga-filtri">
+        <div class="gruppo" role="group" aria-label="Lingua in cui cercare" id="filtro-lingua"></div>
+        <label for="categoria" class="visivamente-nascosto">Categoria</label>
+        <select id="categoria"></select>
+      </div>
+
+      <p id="conteggio" class="conteggio" aria-live="polite"></p>
+    </section>
+
+    <section id="risultati" class="risultati" aria-label="Risultati"></section>
+    <p id="vuoto" class="vuoto" hidden>Nessun termine trovato. Prova con meno lettere, oppure cerca in un'altra lingua.</p>
+    <p id="errore" class="errore" hidden></p>
+
+    <section id="fonti" class="elenco-fonti" aria-label="Fonti" hidden>
+      <details>
+        <summary>Fonti</summary>
+        <dl id="elenco-fonti"></dl>
+      </details>
+    </section>
+  </main>
+
+  <footer class="piede">
+    <p id="statistiche"></p>
+    <p>
+      Dati rilasciati con licenza
+      <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.it" target="_blank" rel="license noopener">CC BY-SA 4.0</a>.
+      Codice con licenza MIT.
+      <a href="https://github.com/gissimo/veliglotta" target="_blank" rel="noopener">Sorgenti e contributi su GitHub</a>.
+    </p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,445 @@
+"use strict";
+
+const LINGUE = [
+  { codice: "eng", nome: "Inglese" },
+  { codice: "esp", nome: "Spagnolo" },
+  { codice: "fra", nome: "Francese" },
+  { codice: "ita", nome: "Italiano" },
+];
+
+const CATEGORIE = {
+  scafo: "Scafo",
+  coperta: "Coperta",
+  attrezzatura: "Attrezzatura",
+  vele: "Vele",
+  manovre: "Manovre",
+  navigazione: "Navigazione",
+  meteo: "Meteo",
+  equipaggio: "Equipaggio",
+};
+
+const GENERE = { m: "m.", f: "f.", loc: "loc." };
+
+const PESI = { A: 0, B: 1, C: 2 };
+
+const LIVELLI = [
+  "nessuna fonte",
+  "solo fonti deboli",
+  "una fonte attendibile, senza doppio riscontro",
+  "una fonte autorevole e un secondo riscontro",
+];
+
+const stato = { q: "", lingua: "tutte", categoria: "tutte" };
+let indice = [];
+let voci = [];
+let catalogo = new Map();
+
+const el = {
+  q: document.getElementById("q"),
+  pulisci: document.getElementById("pulisci"),
+  filtroLingua: document.getElementById("filtro-lingua"),
+  categoria: document.getElementById("categoria"),
+  conteggio: document.getElementById("conteggio"),
+  risultati: document.getElementById("risultati"),
+  vuoto: document.getElementById("vuoto"),
+  errore: document.getElementById("errore"),
+  statistiche: document.getElementById("statistiche"),
+  sezioneFonti: document.getElementById("fonti"),
+  elencoFonti: document.getElementById("elenco-fonti"),
+};
+
+/* Normalizzazione: minuscolo, senza accenti, trattini e apostrofi come spazi.
+   Restituisce anche la mappa dalla posizione normalizzata a quella originale,
+   usata per evidenziare le corrispondenze nel testo originale. */
+function fold(s) {
+  let str = "";
+  const map = [];
+  for (let i = 0; i < s.length; i++) {
+    let c = s[i];
+    if (c === "-" || c === "'" || c === "’") c = " ";
+    const f = c.normalize("NFD").replace(/\p{M}/gu, "").toLowerCase();
+    for (let k = 0; k < f.length; k++) {
+      str += f[k];
+      map.push(i);
+    }
+  }
+  return { str, map };
+}
+
+function costruisciIndice() {
+  indice = [];
+  for (const voce of voci) {
+    for (const l of LINGUE) {
+      for (const termine of voce[l.codice] || []) {
+        indice.push({ voce, lingua: l.codice, f: fold(termine.t) });
+      }
+    }
+  }
+}
+
+function titolo(voce) {
+  const t = (voce.ita && voce.ita[0]) || (voce.eng && voce.eng[0]);
+  return t ? t.t : voce.id;
+}
+
+function punteggio(voce, q) {
+  let migliore = Infinity;
+  for (const e of indice) {
+    if (e.voce !== voce) continue;
+    if (stato.lingua !== "tutte" && e.lingua !== stato.lingua) continue;
+    const i = e.f.str.indexOf(q);
+    if (i < 0) continue;
+    let p;
+    if (e.f.str === q) p = 0;
+    else if (i === 0) p = 1;
+    else if (e.f.str[i - 1] === " ") p = 2;
+    else p = 3;
+    if (p < migliore) migliore = p;
+  }
+  return migliore;
+}
+
+function cerca() {
+  const q = fold(stato.q.trim()).str;
+  let lista = voci.filter(
+    (v) => stato.categoria === "tutte" || v.categoria === stato.categoria
+  );
+  if (q) {
+    const con = [];
+    for (const v of lista) {
+      const p = punteggio(v, q);
+      if (p !== Infinity) con.push({ v, p });
+    }
+    con.sort((a, b) => a.p - b.p || titolo(a.v).localeCompare(titolo(b.v), "it"));
+    return con.map((x) => x.v);
+  }
+  return lista.sort((a, b) => titolo(a).localeCompare(titolo(b), "it"));
+}
+
+/* Costruisce un nodo con le corrispondenze di q evidenziate. */
+function conEvidenza(testo, q) {
+  const frag = document.createDocumentFragment();
+  if (!q) {
+    frag.append(testo);
+    return frag;
+  }
+  const f = fold(testo);
+  const i = f.str.indexOf(q);
+  if (i < 0) {
+    frag.append(testo);
+    return frag;
+  }
+  const inizio = f.map[i];
+  const fine = f.map[i + q.length - 1] + 1;
+  frag.append(testo.slice(0, inizio));
+  const m = document.createElement("mark");
+  m.textContent = testo.slice(inizio, fine);
+  frag.append(m);
+  frag.append(testo.slice(fine));
+  return frag;
+}
+
+function nodo(tag, classe, testo) {
+  const n = document.createElement(tag);
+  if (classe) n.className = classe;
+  if (testo !== undefined) n.textContent = testo;
+  return n;
+}
+
+function scheda(voce, q) {
+  const art = nodo("article", "scheda");
+
+  const testa = nodo("div", "scheda-testa");
+  testa.append(nodo("h2", "scheda-titolo", titolo(voce)));
+  const meta = nodo("div", "scheda-meta");
+  meta.append(nodo("span", "categoria", CATEGORIE[voce.categoria] || voce.categoria));
+  testa.append(meta);
+  art.append(testa);
+
+  const griglia = nodo("div", "lingue");
+  const lv = livelli(voce);
+  for (const l of LINGUE) {
+    const blocco = nodo("div", "lingua");
+    const etichetta = nodo("span", "lingua-etichetta", l.codice.toUpperCase());
+    etichetta.title = l.nome;
+    if (catalogo.size) {
+      const n = lv[l.codice];
+      const p = nodo("span", "livello", "●".repeat(n) + "○".repeat(3 - n));
+      p.title = `${l.nome}: ${LIVELLI[n]}`;
+      p.setAttribute("aria-label", p.title);
+      etichetta.append(" ", p);
+    }
+    blocco.append(etichetta);
+    const ul = nodo("ul", "termini");
+    for (const t of voce[l.codice] || []) {
+      const li = nodo("li");
+      const sp = nodo("span", "termine");
+      sp.append(conEvidenza(t.t, q));
+      li.append(sp);
+      if (t.g) li.append(nodo("span", "genere", GENERE[t.g] || t.g));
+      ul.append(li);
+    }
+    blocco.append(ul);
+    griglia.append(blocco);
+  }
+  art.append(griglia);
+
+  if (voce.definizione) art.append(nodo("p", "definizione", voce.definizione));
+  if (voce.nota) art.append(nodo("p", "nota", voce.nota));
+
+  if (voce.fonti && voce.fonti.length) {
+    const p = nodo("p", "fonti", "Fonti: ");
+    gruppiFonti(voce.fonti).forEach((g, i) => {
+      if (i) p.append(" · ");
+      const c = catalogo.get(g.sigla) || {};
+      const base = c.url || (c.link && c.link[0].url);
+      const url = [...g.citazioni.map((f) => risolvi(f.url, base)), base].find(
+        (u) => u && /^https?:\/\//.test(u)
+      );
+      const n = url ? nodo("a", "sigla", g.sigla) : nodo("span", "sigla", g.sigla);
+      if (url) {
+        n.href = url;
+        n.target = "_blank";
+        n.rel = "noopener";
+      }
+      n.title = g.citazioni.map((f) => f.termini || "").join("; ");
+      p.append(n);
+    });
+    art.append(p);
+  }
+  return art;
+}
+
+/* Gli url delle citazioni possono essere relativi all'indirizzo dell'opera nel catalogo,
+   come un link relativo del web: "scafo/" su https://www.treccani.it/vocabolario/. */
+function risolvi(url, base) {
+  if (!url) return null;
+  try {
+    return new URL(url, base).href;
+  } catch {
+    return null;
+  }
+}
+
+/* Raggruppa le citazioni di una voce per sigla, una sola per opera,
+   in ordine di peso e poi di posizione nel catalogo. */
+function gruppiFonti(fonti) {
+  const gruppi = new Map();
+  for (const f of fonti) {
+    const c = typeof f === "string" ? { sigla: f } : f;
+    const sigla = c.sigla || "";
+    if (!gruppi.has(sigla)) gruppi.set(sigla, { sigla, citazioni: [] });
+    gruppi.get(sigla).citazioni.push(c);
+  }
+  const ordine = (s) => {
+    const c = catalogo.get(s);
+    return c ? Math.min(...Object.values(c.pesi || {}).map((p) => PESI[p] ?? 3), 3) * 1000 + c.indice : 9999;
+  };
+  return [...gruppi.values()].sort((a, b) => ordine(a.sigla) - ordine(b.sigla));
+}
+
+/* Livello di verifica da 0 a 3 per ogni lingua, come livelli in scripts/valida.py:
+   una citazione conta se la fonte copre la lingua e tra i suoi termini c'è uno della lingua. */
+function livelli(voce) {
+  const ris = {};
+  for (const l of LINGUE) {
+    const termini = (voce[l.codice] || []).map((t) => fold(t.t).str);
+    const migliori = new Map();
+    for (const f of voce.fonti || []) {
+      if (typeof f !== "object") continue;
+      const c = catalogo.get(f.sigla);
+      const peso = c && c.pesi && c.pesi[l.codice];
+      if (!peso) continue;
+      const citati = fold(f.termini || "").str;
+      const trovato = termini.some((t) =>
+        new RegExp("(?<![a-z])" + t.replace(/[.*+?^${}()|[\]\\]/g, "\\$&") + "(?![a-z])").test(citati)
+      );
+      if (trovato && (!migliori.has(f.sigla) || peso < migliori.get(f.sigla))) migliori.set(f.sigla, peso);
+    }
+    const pesi = [...migliori.values()];
+    const forti = pesi.filter((p) => p === "A" || p === "B").length;
+    if (pesi.includes("A") && forti >= 2) ris[l.codice] = 3;
+    else if (forti) ris[l.codice] = 2;
+    else ris[l.codice] = pesi.length ? 1 : 0;
+  }
+  return ris;
+}
+
+function link(testo, url) {
+  const a = nodo("a", null, testo);
+  a.href = url;
+  a.target = "_blank";
+  a.rel = "noopener";
+  return a;
+}
+
+function disegnaElencoFonti() {
+  const voci = [...catalogo.values()].sort((a, b) => a.sigla.localeCompare(b.sigla, "it"));
+  el.elencoFonti.replaceChildren(
+    ...voci.flatMap((c) => {
+      const dt = nodo("dt", null, c.sigla);
+      const dd = nodo("dd", null, c.titolo);
+      if (c.url) {
+        dd.append(" ");
+        dd.append(link("(link)", c.url));
+      }
+      if (c.link) {
+        dd.append(" (");
+        c.link.forEach((l, i) => {
+          if (i) dd.append(", ");
+          dd.append(link(l.testo, l.url));
+        });
+        dd.append(")");
+      }
+      return [dt, dd];
+    })
+  );
+  el.sezioneFonti.hidden = catalogo.size === 0;
+}
+
+function disegna() {
+  el.pulisci.hidden = stato.q === "";
+  const trovate = cerca();
+  const q = fold(stato.q.trim()).str;
+  el.risultati.replaceChildren(...trovate.map((v) => scheda(v, q)));
+  el.vuoto.hidden = trovate.length !== 0;
+  el.conteggio.textContent =
+    trovate.length === voci.length
+      ? `${voci.length} termini`
+      : `${trovate.length} di ${voci.length} termini`;
+  aggiornaUrl();
+}
+
+function aggiornaUrl() {
+  const p = new URLSearchParams();
+  if (stato.q) p.set("q", stato.q);
+  if (stato.lingua !== "tutte") p.set("l", stato.lingua);
+  if (stato.categoria !== "tutte") p.set("c", stato.categoria);
+  const h = p.toString();
+  history.replaceState(null, "", h ? "#" + h : location.pathname + location.search);
+}
+
+function leggiUrl() {
+  const p = new URLSearchParams(location.hash.slice(1));
+  stato.q = p.get("q") || "";
+  const l = p.get("l");
+  stato.lingua = LINGUE.some((x) => x.codice === l) ? l : "tutte";
+  const c = p.get("c");
+  stato.categoria = c && CATEGORIE[c] ? c : "tutte";
+}
+
+function costruisciControlli() {
+  const opzioni = [{ codice: "tutte", nome: "Tutte" }, ...LINGUE];
+  for (const o of opzioni) {
+    const b = nodo("button", "chip", o.codice === "tutte" ? "Tutte" : o.codice.toUpperCase());
+    b.type = "button";
+    b.dataset.lingua = o.codice;
+    b.title = o.nome;
+    b.addEventListener("click", () => {
+      stato.lingua = o.codice;
+      aggiornaChip();
+      disegna();
+    });
+    el.filtroLingua.append(b);
+  }
+
+  const tutte = nodo("option", null, "Tutte le categorie");
+  tutte.value = "tutte";
+  el.categoria.append(tutte);
+  const perNome = Object.entries(CATEGORIE).sort((a, b) => a[1].localeCompare(b[1], "it"));
+  for (const [k, nome] of perNome) {
+    const o = nodo("option", null, nome);
+    o.value = k;
+    el.categoria.append(o);
+  }
+  el.categoria.addEventListener("change", () => {
+    stato.categoria = el.categoria.value;
+    disegna();
+  });
+
+  el.q.addEventListener("input", () => {
+    stato.q = el.q.value;
+    disegna();
+  });
+
+  const pulisciRicerca = () => {
+    el.q.value = "";
+    stato.q = "";
+    disegna();
+  };
+  el.pulisci.addEventListener("click", () => {
+    pulisciRicerca();
+    el.q.blur();
+  });
+  el.q.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && el.q.value) {
+      e.preventDefault();
+      pulisciRicerca();
+    }
+  });
+}
+
+function aggiornaChip() {
+  for (const b of el.filtroLingua.children) {
+    b.setAttribute("aria-pressed", String(b.dataset.lingua === stato.lingua));
+  }
+}
+
+function mostraErrore(msg) {
+  el.errore.textContent = msg;
+  el.errore.hidden = false;
+}
+
+async function avvia() {
+  costruisciControlli();
+  leggiUrl();
+  el.q.value = stato.q;
+  el.categoria.value = stato.categoria;
+  aggiornaChip();
+
+  const fonti = fetch("data/fonti.json")
+    .then((r) => (r.ok ? r.json() : { fonti: [] }))
+    .catch(() => ({ fonti: [] }));
+
+  try {
+    const risposta = await fetch("data/voci.json");
+    if (!risposta.ok) throw new Error("HTTP " + risposta.status);
+    const dati = await risposta.json();
+    voci = dati.voci;
+  } catch (e) {
+    mostraErrore(
+      location.protocol === "file:"
+        ? "Il dizionario non si carica aprendo il file direttamente. Servilo con un server locale, per esempio con: python3 -m http.server"
+        : "Impossibile caricare i dati. Controlla la connessione e riprova."
+    );
+    return;
+  }
+
+  /* Senza catalogo le schede mostrano comunque le sigle, senza ordine per peso. */
+  catalogo = new Map((await fonti).fonti.map((c, indice) => [c.sigla, { ...c, indice }]));
+  disegnaElencoFonti();
+
+  costruisciIndice();
+  if (catalogo.size) {
+    const complete = voci.filter((v) => Object.values(livelli(v)).every((n) => n === 3)).length;
+    el.statistiche.textContent = `${voci.length} termini, ${complete} con tre pallini in tutte le lingue.`;
+  } else {
+    el.statistiche.textContent = `${voci.length} termini.`;
+  }
+  disegna();
+}
+
+window.addEventListener("hashchange", () => {
+  if (!voci.length) return;
+  leggiUrl();
+  el.q.value = stato.q;
+  el.categoria.value = stato.categoria;
+  aggiornaChip();
+  disegna();
+});
+
+if ("serviceWorker" in navigator && location.protocol.startsWith("http")) {
+  navigator.serviceWorker.register("sw.js").catch(() => {});
+}
+
+avvia();
