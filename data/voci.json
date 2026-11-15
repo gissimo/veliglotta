@@ -350,7 +350,6 @@
       "definizione": "Qualsiasi cavo tessile usato a bordo per una funzione precisa.",
       "nota": "In italiano si dice anche cavo, che però indica anche i cavi d'acciaio ed elettrici.",
       "fonti": [
-        { "sigla": "UNITS", "termini": "cima" },
         { "sigla": "MAIF", "termini": "bout" },
         { "sigla": "TRE", "termini": "cima", "url": "cima/" },
         { "sigla": "INCUAL", "termini": "cabo" },
@@ -699,7 +698,7 @@
         { "sigla": "AEMET", "termini": "diferencia entre tiempo y clima" },
         { "sigla": "DPD", "termini": "meteorología", "url": "meteorolog%C3%ADa" },
         { "sigla": "TRE", "termini": "meteo", "url": "meteo/" },
-        { "sigla": "TRE", "termini": "tempo, sign. 8: tempo atmosferico", "url": "tempo/" },
+        { "sigla": "TRE", "termini": "tempo, sign. 8: l'insieme delle condizioni fisiche atmosferiche", "url": "tempo/" },
         { "sigla": "MF", "termini": "tempo atmosferico, weather", "url": "inglita.htm" },
         { "sigla": "PER", "termini": "mal tiempo" }
       ]
@@ -2812,7 +2811,7 @@
       "nota": "In italiano salpare vuol dire anche partire (vedi salpare). Anche in spagnolo levar vuol dire sia salpare l'ancora sia partire. Il contrario è dar fondo (vedi dar fondo).",
       "fonti": [
         { "sigla": "GLN", "termini": "relever le mouillage, salpare l'ancora" },
-        { "sigla": "TRE", "termini": "salpare l'ancora", "url": "salpare/" },
+        { "sigla": "TRE", "termini": "salpare: tirare su l'ancora; salpato le ancore", "url": "salpare/" },
         { "sigla": "WW", "termini": "salpare, to weigh anchor" },
         { "sigla": "USCG", "termini": "levar anclas", "url": "English-Spanish-Glossary-Nautical-Terms.pdf" },
         { "sigla": "FFV-ESP", "termini": "levar el ancla" },
@@ -2905,7 +2904,7 @@
         { "sigla": "GLN", "termini": "partir au lof, straorzare" },
         { "sigla": "TRE", "termini": "straorzare", "url": "straorzare/" },
         { "sigla": "USCG", "termini": "broach, straorzare", "url": "English-Italian-Glossary-Nautical-Terms.pdf" },
-        { "sigla": "NAUTIK", "termini": "irse de orzada (involuntaria)", "url": "navegacion/irse-de-orzada-con-spi-simetrico-trimado-velas/" }
+        { "sigla": "NAUTIK", "termini": "irse de orzada", "url": "navegacion/irse-de-orzada-con-spi-simetrico-trimado-velas/" }
       ]
     },
     {
@@ -3428,14 +3427,16 @@
       "categoria": "manovre",
       "eng": [{ "t": "close reach" }],
       "esp": [{ "t": "a un descuartelar", "g": "loc" }, { "t": "ceñida abierta", "g": "f" }],
-      "fra": [{ "t": "petit largue", "g": "m" }],
+      "fra": [{ "t": "bon plein", "g": "m" }, { "t": "petit largue", "g": "m" }],
       "ita": [{ "t": "bolina larga", "g": "f" }],
       "definizione": "Andatura tra la bolina e il traverso, con il vento che arriva a circa 60-80 gradi dalla prua.",
-      "nota": "Polisemico in francese: petit largue si usa per la bolina larga, ma anche per l'andatura dopo il traverso (vedi lasco); in Francia per la bolina larga si dice anche bon plein. In spagnolo si dice navegar a un descuartelar.",
+      "nota": "Polisemico in francese: petit largue si usa per la bolina larga, ma anche per l'andatura appena oltre il traverso (vedi lasco). Non ha questa ambiguità bon plein, o près bon plein, che indica sempre l'andatura tra il près e il traverso: si poggia di qualche grado dalla bolina stretta per andare più veloci, quindi non va tradotto con bolina stretta. In spagnolo si dice navegar a un descuartelar.",
       "fonti": [
         { "sigla": "GLN", "termini": "petit largue, bolina larga" },
+        { "sigla": "OQLF-GDT", "termini": "plus près bon plein (entre le plus près et le travers)", "url": "fiche-gdt/fiche/8422363/allure" },
+        { "sigla": "FFV-ENS", "termini": "près bon plein" },
         { "sigla": "DLE", "termini": "descuartelar (navegar a un descuartelar)", "url": "descuartelar" },
-        { "sigla": "FFV-GBR", "termini": "petit largue, close reach" },
+        { "sigla": "FFV-GBR", "termini": "petit largue, close reach; au près bon plein" },
         { "sigla": "USCG", "termini": "close reach, navegar de ceñida abierta", "url": "English-Spanish-Glossary-Nautical-Terms.pdf" },
         { "sigla": "DIMAR", "termini": "descuartelar", "url": "?name=4" },
         { "sigla": "PER", "termini": "navegar a un descuartelar" }
@@ -3727,6 +3728,96 @@
         { "sigla": "RFEV-DIC", "termini": "dirección, cap / route, heading" },
         { "sigla": "MW", "termini": "heading", "url": "heading" },
         { "sigla": "BOW", "termini": "heading" }
+      ]
+    },
+    {
+      "id": "sartiame",
+      "categoria": "attrezzatura",
+      "eng": [{ "t": "standing rigging" }],
+      "esp": [{ "t": "jarcia firme", "g": "f" }, { "t": "jarcia fija", "g": "f" }],
+      "fra": [{ "t": "gréement dormant", "g": "m" }],
+      "ita": [{ "t": "sartiame", "g": "m" }, { "t": "manovre fisse", "g": "f" }, { "t": "manovre dormienti", "g": "f" }],
+      "definizione": "L'insieme dei cavi fissi, come sartie, stralli e paterazzo, che sostengono l'albero e restano in tensione durante la navigazione.",
+      "nota": "In senso stretto sartiame è l'insieme delle sartie, ma nell'uso comprende tutte le manovre fisse, stralli compresi. Il contrario sono le manovre correnti (vedi manovre correnti). In francese manœuvre dormante è un sinonimo raro.",
+      "fonti": [
+        { "sigla": "WS-ERS", "termini": "standing rigging" },
+        { "sigla": "TRE", "termini": "sartiame (l'insieme dei cavi fissi che nei velieri sostengono l'alberatura)", "url": "sartiame/" },
+        { "sigla": "TRE", "termini": "manovra: manovre dormienti", "url": "manovra/" },
+        { "sigla": "WW", "termini": "sartiame, standing rigging; manovre dormienti" },
+        { "sigla": "GRANLASCO", "termini": "manovre fisse" },
+        { "sigla": "OQLF-GDT", "termini": "gréement courant, par opposition au gréement dormant", "url": "fiche-gdt/fiche/8881496/greement-courant" },
+        { "sigla": "MSB", "termini": "gréement dormant" },
+        { "sigla": "DLE", "termini": "jarcia firme (también jarcia muerta)", "url": "jarcia" },
+        { "sigla": "INCUAL", "termini": "jarcia firme" },
+        { "sigla": "TC", "termini": "jarcia fija, jarcia firme, gréement dormant, manoeuvre dormante, standing rigging" },
+        { "sigla": "PER", "termini": "jarcia firme" },
+        { "sigla": "ORC", "termini": "jarcia firme" },
+        { "sigla": "RFEV-DIC", "termini": "jarcia firme, standing rigging" },
+        { "sigla": "RL", "termini": "jarcia firme, standing rigging, manovra fissa" },
+        { "sigla": "USCG", "termini": "standing rigging, sartiame fisso", "url": "English-Italian-Glossary-Nautical-Terms.pdf" },
+        { "sigla": "USCG", "termini": "standing rigging, jarcia firme", "url": "English-Spanish-Glossary-Nautical-Terms.pdf" },
+        { "sigla": "USCG", "termini": "standing rigging, greement dormant", "url": "English-French-Glossary-Nautical-Terms.pdf" },
+        { "sigla": "FFV-ITA", "termini": "gréement dormant, manovre fisse o dormienti" },
+        { "sigla": "LF", "termini": "manovre fisse, standing rigging" }
+      ]
+    },
+    {
+      "id": "tuga",
+      "categoria": "coperta",
+      "eng": [{ "t": "deckhouse" }],
+      "esp": [{ "t": "caseta", "g": "f" }],
+      "fra": [{ "t": "rouf", "g": "m" }],
+      "ita": [{ "t": "tuga", "g": "f" }],
+      "definizione": "Sovrastruttura che si alza dalla coperta, più stretta dello scafo, e copre parte degli spazi sottocoperta.",
+      "nota": "Sulle barche a vela inglesi si dice spesso coachroof, in spagnolo anche carroza. Falso amico: lo spagnolo tambucho è il piccolo riparo sopra l'accesso sottocoperta, come l'italiano tambuccio, non la tuga. L'inglese roof indica solo il tetto.",
+      "fonti": [
+        { "sigla": "TRE", "termini": "tuga", "url": "tuga/" },
+        { "sigla": "WW", "termini": "tuga, deck house" },
+        { "sigla": "OQLF-GDT", "termini": "rouf, deckhouse", "url": "fiche-gdt/fiche/8419477/rouf" },
+        { "sigla": "MW", "termini": "deckhouse", "url": "deckhouse" },
+        { "sigla": "FFV-GBR", "termini": "rouf, deckhouse" },
+        { "sigla": "DEI", "termini": "caseta, deckhouse", "url": "es/lema/caseta" },
+        { "sigla": "DEI", "termini": "tambucho, companion way", "url": "es/lema/tambucho" },
+        { "sigla": "USCG", "termini": "coach roof, tuga", "url": "English-Italian-Glossary-Nautical-Terms.pdf" },
+        { "sigla": "USCG", "termini": "coach roof, carroza", "url": "English-Spanish-Glossary-Nautical-Terms.pdf" },
+        { "sigla": "USCG", "termini": "coach roof, rouf", "url": "English-French-Glossary-Nautical-Terms.pdf" },
+        { "sigla": "FFV-ITA", "termini": "rouf, tetto della tuga" },
+        { "sigla": "LF", "termini": "tuga (roof)" }
+      ]
+    },
+    {
+      "id": "svergolamento",
+      "categoria": "vele",
+      "eng": [{ "t": "twist" }],
+      "esp": [{ "t": "twist", "g": "m" }],
+      "fra": [{ "t": "vrillage", "g": "m" }, { "t": "dévers", "g": "m" }],
+      "ita": [{ "t": "svergolamento", "g": "m" }],
+      "definizione": "Apertura progressiva della balumina verso l'alto: la parte alta della vela lavora con un angolo più aperto rispetto al vento di quella bassa. Si regola con scotta, vang e carrello.",
+      "nota": "Polisemico in francese: dévers indica anche la flessione verso poppa dello strallo sotto carico (dévers d'étai), che non è uno svergolamento della vela. Anche svergolamento in italiano ha altri sensi tecnici, come la deformazione permanente dello scafo. In spagnolo i velai usano l'inglese twist.",
+      "fonti": [
+        { "sigla": "TRE", "termini": "svergolamento di una vela", "url": "svergolamento/" },
+        { "sigla": "LF", "termini": "svergolare, to twist; svergolamento della balumina" },
+        { "sigla": "FFV-GBR", "termini": "dévers d'une voile, twist of a sail" },
+        { "sigla": "BATEAUX", "termini": "vrillage", "url": "article/31441/reglage-de-grand-voile-le-vrillage-et-l-incidence" },
+        { "sigla": "NS", "termini": "twist progresivo", "url": "consejo-north-sails-37" }
+      ]
+    },
+    {
+      "id": "flusso-laminare",
+      "categoria": "vele",
+      "eng": [{ "t": "laminar flow" }],
+      "esp": [{ "t": "flujo laminar", "g": "m" }],
+      "fra": [{ "t": "écoulement laminaire", "g": "m" }],
+      "ita": [{ "t": "flusso laminare", "g": "m" }, { "t": "moto laminare", "g": "m" }],
+      "definizione": "Scorrimento ordinato dell'aria lungo la vela, a strati paralleli che restano attaccati alla superficie. È la condizione in cui la vela produce portanza, e i segnavento che filano dritti lo indicano.",
+      "nota": "Il contrario è il flusso turbulento, quando l'aria si stacca dalla vela e i segnavento sottovento si arricciano. Nelle andature portanti la vela lavora soprattutto per spinta e il flusso non è più laminare (vedi segnavento).",
+      "fonti": [
+        { "sigla": "MW", "termini": "laminar flow", "url": "laminar%20flow" },
+        { "sigla": "OQLF-GDT", "termini": "écoulement laminaire, laminar flow", "url": "fiche-gdt/fiche/2078761/ecoulement-laminaire" },
+        { "sigla": "FFV-GBR", "termini": "écoulement laminaire, laminar flow" },
+        { "sigla": "IATE", "termini": "natural laminar flow, flujo laminar natural, écoulement laminaire naturel, flusso laminare naturale", "url": "entry/result/1566697" },
+        { "sigla": "TRE", "termini": "moto laminare, regime laminare (moto (o regime) l.)", "url": "laminare1/" },
+        { "sigla": "WW", "termini": "scorrimento laminare; il flusso dell'aria nelle vele con il vento di bolina-traverso è di tipo laminare" }
       ]
     }
   ]
