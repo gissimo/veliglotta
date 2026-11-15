@@ -634,7 +634,8 @@
         { "sigla": "WS-ERS", "termini": "equipment" },
         { "sigla": "RFEV-REV", "termini": "equipamiento (Reglas de Equipamiento, equipment)" },
         { "sigla": "RFEV-DIC", "termini": "équipement de secours; equipo de navegación, piloting equipement" },
-        { "sigla": "GRANLASCO", "termini": "scafo ed attrezzatura" }
+        { "sigla": "GRANLASCO", "termini": "scafo ed attrezzatura" },
+        { "sigla": "RD875", "termini": "equipamiento náutico" }
       ]
     },
     {
@@ -697,12 +698,13 @@
       "nota": "Termine polisemico: tempo, tiempo e temps indicano anche il tempo cronologico. Da non confondere con la meteorologia, che è la scienza, né con il clima. Meteo e météo sono forme colloquiali.",
       "fonti": [
         { "sigla": "OQLF-GDT", "termini": "temps, weather", "url": "fiche-gdt/fiche/8402391/temps" },
-        { "sigla": "AEMET", "termini": "diferencia entre tiempo y clima" },
         { "sigla": "DPD", "termini": "meteorología", "url": "meteorolog%C3%ADa" },
         { "sigla": "TRE", "termini": "meteo", "url": "meteo/" },
         { "sigla": "TRE", "termini": "tempo, sign. 8: l'insieme delle condizioni fisiche atmosferiche", "url": "tempo/" },
         { "sigla": "MF", "termini": "tempo atmosferico, weather", "url": "inglita.htm" },
-        { "sigla": "PER", "termini": "mal tiempo" }
+        { "sigla": "PER", "termini": "mal tiempo" },
+        { "sigla": "RD875", "termini": "mal tiempo" },
+        { "sigla": "AEMET-MAN", "termini": "el tiempo en un lugar y momento dados; predicción del tiempo" }
       ]
     },
     {
@@ -747,7 +749,8 @@
         { "sigla": "RL", "termini": "orza de pivote" },
         { "sigla": "RFEV-DIC", "termini": "orza de pivote" },
         { "sigla": "RFEV-REV", "termini": "orza, centreboard" },
-        { "sigla": "RL", "termini": "orza de pivote, dérive (pivotante), centerboard, deriva basculante" }
+        { "sigla": "RL", "termini": "orza de pivote, dérive (pivotante), centerboard, deriva basculante" },
+        { "sigla": "RD875", "termini": "orza fija y abatible" }
       ]
     },
     {
@@ -841,7 +844,8 @@
         { "sigla": "MF", "termini": "prodiere, bowman", "url": "itaing.htm" },
         { "sigla": "MW", "termini": "bowman", "url": "bowman" },
         { "sigla": "TC", "termini": "proel, équipier d'avant, foredeck hand" },
-        { "sigla": "CER", "termini": "numéro 1 (No1), la personne la plus en avant sur le bateau" }
+        { "sigla": "CER", "termini": "numéro 1 (No1), la personne la plus en avant sur le bateau" },
+        { "sigla": "DLE", "termini": "proel (1.b)", "url": "proel" }
       ]
     },
     {
@@ -1030,7 +1034,8 @@
         { "sigla": "LF", "termini": "lunghezza fuori tutto, LOA" },
         { "sigla": "TC-AC", "termini": "eslora, length overall, longueur hors tout" },
         { "sigla": "MSB", "termini": "longueur hors tout" },
-        { "sigla": "PER", "termini": "eslora máxima" }
+        { "sigla": "PER", "termini": "eslora máxima" },
+        { "sigla": "DEI", "termini": "eslora (2. longitud de un barco de proa a popa), length", "url": "es/lema/eslora" }
       ]
     },
     {
@@ -1237,7 +1242,8 @@
         { "sigla": "FFV-GBR", "termini": "filière, lifeline" },
         { "sigla": "LF", "termini": "draglia, lifeline" },
         { "sigla": "PER", "termini": "guardamancebos" },
-        { "sigla": "MW", "termini": "lifeline", "url": "lifeline" }
+        { "sigla": "MW", "termini": "lifeline", "url": "lifeline" },
+        { "sigla": "RD875", "termini": "candeleros y guardamancebos" }
       ]
     },
     {
@@ -1267,7 +1273,9 @@
         { "sigla": "TC", "termini": "escotilla, hatch, écoutille" },
         { "sigla": "PER", "termini": "escotilla" },
         { "sigla": "MW", "termini": "hatch", "url": "hatch" },
-        { "sigla": "FFV-GBR", "termini": "écoutille, hatch, hatchway" }
+        { "sigla": "FFV-GBR", "termini": "écoutille, hatch, hatchway" },
+        { "sigla": "DEI", "termini": "escotilla, hatchway", "url": "es/lema/escotilla" },
+        { "sigla": "RD875", "termini": "escotillas, escotilla principal" }
       ]
     },
     {
@@ -1297,7 +1305,8 @@
       "fonti": [
         { "sigla": "RL", "termini": "stopper" },
         { "sigla": "USCG", "termini": "jammer, stopper", "url": "English-Italian-Glossary-Nautical-Terms.pdf" },
-        { "sigla": "USCG", "termini": "jammer, bloqueur", "url": "English-French-Glossary-Nautical-Terms.pdf" }
+        { "sigla": "USCG", "termini": "jammer, bloqueur", "url": "English-French-Glossary-Nautical-Terms.pdf" },
+        { "sigla": "DIMAR", "termini": "stopper (variante de mordaza de nueces)", "url": "?page=17" }
       ]
     },
     {
@@ -1361,7 +1370,9 @@
         { "sigla": "MSB", "termini": "étai" },
         { "sigla": "GLN", "termini": "étai, strallo" },
         { "sigla": "PER", "termini": "estay de proa" },
-        { "sigla": "MW", "termini": "forestay", "url": "forestay" }
+        { "sigla": "MW", "termini": "forestay", "url": "forestay" },
+        { "sigla": "DEI", "termini": "estay, stay", "url": "es/lema/estay" },
+        { "sigla": "RD875", "termini": "crucetas, obenques, obenquillos, estay" }
       ]
     },
     {
@@ -1391,7 +1402,8 @@
         { "sigla": "RFEV-REV", "termini": "estay de popa, backstay" },
         { "sigla": "TC", "termini": "estay de popa, backstay, pataras" },
         { "sigla": "MSB", "termini": "pataras" },
-        { "sigla": "GLN", "termini": "pataras, strallo di poppa o paterazzo" }
+        { "sigla": "GLN", "termini": "pataras, strallo di poppa o paterazzo" },
+        { "sigla": "DEI", "termini": "burda: estay de popa, Backstay", "url": "es/lema/burda" }
       ]
     },
     {
@@ -1504,7 +1516,8 @@
         { "sigla": "MF", "termini": "crocetta, spreader", "url": "inglita.htm" },
         { "sigla": "RFEV-REV", "termini": "cruceta, spreader" },
         { "sigla": "MSB", "termini": "barre de flèche" },
-        { "sigla": "GLN", "termini": "barre de flèche, crocetta" }
+        { "sigla": "GLN", "termini": "barre de flèche, crocetta" },
+        { "sigla": "RD875", "termini": "crucetas; distancia de la baluma a la cruceta" }
       ]
     },
     {
@@ -1547,7 +1560,8 @@
         { "sigla": "UNIOVI", "termini": "pinzote, gooseneck" },
         { "sigla": "LF", "termini": "trozza, gooseneck" },
         { "sigla": "MSB", "termini": "vit-de-mulet" },
-        { "sigla": "GLN", "termini": "vit-de-mulet, trozza" }
+        { "sigla": "GLN", "termini": "vit-de-mulet, trozza" },
+        { "sigla": "RD875", "termini": "pinzote de botavara" }
       ]
     },
     {
@@ -1579,7 +1593,8 @@
         { "sigla": "TC", "termini": "tangón, spinnaker boom, tangon" },
         { "sigla": "MSB", "termini": "tangon" },
         { "sigla": "GLN", "termini": "tangon, tangone" },
-        { "sigla": "PER", "termini": "tangón" }
+        { "sigla": "PER", "termini": "tangón" },
+        { "sigla": "RD875", "termini": "el tangón y su aparejo" }
       ]
     },
     {
@@ -1602,7 +1617,8 @@
         { "sigla": "USCG", "termini": "genoa, génois", "url": "English-French-Glossary-Nautical-Terms.pdf" },
         { "sigla": "FFV-ESP", "termini": "génois, génova" },
         { "sigla": "MSB", "termini": "génois" },
-        { "sigla": "GLN", "termini": "génois, genoa" }
+        { "sigla": "GLN", "termini": "génois, genoa" },
+        { "sigla": "RD875", "termini": "génova" }
       ]
     },
     {
@@ -1624,7 +1640,8 @@
         { "sigla": "FFV-GBR", "termini": "tourmentin, storm jib" },
         { "sigla": "MSB", "termini": "tourmentin" },
         { "sigla": "GLN", "termini": "tourmentin, tormentina" },
-        { "sigla": "PER", "termini": "tormentín" }
+        { "sigla": "PER", "termini": "tormentín" },
+        { "sigla": "RD875", "termini": "velas de capa y tormentín" }
       ]
     },
     {
@@ -1680,7 +1697,9 @@
         { "sigla": "TC-AC", "termini": "grátil, luff, guindant" },
         { "sigla": "GLN", "termini": "guindant, inferitura" },
         { "sigla": "PER", "termini": "grátil" },
-        { "sigla": "MW", "termini": "luff", "url": "luff" }
+        { "sigla": "MW", "termini": "luff", "url": "luff" },
+        { "sigla": "RD875", "termini": "grátil, pujamen y baluma" },
+        { "sigla": "DLE", "termini": "grátil (1)", "url": "gr%C3%A1til" }
       ]
     },
     {
@@ -1810,7 +1829,8 @@
         { "sigla": "TC-AC", "termini": "puño de escota, clew, point d'écoute" },
         { "sigla": "DLE", "termini": "puño", "url": "pu%C3%B1o" },
         { "sigla": "GLN", "termini": "point d'écoute, punto di scotta" },
-        { "sigla": "MW", "termini": "clew", "url": "clew" }
+        { "sigla": "MW", "termini": "clew", "url": "clew" },
+        { "sigla": "RD875", "termini": "puño de escota" }
       ]
     },
     {
@@ -1840,7 +1860,8 @@
         { "sigla": "TC-AC", "termini": "puño de amura, tack, point d'amure" },
         { "sigla": "DLE", "termini": "puño", "url": "pu%C3%B1o" },
         { "sigla": "GLN", "termini": "point d'amure, punto di mura" },
-        { "sigla": "MW", "termini": "tack", "url": "tack" }
+        { "sigla": "MW", "termini": "tack", "url": "tack" },
+        { "sigla": "RD875", "termini": "puño de amura" }
       ]
     },
     {
@@ -1993,7 +2014,8 @@
       "fonti": [
         { "sigla": "OQLF-GDT", "termini": "œillet de Cunningham", "url": "fiche-gdt/fiche/10455059/oeillet-de-cunningham" },
         { "sigla": "RL", "termini": "cunningham" },
-        { "sigla": "MSB", "termini": "cunningham" }
+        { "sigla": "MSB", "termini": "cunningham" },
+        { "sigla": "RD875", "termini": "pajarito, cunningham, carro de mayor y trapa" }
       ]
     },
     {
@@ -2088,7 +2110,9 @@
         { "sigla": "MF", "termini": "vento, wind", "url": "itaing.htm" },
         { "sigla": "MF", "termini": "vento, wind", "url": "inglita.htm" },
         { "sigla": "PER", "termini": "viento" },
-        { "sigla": "MW", "termini": "wind", "url": "wind" }
+        { "sigla": "MW", "termini": "wind", "url": "wind" },
+        { "sigla": "RD875", "termini": "viento, corriente y olas" },
+        { "sigla": "AEMET-MAN", "termini": "viento, dirección del viento" }
       ]
     },
     {
@@ -2110,7 +2134,8 @@
         { "sigla": "MF", "termini": "vento reale, true wind", "url": "inglita.htm" },
         { "sigla": "TC", "termini": "viento real, true wind, vent réel" },
         { "sigla": "PER", "termini": "viento real" },
-        { "sigla": "BOW", "termini": "true wind" }
+        { "sigla": "BOW", "termini": "true wind" },
+        { "sigla": "RD875", "termini": "viento real, relativo y aparente" }
       ]
     },
     {
@@ -2136,7 +2161,8 @@
         { "sigla": "TC", "termini": "viento aparente, apparent wind, vent apparent" },
         { "sigla": "MSB", "termini": "vent apparent" },
         { "sigla": "PER", "termini": "viento aparente" },
-        { "sigla": "BOW", "termini": "apparent wind" }
+        { "sigla": "BOW", "termini": "apparent wind" },
+        { "sigla": "RD875", "termini": "viento aparente y viento real" }
       ]
     },
     {
@@ -2464,7 +2490,8 @@
         { "sigla": "FFV-GBR", "termini": "bras, brace" },
         { "sigla": "RFEV-DIC", "termini": "braza, bras, afterguy; braza del spí, guy" },
         { "sigla": "RL", "termini": "braza, afterguy, braccio; braza del spí, braccio dello spi" },
-        { "sigla": "MF", "termini": "braccio, brace, guy", "url": "itaing.htm" }
+        { "sigla": "MF", "termini": "braccio, brace, guy", "url": "itaing.htm" },
+        { "sigla": "RD875", "termini": "mosquetón rápido de la braza" }
       ]
     },
     {
@@ -2559,7 +2586,8 @@
         { "sigla": "GLN", "termini": "galhauban, sartia alta" },
         { "sigla": "MSB", "termini": "galhauban" },
         { "sigla": "FFV-GBR", "termini": "galhauban, upper shroud" },
-        { "sigla": "INCUAL", "termini": "obenques altos" }
+        { "sigla": "INCUAL", "termini": "obenques altos" },
+        { "sigla": "DIMAR", "termini": "trapecio: encapilladura del obenque alto", "url": "?page=18" }
       ]
     },
     {
@@ -2577,7 +2605,8 @@
         { "sigla": "INCUAL", "termini": "enrollador" },
         { "sigla": "USCG", "termini": "roller furling, avvolgifiocco", "url": "English-Italian-Glossary-Nautical-Terms.pdf" },
         { "sigla": "USCG", "termini": "roller furling, enrollador de vela", "url": "English-Spanish-Glossary-Nautical-Terms.pdf" },
-        { "sigla": "USCG", "termini": "roller furling, enrouleur", "url": "English-French-Glossary-Nautical-Terms.pdf" }
+        { "sigla": "USCG", "termini": "roller furling, enrouleur", "url": "English-French-Glossary-Nautical-Terms.pdf" },
+        { "sigla": "RD875", "termini": "enrollador de génova" }
       ]
     },
     {
@@ -2598,7 +2627,10 @@
         { "sigla": "USCG", "termini": "toe rail, trincarino", "url": "English-Italian-Glossary-Nautical-Terms.pdf" },
         { "sigla": "USCG", "termini": "toe rail, regala", "url": "English-Spanish-Glossary-Nautical-Terms.pdf" },
         { "sigla": "USCG", "termini": "toe rail, rail de fargue", "url": "English-French-Glossary-Nautical-Terms.pdf" },
-        { "sigla": "MF", "termini": "falchetta, toerail", "url": "itaing.htm" }
+        { "sigla": "MF", "termini": "falchetta, toerail", "url": "itaing.htm" },
+        { "sigla": "DEI", "termini": "regala", "url": "es/lema/regala" },
+        { "sigla": "TC", "termini": "regala, top rail, liston" },
+        { "sigla": "RD875", "termini": "borda, regala" }
       ]
     },
     {
@@ -2620,7 +2652,9 @@
         { "sigla": "RFEV-DIC", "termini": "catavientos, tell-tale" },
         { "sigla": "RL", "termini": "catavientos, tell-tale, filetti segnavento" },
         { "sigla": "PER", "termini": "catavientos" },
-        { "sigla": "MW", "termini": "telltale", "url": "telltale" }
+        { "sigla": "MW", "termini": "telltale", "url": "telltale" },
+        { "sigla": "RD875", "termini": "catavientos en el grátil; cataviento" },
+        { "sigla": "DLE", "termini": "catavientos", "url": "catavientos" }
       ]
     },
     {
@@ -2751,7 +2785,9 @@
         { "sigla": "RFEV-DIC", "termini": "aparejo" },
         { "sigla": "PER", "termini": "aparejo marconi" },
         { "sigla": "MW", "termini": "rig", "url": "rig" },
-        { "sigla": "TRE", "termini": "attrezzatura (in marina)", "url": "attrezzatura/" }
+        { "sigla": "TRE", "termini": "attrezzatura (in marina)", "url": "attrezzatura/" },
+        { "sigla": "DEI", "termini": "aparejo, rig", "url": "es/lema/aparejo" },
+        { "sigla": "RD875", "termini": "aparejo de vela" }
       ]
     },
     {
@@ -2863,7 +2899,9 @@
         { "sigla": "FFV-ESP", "termini": "s'amarrer, amarraje" },
         { "sigla": "MF", "termini": "ormeggio, mooring", "url": "itaing.htm" },
         { "sigla": "PER", "termini": "amarrar" },
-        { "sigla": "MW", "termini": "moor", "url": "moor" }
+        { "sigla": "MW", "termini": "moor", "url": "moor" },
+        { "sigla": "RD875", "termini": "amarrar: cabos que deben darse" },
+        { "sigla": "DLE", "termini": "amarrar (1.c)", "url": "amarrar" }
       ]
     },
     {
@@ -2921,7 +2959,8 @@
         { "sigla": "GLN", "termini": "partir au lof, straorzare" },
         { "sigla": "TRE", "termini": "straorzare", "url": "straorzare/" },
         { "sigla": "USCG", "termini": "broach, straorzare", "url": "English-Italian-Glossary-Nautical-Terms.pdf" },
-        { "sigla": "NAUTIK", "termini": "irse de orzada", "url": "navegacion/irse-de-orzada-con-spi-simetrico-trimado-velas/" }
+        { "sigla": "NAUTIK", "termini": "irse de orzada", "url": "navegacion/irse-de-orzada-con-spi-simetrico-trimado-velas/" },
+        { "sigla": "RD875", "termini": "irse de arribada e irse de orzada" }
       ]
     },
     {
@@ -3056,7 +3095,8 @@
         { "sigla": "FFV-ESP", "termini": "accoster, atracar de costado" },
         { "sigla": "PER", "termini": "atracar" },
         { "sigla": "MW", "termini": "dock", "url": "dock" },
-        { "sigla": "BOW", "termini": "dock (v.)" }
+        { "sigla": "BOW", "termini": "dock (v.)" },
+        { "sigla": "DLE", "termini": "atracar (1)", "url": "atracar" }
       ]
     },
     {
@@ -3104,7 +3144,8 @@
         { "sigla": "MF", "termini": "fileggiare, to shiver, to flap", "url": "itaing.htm" },
         { "sigla": "RFEV-DIC", "termini": "flamear, fasseyer, to flap" },
         { "sigla": "MW", "termini": "shiver", "url": "shiver" },
-        { "sigla": "MSB", "termini": "faseyer" }
+        { "sigla": "MSB", "termini": "faseyer" },
+        { "sigla": "DIMAR", "termini": "flamear", "url": "?page=14" }
       ]
     },
     {
@@ -3126,7 +3167,9 @@
         { "sigla": "MF", "termini": "dar volta, to belay, to make fast", "url": "itaing.htm" },
         { "sigla": "USCG", "termini": "secure, hacer firme", "url": "English-Spanish-Glossary-Nautical-Terms.pdf" },
         { "sigla": "PER", "termini": "hacer firme" },
-        { "sigla": "MW", "termini": "belay", "url": "belay" }
+        { "sigla": "MW", "termini": "belay", "url": "belay" },
+        { "sigla": "RD875", "termini": "hacer firme un cabo en bitas y cornamusas" },
+        { "sigla": "DLE", "termini": "amarrar (1.a)", "url": "amarrar" }
       ]
     },
     {
@@ -3188,7 +3231,8 @@
         { "sigla": "USCG", "termini": "mooring line, cabo de amarre", "url": "English-Spanish-Glossary-Nautical-Terms.pdf" },
         { "sigla": "MF", "termini": "cavo d'ormeggio, mooring rope", "url": "itaing.htm" },
         { "sigla": "FFV-ESP", "termini": "amarre, estacha, amarra" },
-        { "sigla": "PER", "termini": "amarra" }
+        { "sigla": "PER", "termini": "amarra" },
+        { "sigla": "DLE", "termini": "amarra (1.a)", "url": "amarra" }
       ]
     },
     {
@@ -3242,7 +3286,8 @@
         { "sigla": "USCG", "termini": "spring line, garde descendante/montante", "url": "English-French-Glossary-Nautical-Terms.pdf" },
         { "sigla": "FFV-ESP", "termini": "garde montante, esprín" },
         { "sigla": "PER", "termini": "esprin, llamado tradicionalmente spring" },
-        { "sigla": "MW", "termini": "spring line", "url": "spring%20line" }
+        { "sigla": "MW", "termini": "spring line", "url": "spring%20line" },
+        { "sigla": "RD875", "termini": "largo, través, esprín y codera" }
       ]
     },
     {
@@ -3289,7 +3334,9 @@
         { "sigla": "FFV-ESP", "termini": "manille, grillete" },
         { "sigla": "PER", "termini": "grillete" },
         { "sigla": "MW", "termini": "shackle", "url": "shackle" },
-        { "sigla": "WW", "termini": "grillo, shackle" }
+        { "sigla": "WW", "termini": "grillo, shackle" },
+        { "sigla": "RD875", "termini": "grillete de unión" },
+        { "sigla": "DLE", "termini": "grillete (1)", "url": "grillete" }
       ]
     },
     {
@@ -3423,7 +3470,8 @@
         { "sigla": "TRE", "termini": "doppino", "url": "doppino/" },
         { "sigla": "ESNG", "termini": "amarrar por seno" },
         { "sigla": "EOC", "termini": "slip line" },
-        { "sigla": "PER", "termini": "amarrar por seno" }
+        { "sigla": "PER", "termini": "amarrar por seno" },
+        { "sigla": "RD875", "termini": "amarrar por seno" }
       ]
     },
     {
@@ -3440,7 +3488,8 @@
         { "sigla": "WW", "termini": "essere all'ancora, to ride at anchor" },
         { "sigla": "FFV-GBR", "termini": "être au mouillage, lie anchor" },
         { "sigla": "RFEV-RRV", "termini": "está fondeado" },
-        { "sigla": "PER", "termini": "fondeado" }
+        { "sigla": "PER", "termini": "fondeado" },
+        { "sigla": "DLE", "termini": "fondear (1), fondeado", "url": "fondear" }
       ]
     },
     {
@@ -3524,7 +3573,8 @@
         { "sigla": "WW", "termini": "prua al vento" },
         { "sigla": "RFEV-DIC", "termini": "vent debout, head to wind" },
         { "sigla": "PER", "termini": "proa al viento" },
-        { "sigla": "MSB", "termini": "vent debout" }
+        { "sigla": "MSB", "termini": "vent debout" },
+        { "sigla": "RD875", "termini": "navegar proa al viento" }
       ]
     },
     {
@@ -3545,7 +3595,8 @@
         { "sigla": "USCG", "termini": "adrift, à la derive", "url": "English-French-Glossary-Nautical-Terms.pdf" },
         { "sigla": "PER", "termini": "a la deriva" },
         { "sigla": "MW", "termini": "adrift", "url": "adrift" },
-        { "sigla": "BOW", "termini": "adrift" }
+        { "sigla": "BOW", "termini": "adrift" },
+        { "sigla": "DLE", "termini": "a la deriva", "url": "deriva" }
       ]
     },
     {
@@ -3581,7 +3632,8 @@
         { "sigla": "USCG", "termini": "channel (nav.), canal", "url": "English-Spanish-Glossary-Nautical-Terms.pdf" },
         { "sigla": "USCG", "termini": "channel (nav.), chenal", "url": "English-French-Glossary-Nautical-Terms.pdf" },
         { "sigla": "PER", "termini": "canal" },
-        { "sigla": "BOW", "termini": "channel" }
+        { "sigla": "BOW", "termini": "channel" },
+        { "sigla": "DLE", "termini": "canal (6)", "url": "canal" }
       ]
     },
     {
@@ -3601,7 +3653,9 @@
         { "sigla": "USCG", "termini": "shoal, bajío", "url": "English-Spanish-Glossary-Nautical-Terms.pdf" },
         { "sigla": "USCG", "termini": "shoal, haut-fond", "url": "English-French-Glossary-Nautical-Terms.pdf" },
         { "sigla": "MW", "termini": "shoal", "url": "shoal" },
-        { "sigla": "BOW", "termini": "shoal" }
+        { "sigla": "BOW", "termini": "shoal" },
+        { "sigla": "DLE", "termini": "bajío (1.b)", "url": "baj%C3%ADo" },
+        { "sigla": "DIMAR", "termini": "bajío", "url": "?page=4" }
       ]
     },
     {
@@ -3619,7 +3673,8 @@
         { "sigla": "PBO", "termini": "COG (course over the ground), ground track" },
         { "sigla": "FFV-ITA", "termini": "route sur le fond" },
         { "sigla": "PER", "termini": "rumbo de fondo, llamado antiguamente rumbo efectivo" },
-        { "sigla": "BOW", "termini": "course over ground (track)" }
+        { "sigla": "BOW", "termini": "course over ground (track)" },
+        { "sigla": "RD875", "termini": "rumbo efectivo y velocidad efectiva" }
       ]
     },
     {
@@ -3654,7 +3709,8 @@
         { "sigla": "FFV-ITA", "termini": "annuaire des marées, tavole di marea" },
         { "sigla": "FFV-ESP", "termini": "annuaire des marées, tabla de mareas" },
         { "sigla": "PER", "termini": "anuario de mareas" },
-        { "sigla": "BOW", "termini": "tide tables" }
+        { "sigla": "BOW", "termini": "tide tables" },
+        { "sigla": "RD875", "termini": "anuario de mareas" }
       ]
     },
     {
@@ -3672,7 +3728,8 @@
         { "sigla": "FFV-ESP", "termini": "marche avant, marcha avante" },
         { "sigla": "USCG", "termini": "ahead, avanti", "url": "English-Italian-Glossary-Nautical-Terms.pdf" },
         { "sigla": "PER", "termini": "marcha avante" },
-        { "sigla": "RYA", "termini": "ahead (on the leeward engine)" }
+        { "sigla": "RYA", "termini": "ahead (on the leeward engine)" },
+        { "sigla": "RD875", "termini": "curva de evolución en marcha avante" }
       ]
     },
     {
@@ -3691,7 +3748,8 @@
         { "sigla": "FFV-ESP", "termini": "marche arrière, atrás" },
         { "sigla": "USCG", "termini": "astern, indietro", "url": "English-Italian-Glossary-Nautical-Terms.pdf" },
         { "sigla": "LF", "termini": "andare indietro, to go astern" },
-        { "sigla": "PER", "termini": "marcha atrás" }
+        { "sigla": "PER", "termini": "marcha atrás" },
+        { "sigla": "DLE", "termini": "marcha atrás (1.b)", "url": "marcha" }
       ]
     },
     {
@@ -3707,7 +3765,9 @@
         { "sigla": "ESNG", "termini": "punto muerto" },
         { "sigla": "FFV-ESP", "termini": "point mort, punto muerto" },
         { "sigla": "MF", "termini": "folle, neutral", "url": "itaing.htm" },
-        { "sigla": "PER", "termini": "punto muerto" }
+        { "sigla": "PER", "termini": "punto muerto" },
+        { "sigla": "RD875", "termini": "punto muerto" },
+        { "sigla": "DLE", "termini": "punto muerto (2.a)", "url": "punto" }
       ]
     },
     {
@@ -3754,7 +3814,9 @@
         { "sigla": "USCG", "termini": "heading, cap", "url": "English-French-Glossary-Nautical-Terms.pdf" },
         { "sigla": "RFEV-DIC", "termini": "dirección, cap / route, heading" },
         { "sigla": "MW", "termini": "heading", "url": "heading" },
-        { "sigla": "BOW", "termini": "heading" }
+        { "sigla": "BOW", "termini": "heading" },
+        { "sigla": "RD875", "termini": "rumbo verdadero, magnético y de aguja" },
+        { "sigla": "DLE", "termini": "rumbo (1.a)", "url": "rumbo" }
       ]
     },
     {
