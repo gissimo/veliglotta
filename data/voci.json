@@ -204,6 +204,34 @@
       ]
     },
     {
+      "id": "vela",
+      "categoria": "vele",
+      "eng": [{ "t": "sail" }],
+      "esp": [{ "t": "vela", "g": "f" }],
+      "fra": [{ "t": "voile", "g": "f" }],
+      "ita": [{ "t": "vela", "g": "f" }],
+      "definizione": "Superficie di tessuto issata sull'attrezzatura della barca, che riceve l'azione del vento e la trasforma nella spinta che fa avanzare la barca.",
+      "nota": "Polisemico: in italiano, spagnolo e francese vela e voile indicano anche lo sport (fare vela, faire de la voile), che in inglese si chiama sailing, non sail.",
+      "fonti": [
+        { "sigla": "WS-ERS", "termini": "sail" },
+        { "sigla": "RFEV-REV", "termini": "vela (sail)" },
+        { "sigla": "TRE", "termini": "vela", "url": "vela/" },
+        { "sigla": "DEI", "termini": "vela, sail", "url": "es/lema/vela" },
+        { "sigla": "LAR", "termini": "voile", "url": "voile/82377" },
+        { "sigla": "TC", "termini": "vela, sail, voile" },
+        { "sigla": "RL", "termini": "vela, voile, sail" },
+        { "sigla": "RFEV-DIC", "termini": "vela, voile, sail" },
+        { "sigla": "WW", "termini": "vela, sail" },
+        { "sigla": "USCG", "termini": "sail, vela", "url": "English-Italian-Glossary-Nautical-Terms.pdf" },
+        { "sigla": "FFV-GBR", "termini": "voile, sail" },
+        { "sigla": "FFV-ITA", "termini": "voiles, vele" },
+        { "sigla": "FFV-ESP", "termini": "voiles, velas" },
+        { "sigla": "MF", "termini": "vela, sail", "url": "itaing.htm" },
+        { "sigla": "MF", "termini": "sail, vela", "url": "inglita.htm" },
+        { "sigla": "MW", "termini": "sail", "url": "sail" }
+      ]
+    },
+    {
       "id": "randa",
       "categoria": "vele",
       "eng": [{ "t": "mainsail" }],
@@ -1948,7 +1976,7 @@
         { "sigla": "RL", "termini": "aries" },
         { "sigla": "NKH", "termini": "reefing hook, ram's horn, reefing horn" },
         { "sigla": "SELDEN", "termini": "croc de ris du vit de mulet; crochets en S pour prise de ris", "url": "store/medias/sailing/5dd/2e1/b13/original/5dd2e1b139819f3668eb3fc6.pdf" },
-        { "sigla": "YD", "termini": "gancio chiamato collo d'oca che si trova nella trozza", "url": "en/terzaroli-borosa" }
+        { "sigla": "YD", "termini": "gancio chiamato collo d'oca che si trova nella trozza", "url": "terzaroli-borosa/" }
       ]
     },
     {
@@ -2749,7 +2777,7 @@
         { "sigla": "GLN", "termini": "solent à ris, solent terzarolabile" },
         { "sigla": "WS-ERS", "termini": "solent" },
         { "sigla": "MSB", "termini": "solent" },
-        { "sigla": "CAB", "termini": "solent", "url": "es/?p=3432" }
+        { "sigla": "CAB", "termini": "solent", "url": "es/tipos-partes-velas-barco/" }
       ]
     },
     {
@@ -3124,7 +3152,9 @@
         { "sigla": "LAR", "termini": "gîte (n.f.), inclinaison d'un bateau sur un bord", "url": "g%C3%AEte/37006" },
         { "sigla": "WW", "termini": "sbandamento, heeling; angolo di sbandamento, angle of heeling" },
         { "sigla": "MF", "termini": "heeling, sbandamento; list, sbandamento", "url": "inglita.htm" },
-        { "sigla": "USCG", "termini": "heel, escora; heel, gîte; heel, sbandamento; list, sbandamento" }
+        { "sigla": "USCG", "termini": "heel, sbandamento; list, sbandamento", "url": "English-Italian-Glossary-Nautical-Terms.pdf" },
+        { "sigla": "USCG", "termini": "heel, escora", "url": "English-Spanish-Glossary-Nautical-Terms.pdf" },
+        { "sigla": "USCG", "termini": "heel, gîte", "url": "English-French-Glossary-Nautical-Terms.pdf" }
       ]
     },
     {
