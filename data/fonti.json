@@ -3,6 +3,7 @@
   "fonti": [
     { "sigla": "WS-ERS", "pesi": {"eng": "A"}, "titolo": "World Sailing, Equipment Rules of Sailing 2025-2028", "url": "https://regattanetwork.com/clubmgmt/regatta_uploads/27815/EquipmentRulesofSailing20252028v.2.pdf" },
     { "sigla": "TRE", "pesi": {"ita": "A"}, "titolo": "Treccani, Vocabolario", "url": "https://www.treccani.it/vocabolario/" },
+    { "sigla": "GLN", "pesi": {"fra": "A", "ita": "A"}, "titolo": "Les Glénans, Il corso di navigazione dei Glénans, nona edizione (2024), lessico franco-italiano" },
     { "sigla": "OQLF-GDT", "pesi": {"eng": "B", "fra": "A"}, "titolo": "Office québécois de la langue française, Grand dictionnaire terminologique", "url": "https://vitrinelinguistique.oqlf.gouv.qc.ca/" },
     { "sigla": "DLE", "pesi": {"esp": "A"}, "titolo": "Real Academia Española, Diccionario de la lengua española", "url": "https://dle.rae.es/" },
     { "sigla": "DPD", "pesi": {"esp": "A"}, "titolo": "Real Academia Española, Diccionario panhispánico de dudas", "url": "https://www.rae.es/dpd/" },
@@ -29,6 +30,13 @@
     { "sigla": "LF", "pesi": {"eng": "C", "ita": "C"}, "titolo": "Luca Ferrua, Terminologia nautica, traduzione ITA-ING (2009), su Lexicool", "url": "https://static.lexicool.com/dictionary/RC8WN616716.pdf" },
     { "sigla": "MAIF", "pesi": {"fra": "C"}, "titolo": "Mutuelle d'assurance des instituteurs de France, Lexique de la navigation", "url": "https://www.maif.fr/vehicule-mobilite/guide-navigation-bateau/lexique" },
     { "sigla": "SPANISHDICT", "pesi": {"eng": "C", "esp": "C"}, "titolo": "SpanishDict, navigation vs sailing", "url": "https://www.spanishdict.com/compare/navigation/sailing" },
-    { "sigla": "EFD", "pesi": {"esp": "C"}, "titolo": "EFDeportes, Revista Digital", "url": "https://efdeportes.com/" }
+    { "sigla": "EFD", "pesi": {"esp": "C"}, "titolo": "EFDeportes, Revista Digital", "url": "https://efdeportes.com/" },
+    { "sigla": "YM", "pesi": {"eng": "C"}, "titolo": "Yachting Monthly, Why two headsails are better than one (2026)", "url": "https://www.yachtingmonthly.com/uncategorized/why-two-headsails-are-better-than-one-106134" },
+    { "sigla": "SW", "pesi": {"eng": "C"}, "titolo": "Sail-World, A Rough Guide to Mainsail Reefing (2023)", "url": "https://www.sail-world.com/news/258521/A-Rough-Guide-to-Mainsail-Reefing" },
+    { "sigla": "WIKI-EN", "pesi": {"eng": "C"}, "titolo": "Wikipedia in inglese", "url": "https://en.wikipedia.org/wiki/" },
+    { "sigla": "UPF", "pesi": {"esp": "C"}, "titolo": "Upffront, catalogo in spagnolo", "url": "https://www.upffront.com/" },
+    { "sigla": "CAB", "pesi": {"esp": "C"}, "titolo": "Click&Boat, blog in spagnolo", "url": "https://blog.clickandboat.com/" },
+    { "sigla": "NYV", "pesi": {"esp": "C"}, "titolo": "Tomás Ruiz, Navegando y Vela, blog", "url": "https://navegandoyvela.com/" },
+    { "sigla": "BARCOS", "pesi": {"esp": "C"}, "titolo": "Barcos Magazine, Cómo rizar una mayor (2023)", "url": "https://barcosmagazine.com/" }
   ]
 }

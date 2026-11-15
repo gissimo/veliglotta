@@ -26,6 +26,7 @@ Quali voci usano ciascuna fonte si ricava dal campo `fonti` di `data/voci.json`.
 |---|---|---|---|---|---|---|
 | WS-ERS | World Sailing, Equipment Rules of Sailing 2025-2028 | A |  |  |  | Testo originale con le definizioni ufficiali di scafo, appendici, attrezzatura e vele. Copia non ospitata da World Sailing. |
 | TRE | Treccani, Vocabolario |  |  |  | A | Non sempre usa una marca abbreviata: l'ambito nautico può comparire solo dentro la definizione. Controllare gli omonimi numerati. |
+| GLN | Les Glénans, Il corso di navigazione dei Glénans, nona edizione (2024), lessico franco-italiano |  |  | A | A | Lessico bilingue senza definizioni del manuale della scuola dei Glénans. Peso A per entrambe le lingue per decisione dell'utente, in eccezione ai criteri: per autorevolezza dell'opera, non per il formato. |
 | OQLF-GDT | Office québécois de la langue française, Grand dictionnaire terminologique | B |  | A |  | Banca terminologica del Québec: per l'inglese dà solo equivalenti, e alcuni termini francesi possono differire dall'uso di Francia. |
 | DLE | Real Academia Española, Diccionario de la lengua española |  | A |  |  | Monolingue con marca Marina. Molte accezioni descrivono la nave a vele quadre. |
 | DPD | Real Academia Española, Diccionario panhispánico de dudas |  | A |  |  | Normativo sui dubbi d'uso, non nautico. |
@@ -53,6 +54,13 @@ Quali voci usano ciascuna fonte si ricava dal campo `fonti` di `data/voci.json`.
 | MAIF | Mutuelle d'assurance des instituteurs de France, Lexique de la navigation |  |  | C |  | Lessico di una compagnia assicurativa, senza fonti. |
 | SPANISHDICT | SpanishDict, navigation vs sailing | C | C |  |  | Dizionario bilingue commerciale. |
 | EFD | EFDeportes, Revista Digital |  | C |  |  | Articoli divulgativi di una rivista di scienze motorie. |
+| YM | Yachting Monthly, Why two headsails are better than one (2026) | C |  |  |  | Articolo di rivista inglese: usa inner forestay e removable inner forestay. |
+| SW | Sail-World, A Rough Guide to Mainsail Reefing (2023) | C |  |  |  | Articolo di rivista: chiama reef Cunningham la cima che porta giù il punto di mura quando si terzarola. |
+| WIKI-EN | Wikipedia in inglese | C |  |  |  | Enciclopedia collaborativa, solo per termini d'uso senza fonti migliori. |
+| UPF | Upffront, catalogo in spagnolo | C |  |  |  | Negozio di attrezzatura: nomi commerciali dei prodotti, per esempio escota de spinnaker. |
+| CAB | Click&Boat, blog in spagnolo | C |  |  |  | Blog di una piattaforma di noleggio, articolo divulgativo sulle vele. |
+| NYV | Tomás Ruiz, Navegando y Vela, blog |  | C |  |  | Blog di vela in spagnolo: chiama stay volante lo strallo interno amovibile per trinchetta e tormentina. |
+| BARCOS | Barcos Magazine, Cómo rizar una mayor (2023) |  | C |  |  | Rivista spagnola: usa amura de rizo per il punto di mura della mano di terzaroli. |
 
 ## Fonti valide solo per una parte del vocabolario
 
@@ -73,6 +81,7 @@ Il peso per lingua non dice in quale ambito una fonte è affidabile. Prima di ci
 
 ### ITA
 
+- **Les Glénans, *Il corso di navigazione dei Glénans***, nona edizione (2024), *Lessico franco-italiano*, pp. 1032-1033, sezione "Attrezzatura, vele, scafo e appendici": stato letto da due fotografie in `fonti locali/`. Circa 60 coppie francese-italiano senza definizioni. Peso A per italiano e francese. Usa *stralletto* per il bas-étai, *punto di drizza*, *punto di scotta* e *punto di mura* per gli angoli della vela, *sartia volante*, *tesabugna* e *caricabbasso del tangone*. Dai lemmi senza voce sono nate 21 voci nuove (pulpiti, landa, arridatoio, bompresso, falchetta, segnavento, trinchetta, solent e altre). Traduce gréement con attrezzatura, nel senso di attrezzatura velica: da qui la voce attrezzatura velica, distinta da attrezzatura come equipaggiamento. La sezione "Conduzione, manovra, navigazione" non è ancora stata fotografata.
 - **Treccani, Vocabolario**: https://www.treccani.it/vocabolario/, stato letto per *drizza* (https://www.treccani.it/vocabolario/drizza/): la voce non porta una marca abbreviata ma colloca il termine "nell'attrezzatura navale". Peso A. Attenzione agli omonimi numerati: https://www.treccani.it/vocabolario/scotta2/ è il siero del formaggio, non la manovra, quindi l'indirizzo giusto di ogni voce va controllato aprendolo.
 - **Garzanti Linguistica**: https://www.garzantilinguistica.it, stato visto. Peso A. La pagina di ricerca non restituisce il testo delle voci a uno strumento automatico, quindi l'indirizzo delle singole voci resta da confermare.
 - **Federazione Italiana Vela (FIV)**: https://www.federvela.it, stato visto. Pubblica il Regolamento di Regata in italiano, per esempio l'edizione 2017-2020: https://www.federvela.it/images/fiv/rrs_2017-2020_-_ita_con_rev_ws_-_agg_13_feb_sito_fiv.pdf. Peso B: è una traduzione, e in caso di conflitto prevale il testo inglese. Non ho individuato l'edizione 2025-2028 in italiano.
