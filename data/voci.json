@@ -28,7 +28,7 @@
         { "sigla": "RFEV-REV", "termini": "casco, hull" },
         { "sigla": "DEI", "termini": "casco, hull", "url": "es/lema/casco" },
         { "sigla": "TC", "termini": "casco, hull, coque" },
-        { "sigla": "TC-AC", "termini": "casco, hull, coque" },
+        { "sigla": "TC-AC", "termini": "casco, hull, coque, scafo" },
         { "sigla": "GLN", "termini": "coque, scafo" },
         { "sigla": "PER", "termini": "casco" },
         { "sigla": "MW", "termini": "hull", "url": "hull" }
@@ -97,7 +97,7 @@
         { "sigla": "RFEV-REV", "termini": "timón, rudder" },
         { "sigla": "DEI", "termini": "timón, rudder", "url": "es/lema/tim%C3%B3n" },
         { "sigla": "TC", "termini": "timón, rudder, gouvernail" },
-        { "sigla": "TC-AC", "termini": "timón, rudder, gouvernail" },
+        { "sigla": "TC-AC", "termini": "timón, rudder, gouvernail, timone" },
         { "sigla": "MSB", "termini": "safran" },
         { "sigla": "GLN", "termini": "safran, pala del timone" },
         { "sigla": "PER", "termini": "timón" },
@@ -228,7 +228,8 @@
         { "sigla": "FFV-ESP", "termini": "voiles, velas" },
         { "sigla": "MF", "termini": "vela, sail", "url": "itaing.htm" },
         { "sigla": "MF", "termini": "sail, vela", "url": "inglita.htm" },
-        { "sigla": "MW", "termini": "sail", "url": "sail" }
+        { "sigla": "MW", "termini": "sail", "url": "sail" },
+        { "sigla": "FFV-REV", "termini": "voile" }
       ]
     },
     {
@@ -253,7 +254,7 @@
         { "sigla": "USCG", "termini": "mainsail, grand-voile", "url": "English-French-Glossary-Nautical-Terms.pdf" },
         { "sigla": "LF", "termini": "randa, mainsail" },
         { "sigla": "TC", "termini": "vela mayor, mainsail, grand-voile" },
-        { "sigla": "TC-AC", "termini": "vela mayor, mainsail, grand-voile" },
+        { "sigla": "TC-AC", "termini": "vela mayor, mainsail, grand-voile, randa" },
         { "sigla": "DLE", "termini": "vela mayor", "url": "vela" },
         { "sigla": "RFEV-REV", "termini": "mayor, mainsail" },
         { "sigla": "MSB", "termini": "grand-voile" },
@@ -290,7 +291,7 @@
         { "sigla": "LF", "termini": "fiocco, jib" },
         { "sigla": "DEI", "termini": "foque, jib", "url": "es/lema/foque" },
         { "sigla": "TC", "termini": "foque, jib, foc" },
-        { "sigla": "TC-AC", "termini": "foque, jib, foc" },
+        { "sigla": "TC-AC", "termini": "foque, jib, foc, fiocco" },
         { "sigla": "MSB", "termini": "foc" },
         { "sigla": "GLN", "termini": "foc, fiocco" },
         { "sigla": "PER", "termini": "foque" },
@@ -325,7 +326,7 @@
         { "sigla": "RFEV-REV", "termini": "escota, sheet" },
         { "sigla": "DEI", "termini": "escota, sheet", "url": "es/lema/escota" },
         { "sigla": "TC", "termini": "escota, sheet, écoute" },
-        { "sigla": "TC-AC", "termini": "escota, sheet, écoute" },
+        { "sigla": "TC-AC", "termini": "escota, sheet, écoute, scotta" },
         { "sigla": "MSB", "termini": "écoute" },
         { "sigla": "GLN", "termini": "écoute, scotta" },
         { "sigla": "PER", "termini": "puños de escota; escota" },
@@ -477,7 +478,7 @@
         { "sigla": "MF", "termini": "prora, bow", "url": "inglita.htm" },
         { "sigla": "LF", "termini": "prua, bow" },
         { "sigla": "TC", "termini": "proa, bow, proue" },
-        { "sigla": "TC-AC", "termini": "proa, bow, proue" },
+        { "sigla": "TC-AC", "termini": "proa, bow, proue, prora, prua" },
         { "sigla": "DLE", "termini": "proa", "url": "proa" },
         { "sigla": "MSB", "termini": "proue" },
         { "sigla": "PER", "termini": "proa" },
@@ -512,7 +513,7 @@
         { "sigla": "MF", "termini": "poppa, stern", "url": "inglita.htm" },
         { "sigla": "DEI", "termini": "popa, stern", "url": "es/lema/popa" },
         { "sigla": "TC", "termini": "popa, stern, poupe" },
-        { "sigla": "TC-AC", "termini": "popa, stern, poupe" },
+        { "sigla": "TC-AC", "termini": "popa, stern, poupe, poppa" },
         { "sigla": "MSB", "termini": "poupe" },
         { "sigla": "GLN", "termini": "poupe, poppa" },
         { "sigla": "PER", "termini": "popa" },
@@ -539,9 +540,11 @@
         { "sigla": "USCG", "termini": "close-hauled, au plus près", "url": "English-French-Glossary-Nautical-Terms.pdf" },
         { "sigla": "FFV-ITA", "termini": "au plus près, bolina" },
         { "sigla": "DLE", "termini": "ceñida", "url": "ce%C3%B1ida" },
-        { "sigla": "MSB", "termini": "près" },
+        { "sigla": "MSB", "termini": "près, au près" },
         { "sigla": "GLN", "termini": "près serré, bolina stretta" },
-        { "sigla": "MW", "termini": "close-hauled", "url": "close-hauled" }
+        { "sigla": "MW", "termini": "close-hauled", "url": "close-hauled" },
+        { "sigla": "FFV-ENS", "termini": "au près" },
+        { "sigla": "HEO", "termini": "au près" }
       ]
     },
     {
@@ -555,7 +558,7 @@
       "nota": "In inglese tack indica anche la mura (vedi mura). In spagnolo si dice anche virada por avante. In francese virement de bord è generico: per la virata si precisa vent devant.",
       "fonti": [
         { "sigla": "RFEV-RRV", "termini": "virada por avante" },
-        { "sigla": "OQLF-GDT", "termini": "virement de bord", "url": "fiche-gdt/fiche/8882111/virement-de-bord" },
+        { "sigla": "OQLF-GDT", "termini": "virement de bord, virement vent devant, going about", "url": "fiche-gdt/fiche/8882111/virement-de-bord" },
         { "sigla": "TRE", "termini": "virata", "url": "virata/" },
         { "sigla": "RL", "termini": "virada, virada por avante" },
         { "sigla": "RFEV-DIC", "termini": "virada, virada por avante" },
@@ -625,7 +628,8 @@
         { "sigla": "TC", "termini": "compás, compass, compas" },
         { "sigla": "DLE", "termini": "brújula", "url": "br%C3%BAjula" },
         { "sigla": "PER", "termini": "compás" },
-        { "sigla": "BOW", "termini": "compass" }
+        { "sigla": "BOW", "termini": "compass" },
+        { "sigla": "MAIF", "termini": "boussole marine" }
       ]
     },
     {
@@ -645,7 +649,8 @@
         { "sigla": "WW", "termini": "bonaccia" },
         { "sigla": "FFV-GBR", "termini": "calme plat, calm" },
         { "sigla": "MW", "termini": "calm", "url": "calm" },
-        { "sigla": "BOW", "termini": "calm" }
+        { "sigla": "BOW", "termini": "calm" },
+        { "sigla": "MF", "termini": "dead calm, calma piatta", "url": "inglita.htm" }
       ]
     },
     {
@@ -663,7 +668,10 @@
         { "sigla": "RFEV-REV", "termini": "equipamiento (Reglas de Equipamiento, equipment)" },
         { "sigla": "RFEV-DIC", "termini": "équipement de secours; equipo de navegación, piloting equipement" },
         { "sigla": "GRANLASCO", "termini": "scafo ed attrezzatura" },
-        { "sigla": "RD875", "termini": "equipamiento náutico" }
+        { "sigla": "RD875", "termini": "equipamiento náutico" },
+        { "sigla": "WS-RRS", "termini": "hull and equipment" },
+        { "sigla": "FFV-REV", "termini": "équipement" },
+        { "sigla": "FFV-CAS", "termini": "équipement" }
       ]
     },
     {
@@ -686,7 +694,10 @@
         { "sigla": "RFEV-RRV", "termini": "maniobrar" },
         { "sigla": "WW", "termini": "manovrare, to manoeuvre" },
         { "sigla": "PER", "termini": "maniobra" },
-        { "sigla": "MW", "termini": "maneuver", "url": "maneuver" }
+        { "sigla": "MW", "termini": "maneuver", "url": "maneuver" },
+        { "sigla": "WS-RRS", "termini": "manoeuvre" },
+        { "sigla": "AHD", "termini": "maneuver (1b)", "url": "search.html?q=maneuver" },
+        { "sigla": "FFV-CAS", "termini": "manœuvre" }
       ]
     },
     {
@@ -732,7 +743,9 @@
         { "sigla": "MF", "termini": "tempo atmosferico, weather", "url": "inglita.htm" },
         { "sigla": "PER", "termini": "mal tiempo" },
         { "sigla": "RD875", "termini": "mal tiempo" },
-        { "sigla": "AEMET-MAN", "termini": "el tiempo en un lugar y momento dados; predicción del tiempo" }
+        { "sigla": "AEMET-MAN", "termini": "el tiempo en un lugar y momento dados; predicción del tiempo" },
+        { "sigla": "WS-RRS", "termini": "foul weather" },
+        { "sigla": "MSB", "termini": "météo" }
       ]
     },
     {
@@ -778,7 +791,8 @@
         { "sigla": "RFEV-DIC", "termini": "orza de pivote" },
         { "sigla": "RFEV-REV", "termini": "orza, centreboard" },
         { "sigla": "RL", "termini": "orza de pivote, dérive (pivotante), centerboard, deriva basculante" },
-        { "sigla": "RD875", "termini": "orza fija y abatible" }
+        { "sigla": "RD875", "termini": "orza fija y abatible" },
+        { "sigla": "FFV-REV", "termini": "dérive pivotante" }
       ]
     },
     {
@@ -905,7 +919,10 @@
       "fonti": [
         { "sigla": "RL", "termini": "trimmer" },
         { "sigla": "CER", "termini": "régleur" },
-        { "sigla": "QS", "termini": "headsail trimmer, main trimmer" }
+        { "sigla": "QS", "termini": "headsail trimmer, main trimmer" },
+        { "sigla": "FFV-CAS", "termini": "régleur de spinnaker" },
+        { "sigla": "TC-AC", "termini": "mainsail trimmer, trimmer de mayor, trimmer mayor, régleur de grand-voile, trimmer randa" },
+        { "sigla": "TC-AC", "termini": "jib trimmer, trimmer de foque, régleur de foc, trimmer fiocco" }
       ]
     },
     {
@@ -947,7 +964,7 @@
         { "sigla": "MF", "termini": "timoniere, helmsman", "url": "inglita.htm" },
         { "sigla": "DEI", "termini": "timonel, helmsman", "url": "es/lema/timonel" },
         { "sigla": "TC", "termini": "timonel, helmsman, barreur" },
-        { "sigla": "TC-AC", "termini": "timonel, helmsman, barreur" },
+        { "sigla": "TC-AC", "termini": "timonel, helmsman, barreur, timoniere" },
         { "sigla": "PER", "termini": "timonel" },
         { "sigla": "MW", "termini": "helmsman", "url": "helmsman" }
       ]
@@ -970,7 +987,7 @@
         { "sigla": "WW", "termini": "traverso" },
         { "sigla": "DLE", "termini": "través", "url": "trav%C3%A9s" },
         { "sigla": "MW", "termini": "abeam", "url": "abeam" },
-        { "sigla": "BOW", "termini": "abeam" },
+        { "sigla": "BOW", "termini": "abeam, on the beam, broad on the beam" },
         { "sigla": "FFV-GBR", "termini": "par le travers, abeam" }
       ]
     },
@@ -999,7 +1016,7 @@
         { "sigla": "LF", "termini": "sinistra, port" },
         { "sigla": "DEI", "termini": "babor, port", "url": "es/lema/babor" },
         { "sigla": "TC", "termini": "babor, port, bâbord" },
-        { "sigla": "TC-AC", "termini": "babor, port, bâbord" },
+        { "sigla": "TC-AC", "termini": "babor, port, bâbord, sinistra" },
         { "sigla": "MSB", "termini": "bâbord" },
         { "sigla": "GLN", "termini": "à bâbord, a sinistra" },
         { "sigla": "PER", "termini": "babor" },
@@ -1033,7 +1050,7 @@
         { "sigla": "LF", "termini": "dritta, starboard" },
         { "sigla": "DEI", "termini": "estribor, starboard", "url": "es/lema/estribor" },
         { "sigla": "TC", "termini": "estribor, starboard, tribord" },
-        { "sigla": "TC-AC", "termini": "estribor, starboard, tribord" },
+        { "sigla": "TC-AC", "termini": "estribor, starboard, tribord, dritta" },
         { "sigla": "MSB", "termini": "tribord" },
         { "sigla": "GLN", "termini": "à tribord, a dritta" },
         { "sigla": "PER", "termini": "estribor" },
@@ -1046,7 +1063,7 @@
       "eng": [{ "t": "length overall" }, { "t": "LOA" }],
       "esp": [{ "t": "eslora", "g": "f" }, { "t": "eslora total", "g": "f" }],
       "fra": [{ "t": "longueur hors tout", "g": "f" }],
-      "ita": [{ "t": "lunghezza fuori tutto", "g": "f" }, { "t": "lunghezza totale", "g": "f" }],
+      "ita": [{ "t": "lunghezza fuori tutto", "g": "f" }],
       "definizione": "Lunghezza massima della barca, misurata tra i punti estremi di prua e di poppa.",
       "nota": "In spagnolo eslora da sola indica la lunghezza in generale, e ne esistono diversi tipi secondo i punti di riferimento.",
       "fonti": [
@@ -1060,10 +1077,13 @@
         { "sigla": "UNIOVI", "termini": "eslora total, length overall" },
         { "sigla": "MF", "termini": "lunghezza fuori tutto, LOA", "url": "inglita.htm" },
         { "sigla": "LF", "termini": "lunghezza fuori tutto, LOA" },
-        { "sigla": "TC-AC", "termini": "eslora, length overall, longueur hors tout" },
+        { "sigla": "TC-AC", "termini": "eslora, length overall, longueur hors tout, lunghezza fuori tutto" },
         { "sigla": "MSB", "termini": "longueur hors tout" },
         { "sigla": "PER", "termini": "eslora máxima" },
-        { "sigla": "DEI", "termini": "eslora (2. longitud de un barco de proa a popa), length", "url": "es/lema/eslora" }
+        { "sigla": "DEI", "termini": "eslora (2. longitud de un barco de proa a popa), length", "url": "es/lema/eslora" },
+        { "sigla": "FIV-RRS", "termini": "lunghezza fuori tutto" },
+        { "sigla": "MW", "termini": "LOA: length overall", "url": "LOA" },
+        { "sigla": "TRE", "termini": "lunghezza (lunghezza fuori tutto)", "url": "lunghezza/" }
       ]
     },
     {
@@ -1092,7 +1112,9 @@
         { "sigla": "DLE", "termini": "manga", "url": "manga" },
         { "sigla": "MSB", "termini": "bau" },
         { "sigla": "PER", "termini": "manga máxima" },
-        { "sigla": "MW", "termini": "beam", "url": "beam" }
+        { "sigla": "MW", "termini": "beam", "url": "beam" },
+        { "sigla": "FFV-REV", "termini": "largeur du bateau" },
+        { "sigla": "MF", "termini": "punto di baglio massimo", "url": "htmcorso/vela1.htm" }
       ]
     },
     {
@@ -1138,7 +1160,7 @@
       "definizione": "Parte dello scafo che sta sotto la linea di galleggiamento.",
       "nota": "In francese œuvres vives si usa al plurale.",
       "fonti": [
-        { "sigla": "OQLF-GDT", "termini": "carène", "url": "fiche-gdt/fiche/8354202/carene" },
+        { "sigla": "OQLF-GDT", "termini": "carène, œuvres vives, bottom, quickworks, underwater hull", "url": "fiche-gdt/fiche/8354202/carene" },
         { "sigla": "TRE", "termini": "opera (opera viva)", "url": "opera/" },
         { "sigla": "TRE", "termini": "galleggiamento (opera viva)", "url": "galleggiamento/" },
         { "sigla": "RL", "termini": "obra viva" },
@@ -1148,7 +1170,8 @@
         { "sigla": "FFV-GBR", "termini": "carène, bottom" },
         { "sigla": "MF", "termini": "carena, bottom", "url": "itaing.htm" },
         { "sigla": "DLE", "termini": "obra viva", "url": "obra" },
-        { "sigla": "PER", "termini": "obra viva" }
+        { "sigla": "PER", "termini": "obra viva" },
+        { "sigla": "AHD", "termini": "bottom (10a)", "url": "search.html?q=bottom" }
       ]
     },
     {
@@ -1271,7 +1294,8 @@
         { "sigla": "LF", "termini": "draglia, lifeline" },
         { "sigla": "PER", "termini": "guardamancebos" },
         { "sigla": "MW", "termini": "lifeline", "url": "lifeline" },
-        { "sigla": "RD875", "termini": "candeleros y guardamancebos" }
+        { "sigla": "RD875", "termini": "candeleros y guardamancebos" },
+        { "sigla": "FIV-RRS", "termini": "draglia inferiore, draglia superiore" }
       ]
     },
     {
@@ -1312,13 +1336,14 @@
       "eng": [{ "t": "jib car" }, { "t": "jib lead car" }, { "t": "genoa car" }],
       "esp": [{ "t": "carro del génova", "g": "m" }],
       "fra": [{ "t": "chariot d'écoute", "g": "m" }],
-      "ita": [{ "t": "carrello del fiocco", "g": "m" }, { "t": "carrello della scotta", "g": "m" }],
+      "ita": [{ "t": "carrello del fiocco", "g": "m" }],
       "definizione": "Bozzello montato su un carrello che scorre su una rotaia in coperta, e che decide il punto da cui la scotta del fiocco tira la vela.",
       "nota": "In inglese traveller indica di solito il carrello della randa (vedi carrello della randa).",
       "fonti": [
         { "sigla": "RL", "termini": "chariot d'écoute, carrello della scotta" },
         { "sigla": "RFEV-DIC", "termini": "chariot d'écoute" },
-        { "sigla": "BARTON", "termini": "genoa car", "url": "catalogue/towable-genoa-car-20mm/" }
+        { "sigla": "BARTON", "termini": "genoa car", "url": "catalogue/towable-genoa-car-20mm/" },
+        { "sigla": "YD", "termini": "carrello del fiocco", "url": "fiocco-carrello-riduzione/" }
       ]
     },
     {
@@ -1334,7 +1359,10 @@
         { "sigla": "RL", "termini": "stopper" },
         { "sigla": "USCG", "termini": "jammer, stopper", "url": "English-Italian-Glossary-Nautical-Terms.pdf" },
         { "sigla": "USCG", "termini": "jammer, bloqueur", "url": "English-French-Glossary-Nautical-Terms.pdf" },
-        { "sigla": "DIMAR", "termini": "stopper (variante de mordaza de nueces)", "url": "?page=17" }
+        { "sigla": "DIMAR", "termini": "stopper (variante de mordaza de nueces)", "url": "?page=17" },
+        { "sigla": "ANTAL", "termini": "stopper", "url": "it/prodotti/stopper" },
+        { "sigla": "ANTAL", "termini": "bloqueurs", "url": "fr/produits/bloqueurs" },
+        { "sigla": "SPINLOCK", "termini": "soft grip rope clutch", "url": "en-GB/uk/products/xtx" }
       ]
     },
     {
@@ -1355,18 +1383,20 @@
     {
       "id": "carrello-randa",
       "categoria": "coperta",
-      "eng": [{ "t": "mainsheet traveller" }, { "t": "traveller" }, { "t": "horse" }, { "t": "traveler" }],
+      "eng": [{ "t": "traveller" }, { "t": "traveler" }, { "t": "horse" }],
       "esp": [{ "t": "carro de la mayor", "g": "m" }],
       "fra": [{ "t": "chariot de grand-voile", "g": "m" }],
       "ita": [{ "t": "carrello di scotta della randa", "g": "m" }, { "t": "carrello scotta randa", "g": "m" }],
       "definizione": "Carrello che scorre su una rotaia trasversale e porta il paranco della scotta di randa, per spostarne il punto di tiro.",
-      "nota": "Si dice anche carrello della randa. Da non confondere con il carrello del fiocco (vedi carrello del fiocco).",
+      "nota": "Si dice anche carrello della randa. Da non confondere con il carrello del fiocco (vedi carrello del fiocco). In inglese si dice anche mainsheet traveller.",
       "fonti": [
         { "sigla": "RL", "termini": "carro de la mayor" },
         { "sigla": "MW", "termini": "traveler", "url": "traveler" },
         { "sigla": "MSB", "termini": "chariot de grand voile" },
         { "sigla": "DECATHLON", "termini": "carrello scotta randa; carrello di scotta della randa", "url": "tutti-gli-sport/vela/rotaie-e-carrelli" },
-        { "sigla": "BARTON", "termini": "traveller systems, traveller kits", "url": "catalogue/towable-genoa-car-20mm/" }
+        { "sigla": "BARTON", "termini": "traveller systems, traveller kits", "url": "catalogue/towable-genoa-car-20mm/" },
+        { "sigla": "AHD", "termini": "traveler (3c)", "url": "search.html?q=traveler" },
+        { "sigla": "FFV-GBR", "termini": "barre d'écoute, horse, mainsheet horse" }
       ]
     },
     {
@@ -1377,15 +1407,15 @@
       "fra": [{ "t": "étai", "g": "m" }],
       "ita": [{ "t": "strallo", "g": "m" }, { "t": "strallo di prua", "g": "m" }],
       "definizione": "Cavo fisso che tiene l'albero verso prua e su cui si inferisce il fiocco.",
-      "nota": "In spagnolo la forma corretta è estay: stay è un anglicismo diffuso nell'uso. Uno strallo interno che si può staccare è lo strallo amovibile (vedi strallo amovibile).",
+      "nota": "In spagnolo estay e stay sono equivalenti: stay è un anglicismo accettato nell'uso. Uno strallo interno che si può staccare è lo strallo amovibile (vedi strallo amovibile).",
       "fonti": [
         { "sigla": "WS-ERS", "termini": "forestay" },
         { "sigla": "RFEV-RRV", "termini": "estay" },
         { "sigla": "INCUAL", "termini": "stay" },
         { "sigla": "TRE", "termini": "strallo", "url": "strallo/" },
         { "sigla": "RL", "termini": "estay de proa" },
-        { "sigla": "RFEV-DIC", "termini": "estay de proa" },
-        { "sigla": "WW", "termini": "strallo" },
+        { "sigla": "RFEV-DIC", "termini": "estay de proa, forestay / headstay" },
+        { "sigla": "WW", "termini": "strallo, strallo di prua" },
         { "sigla": "USCG", "termini": "forestay, strallo", "url": "English-Italian-Glossary-Nautical-Terms.pdf" },
         { "sigla": "USCG", "termini": "forestay, estay", "url": "English-Spanish-Glossary-Nautical-Terms.pdf" },
         { "sigla": "USCG", "termini": "forestay, étai", "url": "English-French-Glossary-Nautical-Terms.pdf" },
@@ -1394,7 +1424,7 @@
         { "sigla": "LF", "termini": "strallo, forestay" },
         { "sigla": "RFEV-REV", "termini": "estay de proa, forestay" },
         { "sigla": "TC", "termini": "estay de proa, forestay" },
-        { "sigla": "TC-AC", "termini": "estay de proa, forestay" },
+        { "sigla": "TC-AC", "termini": "estay de proa, forestay, strallo" },
         { "sigla": "MSB", "termini": "étai" },
         { "sigla": "GLN", "termini": "étai, strallo" },
         { "sigla": "PER", "termini": "estay de proa" },
@@ -1407,7 +1437,7 @@
       "id": "paterazzo",
       "categoria": "attrezzatura",
       "eng": [{ "t": "backstay" }],
-      "esp": [{ "t": "backstay", "g": "m" }, { "t": "estay de popa", "g": "m" }],
+      "esp": [{ "t": "backestay", "g": "m" }, { "t": "backstay", "g": "m" }, { "t": "estay de popa", "g": "m" }],
       "fra": [{ "t": "pataras", "g": "m" }],
       "ita": [{ "t": "paterazzo", "g": "m" }, { "t": "strallo di poppa", "g": "m" }],
       "definizione": "Cavo fisso che tiene l'albero verso poppa, dalla testa d'albero allo specchio di poppa.",
@@ -1431,22 +1461,24 @@
         { "sigla": "TC", "termini": "estay de popa, backstay, pataras" },
         { "sigla": "MSB", "termini": "pataras" },
         { "sigla": "GLN", "termini": "pataras, strallo di poppa o paterazzo" },
-        { "sigla": "DEI", "termini": "burda: estay de popa, Backstay", "url": "es/lema/burda" }
+        { "sigla": "DEI", "termini": "burda: estay de popa, Backstay", "url": "es/lema/burda" },
+        { "sigla": "UPC-FNB", "termini": "backestay" }
       ]
     },
     {
       "id": "babystay",
       "categoria": "attrezzatura",
       "eng": [{ "t": "baby stay" }],
-      "esp": [{ "t": "baby stay", "g": "m" }],
+      "esp": [{ "t": "babyestay", "g": "m" }, { "t": "baby stay", "g": "m" }],
       "fra": [{ "t": "bas étai", "g": "m" }],
-      "ita": [{ "t": "stralletto", "g": "m" }, { "t": "babystay", "g": "m" }],
+      "ita": [{ "t": "stralletto", "g": "m" }],
       "definizione": "Strallo interno più corto, fissato più in basso sull'albero, che ne controlla la flessione.",
-      "nota": "In italiano stralletto indica sia il babystay sia lo strallo interno dei cutter su cui si inferisce la trinchetta (vedi strallo amovibile). Da non confondere con l'inner forestay inglese, che è quest'ultimo.",
+      "nota": "In italiano stralletto indica sia il babystay sia lo strallo interno dei cutter su cui si inferisce la trinchetta (vedi strallo amovibile). Da non confondere con l'inner forestay inglese, che è quest'ultimo. Nel parlato italiano si sente anche babystay. In spagnolo babyestay e baby stay sono equivalenti.",
       "fonti": [
         { "sigla": "RL", "termini": "baby stay" },
         { "sigla": "FFV-GBR", "termini": "bas étai, baby stay" },
-        { "sigla": "GLN", "termini": "bas-étai, stralletto" }
+        { "sigla": "GLN", "termini": "bas-étai, stralletto" },
+        { "sigla": "UPC-FNB", "termini": "babyestay" }
       ]
     },
     {
@@ -1473,7 +1505,8 @@
         { "sigla": "TC", "termini": "burda volante, running backstay" },
         { "sigla": "MSB", "termini": "bastaque" },
         { "sigla": "GLN", "termini": "bastaque, sartia volante" },
-        { "sigla": "MW", "termini": "runner", "url": "runner" }
+        { "sigla": "MW", "termini": "runner", "url": "runner" },
+        { "sigla": "UPC-FNB", "termini": "burda" }
       ]
     },
     {
@@ -1509,17 +1542,18 @@
     {
       "id": "sartia-bassa",
       "categoria": "attrezzatura",
-      "eng": [{ "t": "lower shroud" }, { "t": "intermediate shroud" }],
+      "eng": [{ "t": "lower shroud" }],
       "esp": [{ "t": "obenquillo", "g": "m" }],
       "fra": [{ "t": "bas-hauban", "g": "m" }],
-      "ita": [{ "t": "sartia bassa", "g": "f" }, { "t": "sartia intermedia", "g": "f" }],
+      "ita": [{ "t": "sartia bassa", "g": "f" }],
       "definizione": "Sartia più corta che tiene l'albero lateralmente fino all'altezza di una crocetta.",
-      "nota": "In spagnolo si distinguono obenques altos, intermedios e bajos, ma si dice anche obenquillo alto e bajo. In francese la sartia alta è il galhauban.",
+      "nota": "In spagnolo si distinguono obenques altos, intermedios e bajos, ma si dice anche obenquillo alto e bajo. In francese la sartia alta è il galhauban. Con due o più ordini di crocette si distinguono sartie alte, intermedie e basse, secondo il punto in cui si attaccano all'albero: la sartia intermedia, in inglese intermediate shroud, non è la sartia bassa.",
       "fonti": [
         { "sigla": "INCUAL", "termini": "obenquillo, obenque" },
         { "sigla": "RL", "termini": "obenquillo" },
         { "sigla": "GLN", "termini": "bas-hauban, sartia bassa" },
-        { "sigla": "MF", "termini": "lower shroud, sartia bassa", "url": "inglita.htm" }
+        { "sigla": "MF", "termini": "lower shroud, sartia bassa", "url": "inglita.htm" },
+        { "sigla": "TRE", "termini": "sartia (sartie alte, sartie intermedie e sartie basse)", "url": "sartia/" }
       ]
     },
     {
@@ -1545,16 +1579,17 @@
         { "sigla": "RFEV-REV", "termini": "cruceta, spreader" },
         { "sigla": "MSB", "termini": "barre de flèche" },
         { "sigla": "GLN", "termini": "barre de flèche, crocetta" },
-        { "sigla": "RD875", "termini": "crucetas; distancia de la baluma a la cruceta" }
+        { "sigla": "RD875", "termini": "crucetas; distancia de la baluma a la cruceta" },
+        { "sigla": "UPC-FNB", "termini": "cruceta" }
       ]
     },
     {
       "id": "testa-d-albero",
       "categoria": "attrezzatura",
-      "eng": [{ "t": "masthead" }, { "t": "mast top" }],
+      "eng": [{ "t": "masthead" }],
       "esp": [{ "t": "tope de palo", "g": "m" }, { "t": "perilla", "g": "f" }],
       "fra": [{ "t": "tête de mât", "g": "f" }],
-      "ita": [{ "t": "testa d'albero", "g": "f" }, { "t": "cima d'albero", "g": "f" }],
+      "ita": [{ "t": "testa d'albero", "g": "f" }],
       "definizione": "Estremità superiore dell'albero.",
       "fonti": [
         { "sigla": "RL", "termini": "tope de palo" },
@@ -1565,7 +1600,10 @@
         { "sigla": "WW", "termini": "testa d'albero" },
         { "sigla": "DLE", "termini": "tope", "url": "tope" },
         { "sigla": "GLN", "termini": "tête de mât, testa d'albero" },
-        { "sigla": "MW", "termini": "masthead", "url": "masthead" }
+        { "sigla": "MW", "termini": "masthead", "url": "masthead" },
+        { "sigla": "WS-RRS", "termini": "masthead" },
+        { "sigla": "AHD", "termini": "masthead (1)", "url": "search.html?q=masthead" },
+        { "sigla": "UPC-FNB", "termini": "tope de palo" }
       ]
     },
     {
@@ -1589,7 +1627,9 @@
         { "sigla": "LF", "termini": "trozza, gooseneck" },
         { "sigla": "MSB", "termini": "vit-de-mulet" },
         { "sigla": "GLN", "termini": "vit-de-mulet, trozza" },
-        { "sigla": "RD875", "termini": "pinzote de botavara" }
+        { "sigla": "RD875", "termini": "pinzote de botavara" },
+        { "sigla": "WS-RRS", "termini": "main-boom gooseneck" },
+        { "sigla": "AHD", "termini": "gooseneck (2)", "url": "search.html?q=gooseneck" }
       ]
     },
     {
@@ -1622,7 +1662,8 @@
         { "sigla": "MSB", "termini": "tangon" },
         { "sigla": "GLN", "termini": "tangon, tangone" },
         { "sigla": "PER", "termini": "tangón" },
-        { "sigla": "RD875", "termini": "el tangón y su aparejo" }
+        { "sigla": "RD875", "termini": "el tangón y su aparejo" },
+        { "sigla": "UPC-FNB", "termini": "tangón" }
       ]
     },
     {
@@ -1646,7 +1687,8 @@
         { "sigla": "FFV-ESP", "termini": "génois, génova" },
         { "sigla": "MSB", "termini": "génois" },
         { "sigla": "GLN", "termini": "génois, genoa" },
-        { "sigla": "RD875", "termini": "génova" }
+        { "sigla": "RD875", "termini": "génova" },
+        { "sigla": "UPC-FNB", "termini": "génova" }
       ]
     },
     {
@@ -1669,7 +1711,9 @@
         { "sigla": "MSB", "termini": "tourmentin" },
         { "sigla": "GLN", "termini": "tourmentin, tormentina" },
         { "sigla": "PER", "termini": "tormentín" },
-        { "sigla": "RD875", "termini": "velas de capa y tormentín" }
+        { "sigla": "RD875", "termini": "velas de capa y tormentín" },
+        { "sigla": "MW", "termini": "storm jib", "url": "storm%20jib" },
+        { "sigla": "UPC-FNB", "termini": "tormentín" }
       ]
     },
     {
@@ -1722,7 +1766,7 @@
         { "sigla": "MF", "termini": "inferitura, luff", "url": "itaing.htm" },
         { "sigla": "RFEV-REV", "termini": "grátil, luff" },
         { "sigla": "TC", "termini": "grátil, luff, guindant" },
-        { "sigla": "TC-AC", "termini": "grátil, luff, guindant" },
+        { "sigla": "TC-AC", "termini": "grátil, luff, guindant, inferitura" },
         { "sigla": "GLN", "termini": "guindant, inferitura" },
         { "sigla": "PER", "termini": "grátil" },
         { "sigla": "MW", "termini": "luff", "url": "luff" },
@@ -1756,7 +1800,7 @@
         { "sigla": "RFEV-REV", "termini": "baluma, leech" },
         { "sigla": "DEI", "termini": "baluma, leech", "url": "es/lema/baluma" },
         { "sigla": "TC", "termini": "baluma, leech, chute" },
-        { "sigla": "TC-AC", "termini": "baluma, leech, chute" },
+        { "sigla": "TC-AC", "termini": "baluma, leech, chute, balumina" },
         { "sigla": "MSB", "termini": "chute" },
         { "sigla": "GLN", "termini": "chute, balumina" },
         { "sigla": "PER", "termini": "baluma" },
@@ -1821,11 +1865,12 @@
         { "sigla": "LF", "termini": "penna, head" },
         { "sigla": "RFEV-REV", "termini": "puño de driza, head point" },
         { "sigla": "TC", "termini": "puño de driza, head, point de drisse" },
-        { "sigla": "TC-AC", "termini": "puño de driza, head, point de drisse" },
+        { "sigla": "TC-AC", "termini": "puño de driza, head, point de drisse, angolo di penna" },
         { "sigla": "DLE", "termini": "puño", "url": "pu%C3%B1o" },
         { "sigla": "MSB", "termini": "point de drisse" },
         { "sigla": "GLN", "termini": "point de drisse, punto di drizza" },
-        { "sigla": "DEI", "termini": "spinnaker: puño de driza", "url": "es/lema/spinnaker" }
+        { "sigla": "DEI", "termini": "spinnaker: puño de driza", "url": "es/lema/spinnaker" },
+        { "sigla": "FFV-REV", "termini": "têtière, point de drisse" }
       ]
     },
     {
@@ -1854,11 +1899,12 @@
         { "sigla": "MF", "termini": "bugna, clew", "url": "inglita.htm" },
         { "sigla": "RFEV-REV", "termini": "puño de escota, clew point" },
         { "sigla": "TC", "termini": "puño de escota, clew, point d'écoute" },
-        { "sigla": "TC-AC", "termini": "puño de escota, clew, point d'écoute" },
+        { "sigla": "TC-AC", "termini": "puño de escota, clew, point d'écoute, angolo di scotta" },
         { "sigla": "DLE", "termini": "puño", "url": "pu%C3%B1o" },
         { "sigla": "GLN", "termini": "point d'écoute, punto di scotta" },
         { "sigla": "MW", "termini": "clew", "url": "clew" },
-        { "sigla": "RD875", "termini": "puño de escota" }
+        { "sigla": "RD875", "termini": "puño de escota" },
+        { "sigla": "UPC-FNB", "termini": "puño de escota" }
       ]
     },
     {
@@ -1885,11 +1931,12 @@
         { "sigla": "LF", "termini": "angolo di mura, tack" },
         { "sigla": "RFEV-REV", "termini": "puño de amura, tack point" },
         { "sigla": "TC", "termini": "puño de amura, tack, point d'amure" },
-        { "sigla": "TC-AC", "termini": "puño de amura, tack, point d'amure" },
+        { "sigla": "TC-AC", "termini": "puño de amura, tack, point d'amure, angolo di mura" },
         { "sigla": "DLE", "termini": "puño", "url": "pu%C3%B1o" },
         { "sigla": "GLN", "termini": "point d'amure, punto di mura" },
         { "sigla": "MW", "termini": "tack", "url": "tack" },
-        { "sigla": "RD875", "termini": "puño de amura" }
+        { "sigla": "RD875", "termini": "puño de amura" },
+        { "sigla": "UPC-FNB", "termini": "puño de amura" }
       ]
     },
     {
@@ -1941,7 +1988,8 @@
         { "sigla": "RL", "termini": "matafiones" },
         { "sigla": "FFV-ITA", "termini": "garcette, matafione" },
         { "sigla": "MF", "termini": "matafione, reef point", "url": "itaing.htm" },
-        { "sigla": "WW", "termini": "matafione, reef point" }
+        { "sigla": "WW", "termini": "matafione, reef point" },
+        { "sigla": "MW", "termini": "reef point; reef line: reef point", "url": "reef%20point" }
       ]
     },
     {
@@ -1952,7 +2000,7 @@
       "fra": [{ "t": "bosse de ris", "g": "f" }],
       "ita": [{ "t": "borosa", "g": "f" }],
       "definizione": "Cima che, quando si prende una mano di terzaroli, porta verso il boma il nuovo punto di scotta della randa, sul lato di balumina.",
-      "nota": "In francese si dice anche empointure de ris, in inglese reef earing, termine tradizionale. Per il lato di mura vedi borosa di mura.",
+      "nota": "In francese si dice anche empointure de ris, in inglese reef earing, termine tradizionale. Polisemico: in inglese reef line indica anche il matafione (reef point). Per il lato di mura vedi borosa di mura.",
       "fonti": [
         { "sigla": "TRE", "termini": "borosa", "url": "borosa/" },
         { "sigla": "RL", "termini": "cabo del rizo" },
@@ -1960,7 +2008,9 @@
         { "sigla": "WW", "termini": "borosa" },
         { "sigla": "MF", "termini": "borosa, reefing line", "url": "itaing.htm" },
         { "sigla": "MF", "termini": "borosa, reefing line", "url": "inglita.htm" },
-        { "sigla": "MSB", "termini": "bosse de ris" }
+        { "sigla": "MSB", "termini": "bosse de ris" },
+        { "sigla": "FFV-REV", "termini": "bosse de ris" },
+        { "sigla": "SW", "termini": "reef line" }
       ]
     },
     {
@@ -2043,7 +2093,8 @@
         { "sigla": "OQLF-GDT", "termini": "œillet de Cunningham", "url": "fiche-gdt/fiche/10455059/oeillet-de-cunningham" },
         { "sigla": "RL", "termini": "cunningham" },
         { "sigla": "MSB", "termini": "cunningham" },
-        { "sigla": "RD875", "termini": "pajarito, cunningham, carro de mayor y trapa" }
+        { "sigla": "RD875", "termini": "pajarito, cunningham, carro de mayor y trapa" },
+        { "sigla": "UPC-FNB", "termini": "cunningham" }
       ]
     },
     {
@@ -2054,11 +2105,11 @@
       "fra": [{ "t": "hale-bas de bôme", "g": "m" }],
       "ita": [{ "t": "vang", "g": "m" }, { "t": "ritenuta del boma", "g": "f" }],
       "definizione": "Paranco o pistone tra boma e base dell'albero che tira il boma verso il basso e controlla la forma della randa.",
-      "nota": "In francese del Québec hale-bas è invece la cima che fa scendere un fiocco (inglese downhaul). Si dice anche ritenuta del boma.",
+      "nota": "In francese del Québec hale-bas è invece la cima che fa scendere un fiocco (inglese downhaul). Si dice anche ritenuta del boma. Falso amico: lo spagnolo retenida è la cima che impedisce la strambata involontaria (inglese preventer), non la ritenuta del boma.",
       "fonti": [
         { "sigla": "WS-ERS", "termini": "vang" },
         { "sigla": "RL", "termini": "contra de la botavara" },
-        { "sigla": "RFEV-DIC", "termini": "contra de la botavara" },
+        { "sigla": "RFEV-DIC", "termini": "contra de la botavara, kicker / kicking strap / boom vang" },
         { "sigla": "USCG", "termini": "vang, vang", "url": "English-Italian-Glossary-Nautical-Terms.pdf" },
         { "sigla": "USCG", "termini": "boom vang, contra de la botavara", "url": "English-Spanish-Glossary-Nautical-Terms.pdf" },
         { "sigla": "GLN", "termini": "hale-bas de bôme, vang" },
@@ -2069,7 +2120,7 @@
     {
       "id": "caricabasso",
       "categoria": "attrezzatura",
-      "eng": [{ "t": "pole downhaul" }, { "t": "foreguy" }],
+      "eng": [{ "t": "foreguy" }],
       "esp": [{ "t": "contra del tangón", "g": "f" }],
       "fra": [{ "t": "hale-bas de tangon", "g": "m" }],
       "ita": [{ "t": "caricabbasso", "g": "m" }, { "t": "caricabasso", "g": "m" }],
@@ -2080,8 +2131,10 @@
         { "sigla": "RL", "termini": "contra (aparejo)" },
         { "sigla": "RFEV-DIC", "termini": "contra (aparejo)" },
         { "sigla": "GLN", "termini": "hale-bas de tangon, caricabbasso del tangone" },
-        { "sigla": "FFV-GBR", "termini": "halebas de spi, spinnaker foreguy; downhaul of spinnaker pole" }
-      ]
+        { "sigla": "FFV-GBR", "termini": "halebas de spi, spinnaker foreguy; downhaul of spinnaker pole" },
+        { "sigla": "MW", "termini": "foreguy", "url": "foreguy" }
+      ],
+      "nota": "In inglese si dice anche pole downhaul."
     },
     {
       "id": "manovre-correnti",
@@ -2093,7 +2146,7 @@
       "definizione": "L'insieme delle cime mobili che servono a issare e regolare le vele, come drizze, scotte e amantigli, in opposizione alle manovre fisse.",
       "nota": "In spagnolo cabuyería, o cabullería, indica l'insieme di tutte le cime di bordo, non solo quelle correnti. Il contrario è standing rigging, jarcia firme, gréement dormant, manovre fisse o dormienti.",
       "fonti": [
-        { "sigla": "OQLF-GDT", "termini": "gréement courant, running rigging", "url": "fiche-gdt/fiche/8881496/greement-courant" },
+        { "sigla": "OQLF-GDT", "termini": "gréement courant, manœuvres courantes, running rigging", "url": "fiche-gdt/fiche/8881496/greement-courant" },
         { "sigla": "INCUAL", "termini": "jarcia labor" },
         { "sigla": "RL", "termini": "jarcia de labor" },
         { "sigla": "RFEV-DIC", "termini": "jarcia de labor" },
@@ -2163,7 +2216,10 @@
         { "sigla": "TC", "termini": "viento real, true wind, vent réel" },
         { "sigla": "PER", "termini": "viento real" },
         { "sigla": "BOW", "termini": "true wind" },
-        { "sigla": "RD875", "termini": "viento real, relativo y aparente" }
+        { "sigla": "RD875", "termini": "viento real, relativo y aparente" },
+        { "sigla": "FIV-RRS", "termini": "vento reale" },
+        { "sigla": "FFV-CAS", "termini": "vent réel" },
+        { "sigla": "UPC-FNB", "termini": "viento real" }
       ]
     },
     {
@@ -2190,7 +2246,8 @@
         { "sigla": "MSB", "termini": "vent apparent" },
         { "sigla": "PER", "termini": "viento aparente" },
         { "sigla": "BOW", "termini": "apparent wind" },
-        { "sigla": "RD875", "termini": "viento aparente y viento real" }
+        { "sigla": "RD875", "termini": "viento aparente y viento real" },
+        { "sigla": "UPC-FNB", "termini": "viento aparente" }
       ]
     },
     {
@@ -2205,7 +2262,7 @@
       "fonti": [
         { "sigla": "TRE", "termini": "sopravvento", "url": "sopravvento/" },
         { "sigla": "OQLF-GDT", "termini": "au vent", "url": "fiche-gdt/fiche/17015005/au-vent" },
-        { "sigla": "OQLF-GDT", "termini": "côté du vent", "url": "fiche-gdt/fiche/8421850/cote-du-vent" },
+        { "sigla": "OQLF-GDT", "termini": "côté du vent, bord du vent, weather side", "url": "fiche-gdt/fiche/8421850/cote-du-vent" },
         { "sigla": "OQLF-GDT", "termini": "lof", "url": "fiche-gdt/fiche/8881789/lof" },
         { "sigla": "INCUAL", "termini": "barlovento" },
         { "sigla": "RFEV-RRV", "termini": "sotavento y barlovento" },
@@ -2225,7 +2282,8 @@
         { "sigla": "GLN", "termini": "au vent, sopravvento" },
         { "sigla": "PER", "termini": "barlovento" },
         { "sigla": "MW", "termini": "windward", "url": "windward" },
-        { "sigla": "BOW", "termini": "windward" }
+        { "sigla": "BOW", "termini": "windward" },
+        { "sigla": "BOW", "termini": "weather side" }
       ]
     },
     {
@@ -2239,7 +2297,7 @@
       "nota": "Si usa soprattutto come avverbio o aggettivo: navigare sottovento, il lato sottovento. In francese la forma corrente è la locuzione sous le vent; côté sous le vent indica il lato della barca. Con vento in poppa il lato sottovento è quello dove si trova la randa. In inglese leeward si pronuncia spesso \"looard\". Contrario: sopravento.",
       "fonti": [
         { "sigla": "TRE", "termini": "sottovento", "url": "sottovento/" },
-        { "sigla": "OQLF-GDT", "termini": "côté sous le vent", "url": "fiche-gdt/fiche/8464055/cote-sous-le-vent" },
+        { "sigla": "OQLF-GDT", "termini": "côté sous le vent, lee side", "url": "fiche-gdt/fiche/8464055/cote-sous-le-vent" },
         { "sigla": "INCUAL", "termini": "sotavento" },
         { "sigla": "RFEV-RRV", "termini": "sotavento y barlovento" },
         { "sigla": "RL", "termini": "sotavento, a sotavento" },
@@ -2258,7 +2316,8 @@
         { "sigla": "GLN", "termini": "sous le vent, sottovento" },
         { "sigla": "PER", "termini": "sotavento" },
         { "sigla": "MW", "termini": "leeward", "url": "leeward" },
-        { "sigla": "BOW", "termini": "leeward" }
+        { "sigla": "BOW", "termini": "leeward" },
+        { "sigla": "BOW", "termini": "lee side" }
       ]
     },
     {
@@ -2279,7 +2338,9 @@
         { "sigla": "FFV-GBR", "termini": "allure, point of sailing" },
         { "sigla": "LF", "termini": "andatura, point of sailing" },
         { "sigla": "MSB", "termini": "allure" },
-        { "sigla": "GLN", "termini": "allures, andature" }
+        { "sigla": "GLN", "termini": "allures, andature" },
+        { "sigla": "FIV-RRS", "termini": "andatura di bolina" },
+        { "sigla": "YM", "termini": "point of sail" }
       ]
     },
     {
@@ -2292,7 +2353,7 @@
       "definizione": "Andatura in cui il vento arriva perpendicolare all'asse della barca, a circa 90 gradi dalla prua.",
       "nota": "Da non confondere con il traverso come fianco della barca (vedi traverso), che in spagnolo e francese ha lo stesso nome. In italiano si distingue anche l'andatura di buon braccio, a circa 80 gradi.",
       "fonti": [
-        { "sigla": "OQLF-GDT", "termini": "vent de travers", "url": "fiche-gdt/fiche/8422363/allure" },
+        { "sigla": "OQLF-GDT", "termini": "vent de travers, wind abeam, wind on the beam", "url": "fiche-gdt/fiche/8422363/allure" },
         { "sigla": "TRE", "termini": "andatura (al traverso, a mezza nave)", "url": "andatura/" },
         { "sigla": "RL", "termini": "viento al través, través" },
         { "sigla": "RFEV-DIC", "termini": "al través, bordo de través, beam reach leg" },
@@ -2303,7 +2364,8 @@
         { "sigla": "FFV-ITA", "termini": "vent de travers, al traverso" },
         { "sigla": "MF", "termini": "andatura al traverso, beam reach", "url": "itaing.htm" },
         { "sigla": "GLN", "termini": "vent de travers, vento al traverso" },
-        { "sigla": "PER", "termini": "ceñir, través, a un largo, en popa" }
+        { "sigla": "PER", "termini": "ceñir, través, a un largo, en popa" },
+        { "sigla": "UPC-FNB", "termini": "de través" }
       ]
     },
     {
@@ -2312,7 +2374,7 @@
       "eng": [{ "t": "reach" }],
       "esp": [{ "t": "largo", "g": "m" }],
       "fra": [{ "t": "largue", "g": "m" }],
-      "ita": [{ "t": "lasco", "g": "m" }, { "t": "andatura di lasco", "g": "f" }],
+      "ita": [{ "t": "lasco", "g": "m" }],
       "definizione": "Andatura in cui il vento arriva da poco dietro il traverso, tra l'andatura al traverso e il gran lasco.",
       "nota": "Il confine tra lasco e gran lasco varia. In francese si distingue il petit largue, tra traverso e largue, che però indica anche la bolina larga (vedi bolina larga); in italiano si dice anche lasco stretto. Polisemico: in italiano lasco vuol dire anche allentato, detto di una cima; in inglese reach indica più in generale le andature tra il traverso e il gran lasco, e a volte si traduce con andatura al traverso: va tradotto in base al contesto. In spagnolo largo copre sia il lasco sia il gran lasco (vedi gran lasco). Lo spagnolo a un descuartelar corrisponde invece alla bolina larga (vedi bolina larga).",
       "fonti": [
@@ -2363,7 +2425,7 @@
       "eng": [{ "t": "run" }, { "t": "running" }, { "t": "before the wind" }],
       "esp": [{ "t": "en popa", "g": "loc" }, { "t": "empopada", "g": "f" }],
       "fra": [{ "t": "vent arrière", "g": "m" }],
-      "ita": [{ "t": "andatura di poppa", "g": "f" }, { "t": "in poppa", "g": "loc" }, { "t": "in fil di ruota", "g": "loc" }],
+      "ita": [{ "t": "in poppa", "g": "loc" }, { "t": "in fil di ruota", "g": "loc" }],
       "definizione": "Andatura in cui il vento arriva da poppa, nella stessa direzione in cui va la barca.",
       "nota": "Con vento esattamente in poppa si dice in fil di ruota, in spagnolo popa cerrada, in inglese dead run. In spagnolo empopada indica anche il lato di poppa di un percorso. Vedi anche poppa, per la parte della barca.",
       "fonti": [
@@ -2398,7 +2460,8 @@
         { "sigla": "GLN", "termini": "baille à mouillage, gavone dell'ancora" },
         { "sigla": "USCG", "termini": "anchor well, gavone dell'ancora", "url": "English-Italian-Glossary-Nautical-Terms.pdf" },
         { "sigla": "USCG", "termini": "anchor well, pozo de anclas", "url": "English-Spanish-Glossary-Nautical-Terms.pdf" },
-        { "sigla": "USCG", "termini": "anchor well, baille à mouillage", "url": "English-French-Glossary-Nautical-Terms.pdf" }
+        { "sigla": "USCG", "termini": "anchor well, baille à mouillage", "url": "English-French-Glossary-Nautical-Terms.pdf" },
+        { "sigla": "MW", "termini": "anchor well", "url": "anchor%20well" }
       ]
     },
     {
@@ -2413,7 +2476,8 @@
       "fonti": [
         { "sigla": "GLN", "termini": "balancine de tangon, amantiglio del tangone" },
         { "sigla": "LF", "termini": "carica alto, uphaul" },
-        { "sigla": "RL", "termini": "amantillo del tangón" }
+        { "sigla": "RL", "termini": "amantillo del tangón" },
+        { "sigla": "YM", "termini": "spinnaker pole topping lift" }
       ]
     },
     {
@@ -2430,7 +2494,8 @@
         { "sigla": "LF", "termini": "pulpito di poppa, stern pulpit" },
         { "sigla": "USCG", "termini": "pushpits, púlpito de popa", "url": "English-Spanish-Glossary-Nautical-Terms.pdf" },
         { "sigla": "FFV-ESP", "termini": "balcon arrière, púlpito de popa" },
-        { "sigla": "FFV-ITA", "termini": "balcon arrière, pulpito poppiero" }
+        { "sigla": "FFV-ITA", "termini": "balcon arrière, pulpito poppiero" },
+        { "sigla": "NKH", "termini": "pushpit", "url": "../pushpit/" }
       ]
     },
     {
@@ -2450,7 +2515,8 @@
         { "sigla": "USCG", "termini": "pulpit (bow), balcon avant", "url": "English-French-Glossary-Nautical-Terms.pdf" },
         { "sigla": "FFV-ITA", "termini": "balcon avant, pulpito" },
         { "sigla": "FFV-ESP", "termini": "balcon avant, púlpito" },
-        { "sigla": "PER", "termini": "púlpito de proa" }
+        { "sigla": "PER", "termini": "púlpito de proa" },
+        { "sigla": "AHD", "termini": "pulpit (3)", "url": "search.html?q=pulpit" }
       ]
     },
     {
@@ -2473,7 +2539,9 @@
         { "sigla": "MF", "termini": "ruota del timone, steering wheel", "url": "itaing.htm" },
         { "sigla": "FFV-ITA", "termini": "roue, ruota del timone" },
         { "sigla": "FFV-ESP", "termini": "roue, rueda del timón" },
-        { "sigla": "PER", "termini": "rueda del timón" }
+        { "sigla": "PER", "termini": "rueda del timón" },
+        { "sigla": "AHD", "termini": "steering wheel", "url": "search.html?q=steering%20wheel" },
+        { "sigla": "UPC-FNB", "termini": "rueda del timón" }
       ]
     },
     {
@@ -2519,7 +2587,9 @@
         { "sigla": "RFEV-DIC", "termini": "braza, bras, afterguy; braza del spí, guy" },
         { "sigla": "RL", "termini": "braza, afterguy, braccio; braza del spí, braccio dello spi" },
         { "sigla": "MF", "termini": "braccio, brace, guy", "url": "itaing.htm" },
-        { "sigla": "RD875", "termini": "mosquetón rápido de la braza" }
+        { "sigla": "RD875", "termini": "mosquetón rápido de la braza" },
+        { "sigla": "MW", "termini": "afterguy", "url": "afterguy" },
+        { "sigla": "UPC-FNB", "termini": "braza, braza de spinnaker" }
       ]
     },
     {
@@ -2559,7 +2629,8 @@
       "fonti": [
         { "sigla": "GLN", "termini": "écoute de spi, scotta dello spinnaker" },
         { "sigla": "WIKI-EN", "termini": "spinnaker sheet", "url": "Sheet_(sailing)" },
-        { "sigla": "UPF", "termini": "escota de spinnaker, escota de spi", "url": "es/shop/escota-de-spinnaker-12mm-x-35m-gottifredi-maffioli-easycruise-cabo-de-vela-preempalmado-kh-sssc12x35-gr-333539" }
+        { "sigla": "UPF", "termini": "escota de spinnaker, escota de spi", "url": "es/shop/escota-de-spinnaker-12mm-x-35m-gottifredi-maffioli-easycruise-cabo-de-vela-preempalmado-kh-sssc12x35-gr-333539" },
+        { "sigla": "UPC-FNB", "termini": "escota de spinnaker, escota de spi" }
       ]
     },
     {
@@ -2570,7 +2641,7 @@
       "fra": [{ "t": "étai largable", "g": "m" }],
       "ita": [{ "t": "strallo amovibile", "g": "m" }],
       "definizione": "Strallo interno che si può staccare e riporre quando non serve, usato per issare una trinchetta o la tormentina.",
-      "nota": "In italiano stralletto indica sia questo strallo sia il babystay (vedi babystay). Polisemico in spagnolo: estay volante si usa per questo strallo, ma indica anche la volante (vedi volante).",
+      "nota": "In italiano stralletto indica sia questo strallo sia il babystay (vedi babystay). Polisemico in spagnolo: estay volante si usa per questo strallo, ma indica anche la volante (vedi volante). In spagnolo estay volante e stay volante sono equivalenti: stay è un anglicismo accettato nell'uso.",
       "fonti": [
         { "sigla": "GLN", "termini": "étai largable, strallo amovibile" },
         { "sigla": "YM", "termini": "removable inner forestay, inner forestay" },
@@ -2634,7 +2705,8 @@
         { "sigla": "USCG", "termini": "roller furling, avvolgifiocco", "url": "English-Italian-Glossary-Nautical-Terms.pdf" },
         { "sigla": "USCG", "termini": "roller furling, enrollador de vela", "url": "English-Spanish-Glossary-Nautical-Terms.pdf" },
         { "sigla": "USCG", "termini": "roller furling, enrouleur", "url": "English-French-Glossary-Nautical-Terms.pdf" },
-        { "sigla": "RD875", "termini": "enrollador de génova" }
+        { "sigla": "RD875", "termini": "enrollador de génova" },
+        { "sigla": "UPC-FNB", "termini": "enrollador de velas" }
       ]
     },
     {
@@ -2667,9 +2739,9 @@
       "eng": [{ "t": "telltale" }, { "t": "tell-tale" }],
       "esp": [{ "t": "catavientos", "g": "m" }, { "t": "cataviento", "g": "m" }],
       "fra": [{ "t": "penon", "g": "m" }],
-      "ita": [{ "t": "segnavento", "g": "m" }, { "t": "filetto", "g": "m" }],
+      "ita": [{ "t": "segnavento", "g": "m" }, { "t": "filetti", "g": "m" }],
       "definizione": "Nastrino leggero cucito sulla vela o legato alle sartie, che mostra come scorre il vento.",
-      "nota": "In italiano si dice spesso filetti, al plurale. Il francese girouette e l'inglese wind vane indicano invece la banderuola in testa d'albero.",
+      "nota": "Il francese girouette e l'inglese wind vane indicano invece la banderuola in testa d'albero.",
       "fonti": [
         { "sigla": "GLN", "termini": "penons, segnavento" },
         { "sigla": "INCUAL", "termini": "cataviento" },
@@ -2682,7 +2754,8 @@
         { "sigla": "PER", "termini": "catavientos" },
         { "sigla": "MW", "termini": "telltale", "url": "telltale" },
         { "sigla": "RD875", "termini": "catavientos en el grátil; cataviento" },
-        { "sigla": "DLE", "termini": "catavientos", "url": "catavientos" }
+        { "sigla": "DLE", "termini": "catavientos", "url": "catavientos" },
+        { "sigla": "WW", "termini": "segnavento, filetti" }
       ]
     },
     {
@@ -2706,7 +2779,8 @@
         { "sigla": "LF", "termini": "arridatoio, bottlescrew" },
         { "sigla": "MF", "termini": "arridatoio, turnbuckle; tenditore, rigging screw", "url": "itaing.htm" },
         { "sigla": "FFV-ITA", "termini": "ridoir, arridatoio, tendisartie" },
-        { "sigla": "FFV-ESP", "termini": "ridoir, tensor" }
+        { "sigla": "FFV-ESP", "termini": "ridoir, tensor" },
+        { "sigla": "MW", "termini": "turnbuckle; rigging screw (2, British): turnbuckle", "url": "turnbuckle" }
       ]
     },
     {
@@ -2724,7 +2798,8 @@
         { "sigla": "TRE", "termini": "gennaker", "url": "gennaker/" },
         { "sigla": "MSB", "termini": "spinnaker asymétrique" },
         { "sigla": "MW", "termini": "gennaker", "url": "gennaker" },
-        { "sigla": "ORC", "termini": "spinnaker asimétrico" }
+        { "sigla": "ORC", "termini": "spinnaker asimétrico" },
+        { "sigla": "YM", "termini": "asymmetric spinnaker" }
       ]
     },
     {
@@ -2761,7 +2836,8 @@
         { "sigla": "FFV-ITA", "termini": "trinquette, vela di taglio, vela di strallo" },
         { "sigla": "FFV-ESP", "termini": "trinquette, vela de estay" },
         { "sigla": "DIMAR", "termini": "trinquetilla, trinqueta", "url": "?page=19" },
-        { "sigla": "MW", "termini": "staysail", "url": "staysail" }
+        { "sigla": "MW", "termini": "staysail", "url": "staysail" },
+        { "sigla": "AHD", "termini": "staysail", "url": "search.html?q=staysail" }
       ]
     },
     {
@@ -2815,7 +2891,8 @@
         { "sigla": "MW", "termini": "rig", "url": "rig" },
         { "sigla": "TRE", "termini": "attrezzatura (in marina)", "url": "attrezzatura/" },
         { "sigla": "DEI", "termini": "aparejo, rig", "url": "es/lema/aparejo" },
-        { "sigla": "RD875", "termini": "aparejo de vela" }
+        { "sigla": "RD875", "termini": "aparejo de vela" },
+        { "sigla": "MF", "termini": "attrezzatura velica, rigging", "url": "itaing.htm" }
       ]
     },
     {
@@ -2837,7 +2914,9 @@
         { "sigla": "USCG", "termini": "hank on, engarruchar", "url": "English-Spanish-Glossary-Nautical-Terms.pdf" },
         { "sigla": "USCG", "termini": "hank on, endrailler", "url": "English-French-Glossary-Nautical-Terms.pdf" },
         { "sigla": "FFV-ITA", "termini": "endrailler le foc, inferire il fiocco" },
-        { "sigla": "FFV-ESP", "termini": "enverguer les voiles, envergar las velas" }
+        { "sigla": "FFV-ESP", "termini": "enverguer les voiles, envergar las velas" },
+        { "sigla": "AHD", "termini": "bend (v. tr. 5)", "url": "search.html?q=bend" },
+        { "sigla": "MW", "termini": "bend (fasten: bend a sail)", "url": "bend" }
       ]
     },
     {
@@ -2877,7 +2956,8 @@
         { "sigla": "FFV-ESP", "termini": "choquer, amollar" },
         { "sigla": "DLE", "termini": "lascar", "url": "lascar" },
         { "sigla": "DLE", "termini": "amollar", "url": "amollar" },
-        { "sigla": "PER", "termini": "lascar" }
+        { "sigla": "PER", "termini": "lascar" },
+        { "sigla": "MW", "termini": "ease (to make less tight: ease up on the rope)", "url": "ease" }
       ]
     },
     {
@@ -2988,7 +3068,9 @@
         { "sigla": "TRE", "termini": "straorzare", "url": "straorzare/" },
         { "sigla": "USCG", "termini": "broach, straorzare", "url": "English-Italian-Glossary-Nautical-Terms.pdf" },
         { "sigla": "NAUTIK", "termini": "irse de orzada", "url": "navegacion/irse-de-orzada-con-spi-simetrico-trimado-velas/" },
-        { "sigla": "RD875", "termini": "irse de arribada e irse de orzada" }
+        { "sigla": "RD875", "termini": "irse de arribada e irse de orzada" },
+        { "sigla": "MW", "termini": "broach (nautical: to veer or yaw dangerously so as to lie broadside to the waves)", "url": "broach" },
+        { "sigla": "UPC-FNB", "termini": "irse de orzada" }
       ]
     },
     {
@@ -3051,7 +3133,8 @@
         { "sigla": "USCG", "termini": "douse, ammainare", "url": "English-Italian-Glossary-Nautical-Terms.pdf" },
         { "sigla": "USCG", "termini": "douse, arriar", "url": "English-Spanish-Glossary-Nautical-Terms.pdf" },
         { "sigla": "USCG", "termini": "douse, amener", "url": "English-French-Glossary-Nautical-Terms.pdf" },
-        { "sigla": "PER", "termini": "arriar" }
+        { "sigla": "PER", "termini": "arriar" },
+        { "sigla": "MW", "termini": "douse (nautical: to take in, lower, strike)", "url": "douse" }
       ]
     },
     {
@@ -3073,7 +3156,8 @@
         { "sigla": "RFEV-DIC", "termini": "hacerse a la mar" },
         { "sigla": "DLE", "termini": "levar; zarpar", "url": "levar" },
         { "sigla": "DLE", "termini": "zarpar", "url": "zarpar" },
-        { "sigla": "PER", "termini": "zarpar; levar, hacerse a la mar" }
+        { "sigla": "PER", "termini": "zarpar; levar, hacerse a la mar" },
+        { "sigla": "AHD", "termini": "set sail", "url": "search.html?q=set%20sail" }
       ]
     },
     {
@@ -3102,7 +3186,8 @@
         { "sigla": "LF", "termini": "dare fondo, anchoring" },
         { "sigla": "MF", "termini": "anchoring, manovra d'ancoraggio", "url": "inglita.htm" },
         { "sigla": "PER", "termini": "fondear; fondeo" },
-        { "sigla": "BOW", "termini": "anchor (v.)" }
+        { "sigla": "BOW", "termini": "anchor (v.)" },
+        { "sigla": "USCG", "termini": "drop anchor, mollare l'ancora", "url": "English-Italian-Glossary-Nautical-Terms.pdf" }
       ]
     },
     {
@@ -3255,7 +3340,7 @@
       "fonti": [
         { "sigla": "GLN", "termini": "amarre, cavo di ormeggio" },
         { "sigla": "ESNG", "termini": "cabos de amarre, amarras" },
-        { "sigla": "EOC", "termini": "dock lines" },
+        { "sigla": "EOC", "termini": "dock line, dock lines" },
         { "sigla": "WW", "termini": "cavo d'ormeggio, mooring rope, mooring line" },
         { "sigla": "USCG", "termini": "mooring line, cima d'ormeggio", "url": "English-Italian-Glossary-Nautical-Terms.pdf" },
         { "sigla": "USCG", "termini": "mooring line, cabo de amarre", "url": "English-Spanish-Glossary-Nautical-Terms.pdf" },
@@ -3540,7 +3625,8 @@
         { "sigla": "USCG", "termini": "close reach, navegar de ceñida abierta", "url": "English-Spanish-Glossary-Nautical-Terms.pdf" },
         { "sigla": "DIMAR", "termini": "descuartelar", "url": "?name=4" },
         { "sigla": "PER", "termini": "navegar a un descuartelar" },
-        { "sigla": "WW", "termini": "di bolina larga, close reach" }
+        { "sigla": "WW", "termini": "di bolina larga, close reach" },
+        { "sigla": "MW", "termini": "close reach", "url": "close%20reach" }
       ]
     },
     {
@@ -3582,7 +3668,8 @@
         { "sigla": "FFV-ITA", "termini": "mettre à la cape, mettersi alla cappa" },
         { "sigla": "FFV-ESP", "termini": "mettre à la cape, capear" },
         { "sigla": "PER", "termini": "capear; fachear" },
-        { "sigla": "MW", "termini": "heave to", "url": "heave%20to" }
+        { "sigla": "MW", "termini": "heave to", "url": "heave%20to" },
+        { "sigla": "AHD", "termini": "heave to", "url": "search.html?q=heave%20to" }
       ]
     },
     {
@@ -3604,7 +3691,9 @@
         { "sigla": "RFEV-DIC", "termini": "vent debout, head to wind" },
         { "sigla": "PER", "termini": "proa al viento" },
         { "sigla": "MSB", "termini": "vent debout" },
-        { "sigla": "RD875", "termini": "navegar proa al viento" }
+        { "sigla": "RD875", "termini": "navegar proa al viento" },
+        { "sigla": "WS-RRS", "termini": "head to wind" },
+        { "sigla": "UPC-FNB", "termini": "proa al viento" }
       ]
     },
     {
@@ -3740,7 +3829,8 @@
         { "sigla": "FFV-ESP", "termini": "annuaire des marées, tabla de mareas" },
         { "sigla": "PER", "termini": "anuario de mareas" },
         { "sigla": "BOW", "termini": "tide tables" },
-        { "sigla": "RD875", "termini": "anuario de mareas" }
+        { "sigla": "RD875", "termini": "anuario de mareas" },
+        { "sigla": "MW", "termini": "tide table", "url": "tide%20table" }
       ]
     },
     {
@@ -3779,7 +3869,9 @@
         { "sigla": "USCG", "termini": "astern, indietro", "url": "English-Italian-Glossary-Nautical-Terms.pdf" },
         { "sigla": "LF", "termini": "andare indietro, to go astern" },
         { "sigla": "PER", "termini": "marcha atrás" },
-        { "sigla": "DLE", "termini": "marcha atrás (1.b)", "url": "marcha" }
+        { "sigla": "DLE", "termini": "marcha atrás (1.b)", "url": "marcha" },
+        { "sigla": "AHD", "termini": "astern (3)", "url": "search.html?q=astern" },
+        { "sigla": "MW", "termini": "astern (backward: full speed astern)", "url": "astern" }
       ]
     },
     {
@@ -3797,7 +3889,8 @@
         { "sigla": "MF", "termini": "folle, neutral", "url": "itaing.htm" },
         { "sigla": "PER", "termini": "punto muerto" },
         { "sigla": "RD875", "termini": "punto muerto" },
-        { "sigla": "DLE", "termini": "punto muerto (2.a)", "url": "punto" }
+        { "sigla": "DLE", "termini": "punto muerto (2.a)", "url": "punto" },
+        { "sigla": "MW", "termini": "neutral (a position of disengagement, as of gears)", "url": "neutral" }
       ]
     },
     {
@@ -3823,7 +3916,8 @@
         { "sigla": "PER", "termini": "derrota; rumbo" },
         { "sigla": "MW", "termini": "course", "url": "course" },
         { "sigla": "BOW", "termini": "course" },
-        { "sigla": "WW", "termini": "rotta, course" }
+        { "sigla": "WW", "termini": "rotta, course" },
+        { "sigla": "FFV-CAS", "termini": "route" }
       ]
     },
     {
@@ -3846,7 +3940,8 @@
         { "sigla": "MW", "termini": "heading", "url": "heading" },
         { "sigla": "BOW", "termini": "heading" },
         { "sigla": "RD875", "termini": "rumbo verdadero, magnético y de aguja" },
-        { "sigla": "DLE", "termini": "rumbo (1.a)", "url": "rumbo" }
+        { "sigla": "DLE", "termini": "rumbo (1.a)", "url": "rumbo" },
+        { "sigla": "FFV-CAS", "termini": "cap" }
       ]
     },
     {
@@ -3877,7 +3972,8 @@
         { "sigla": "USCG", "termini": "standing rigging, jarcia firme", "url": "English-Spanish-Glossary-Nautical-Terms.pdf" },
         { "sigla": "USCG", "termini": "standing rigging, greement dormant", "url": "English-French-Glossary-Nautical-Terms.pdf" },
         { "sigla": "FFV-ITA", "termini": "gréement dormant, manovre fisse o dormienti" },
-        { "sigla": "LF", "termini": "manovre fisse, standing rigging" }
+        { "sigla": "LF", "termini": "manovre fisse, standing rigging" },
+        { "sigla": "WS-RRS", "termini": "standing rigging" }
       ]
     },
     {

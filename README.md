@@ -53,6 +53,8 @@ Per ogni lingua di ogni voce si calcola un livello da 0 a 3:
 - 2: almeno una fonte B, oppure una A senza secondo riscontro;
 - 3: una fonte A e un secondo riscontro A o B di un'altra opera.
 
+Due opere dello stesso ente contano come riscontri distinti se i testi sono diversi. Un'opera che riproduce il testo di un'altra nella stessa lingua (copia, ristampa, versione successiva, traduzione che riporta l'originale) non è un secondo riscontro: in `data/fonti.json` non ha peso per quella lingua, oppure la regola è indicata in `FONTI.md`.
+
 Una citazione conta per una lingua se la fonte copre quella lingua nel catalogo e se il suo campo `termini` contiene uno dei termini della lingua. Nella scheda il livello compare come tre pallini accanto all'etichetta della lingua. `python3 scripts/valida.py --punteggi` stampa la percentuale di ogni voce, cioè la somma dei quattro livelli su 12, e segnala come "completa" una voce con tutte le lingue al livello 3. Il punteggio è l'unica misura di affidabilità: non c'è un campo di stato da aggiornare a mano.
 
 Regole:
