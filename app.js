@@ -22,6 +22,25 @@ const GENERE = { m: "m.", f: "f.", loc: "loc.", v: "v." };
 
 const PESI = { A: 0, B: 1, C: 2 };
 
+/* Opere con una versione per lingua: per ognuna, un pezzo dell'indirizzo e l'etichetta
+   mostrata nella scheda, in ordine alfabetico. */
+const VERSIONI = {
+  USCG: [
+    ["English-Spanish", "ESP"],
+    ["English-French", "FRA"],
+    ["English-Italian", "ITA"],
+  ],
+  MF: [
+    ["htmcorso/", "CORSO"],
+    ["inglita", "ENG-ITA"],
+    ["itaing", "ITA-ENG"],
+  ],
+  ANTAL: [
+    ["antal.it/fr/", "FRA"],
+    ["antal.it/it/", "ITA"],
+  ],
+};
+
 const LIVELLI = [
   "nessuna fonte",
   "solo fonti deboli",
@@ -193,6 +212,11 @@ function scheda(voce, q) {
       if (i) p.append(" · ");
       const c = catalogo.get(g.sigla) || {};
       const base = c.url || (c.link && c.link[0].url);
+      const versioni = versioniCitate(g, base);
+      if (versioni.length) {
+        p.append(nodoVersioni(g, versioni));
+        return;
+      }
       const url = [...g.citazioni.map((f) => risolvi(f.url, base)), base].find(
         (u) => u && /^https?:\/\//.test(u)
       );
@@ -208,6 +232,33 @@ function scheda(voce, q) {
     art.append(p);
   }
   return art;
+}
+
+/* Le versioni linguistiche citate da una voce. Lista vuota se l'opera non ne ha
+   o se una citazione non corrisponde a nessuna versione. */
+function versioniCitate(gruppo, base) {
+  const regole = VERSIONI[gruppo.sigla];
+  if (!regole) return [];
+  const conUrl = gruppo.citazioni.map((f) => ({ ...f, assoluto: risolvi(f.url, base) || "" }));
+  if (!conUrl.every((f) => regole.some(([pezzo]) => f.assoluto.includes(pezzo)))) return [];
+  return regole.flatMap(([pezzo, etichetta]) => {
+    const citate = conUrl.filter((f) => f.assoluto.includes(pezzo));
+    if (!citate.length) return [];
+    return [{ etichetta, url: citate[0].assoluto, termini: citate.map((f) => f.termini || "").join("; ") }];
+  });
+}
+
+function nodoVersioni(gruppo, versioni) {
+  const n = nodo("span", "sigla", `${gruppo.sigla} (`);
+  n.title = gruppo.citazioni.map((f) => f.termini || "").join("; ");
+  versioni.forEach((v, i) => {
+    if (i) n.append(", ");
+    const a = link(v.etichetta, v.url);
+    a.title = v.termini;
+    n.append(a);
+  });
+  n.append(")");
+  return n;
 }
 
 /* Gli url delle citazioni possono essere relativi all'indirizzo dell'opera nel catalogo,

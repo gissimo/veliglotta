@@ -42,7 +42,7 @@ link          facoltativo, al posto di url quando l'opera ha più documenti: lis
 
 Gli url relativi delle citazioni si risolvono come i link relativi del web, a partire da `url` o dal primo di `link`. Per questo un indirizzo del catalogo usato come base deve finire con `/` o con il nome di un file: `valida.py` lo controlla.
 
-Nelle schede l'interfaccia mostra solo le sigle, una per opera e in ordine di peso. Il clic apre la pagina specifica della citazione, o in mancanza quella dell'opera, e passando sopra la sigla compaiono i termini citati. L'elenco delle sigle con il titolo dell'opera è in fondo alla pagina.
+Nelle schede l'interfaccia mostra solo le sigle, una per opera e in ordine di peso. Il clic apre la pagina specifica della citazione, o in mancanza quella dell'opera, e passando sopra la sigla compaiono i termini citati. Le opere con una versione per lingua (costante `VERSIONI` in `app.js`) mostrano un link per ogni versione citata, per esempio `USCG (ESP, FRA, ITA)`. L'elenco delle sigle con il titolo dell'opera è in fondo alla pagina.
 
 ## Punteggio di verifica
 
