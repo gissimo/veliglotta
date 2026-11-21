@@ -409,7 +409,9 @@
         { "sigla": "MF", "termini": "verricello, winch", "url": "inglita.htm" },
         { "sigla": "LF", "termini": "verricello, winch" },
         { "sigla": "MSB", "termini": "winch" },
-        { "sigla": "MW", "termini": "winch", "url": "winch" }
+        { "sigla": "MW", "termini": "winch", "url": "winch" },
+        { "sigla": "HARKEN", "termini": "winche, winches (winche)", "url": "https://develoopproyectos-equipyacht.odoo.com/document/download/8/afe97205-4b73-4756-9dd2-02d7f07b6fe5/13#page=8" },
+        { "sigla": "TLFI", "termini": "winch", "url": "winch" }
       ]
     },
     {
@@ -653,7 +655,8 @@
         { "sigla": "RD875", "termini": "equipamiento náutico" },
         { "sigla": "WS-RRS", "termini": "hull and equipment" },
         { "sigla": "FFV-REV", "termini": "équipement" },
-        { "sigla": "FFV-CAS", "termini": "équipement" }
+        { "sigla": "FFV-CAS", "termini": "équipement" },
+        { "sigla": "DEMAURO", "termini": "attrezzatura", "url": "attrezzatura" }
       ]
     },
     {
@@ -1182,7 +1185,8 @@
         { "sigla": "DLE", "termini": "línea de flotación", "url": "l%C3%ADnea" },
         { "sigla": "MSB", "termini": "ligne de flottaison" },
         { "sigla": "PER", "termini": "línea de flotación" },
-        { "sigla": "MW", "termini": "waterline", "url": "waterline" }
+        { "sigla": "MW", "termini": "waterline", "url": "waterline" },
+        { "sigla": "DEMAURO", "termini": "linea di galleggiamento", "url": "linea-di-galleggiamento" }
       ]
     },
     {
@@ -1310,7 +1314,8 @@
         { "sigla": "RL", "termini": "chariot d'écoute, carrello della scotta" },
         { "sigla": "RFEV-DIC", "termini": "chariot d'écoute" },
         { "sigla": "BARTON", "termini": "genoa car", "url": "catalogue/towable-genoa-car-20mm/" },
-        { "sigla": "YD", "termini": "carrello del fiocco", "url": "fiocco-carrello-riduzione/" }
+        { "sigla": "YD", "termini": "carrello del fiocco", "url": "fiocco-carrello-riduzione/" },
+        { "sigla": "HARKEN", "termini": "jib car, jib lead cars (jib lead car), genoa car", "url": "https://harken.brandbits.com/flipbooks/oagr/inc/pdf/oagr.pdf#page=96" }
       ]
     },
     {
@@ -1329,7 +1334,8 @@
         { "sigla": "DIMAR", "termini": "stopper (variante de mordaza de nueces)", "url": "?page=17" },
         { "sigla": "ANTAL", "termini": "stopper", "url": "it/prodotti/stopper" },
         { "sigla": "ANTAL", "termini": "bloqueurs (bloqueur)", "url": "fr/produits/bloqueurs" },
-        { "sigla": "SPINLOCK", "termini": "soft grip rope clutch", "url": "en-GB/uk/products/xtx" }
+        { "sigla": "SPINLOCK", "termini": "soft grip rope clutch", "url": "en-GB/uk/products/xtx" },
+        { "sigla": "HARKEN", "termini": "rope clutch", "url": "https://harken.brandbits.com/flipbooks/oagr/inc/pdf/oagr.pdf#page=52" }
       ]
     },
     {
@@ -1344,7 +1350,8 @@
       "fonti": [
         { "sigla": "RL", "termini": "piano" },
         { "sigla": "MSB", "termini": "piano" },
-        { "sigla": "QS", "termini": "pit" }
+        { "sigla": "QS", "termini": "pit" },
+        { "sigla": "HARKEN", "termini": "pit", "url": "https://harken.brandbits.com/flipbooks/oagr/inc/pdf/oagr.pdf#page=52" }
       ]
     },
     {
@@ -1361,7 +1368,6 @@
         { "sigla": "MW", "termini": "traveler", "url": "traveler" },
         { "sigla": "MSB", "termini": "chariot de grand voile" },
         { "sigla": "DECATHLON", "termini": "carrello scotta randa; carrello di scotta della randa", "url": "tutti-gli-sport/vela/rotaie-e-carrelli" },
-        { "sigla": "BARTON", "termini": "traveller systems, traveller kits", "url": "catalogue/towable-genoa-car-20mm/" },
         { "sigla": "AHD", "termini": "traveler (3c)", "url": "search.html?q=traveler" },
         { "sigla": "FFV-GBR", "termini": "barre d'écoute, horse, mainsheet horse" }
       ]
@@ -1444,7 +1450,8 @@
         { "sigla": "RL", "termini": "baby stay" },
         { "sigla": "FFV-GBR", "termini": "bas étai, baby stay" },
         { "sigla": "GLN", "termini": "bas-étai, stralletto" },
-        { "sigla": "UPC-FNB", "termini": "babyestay" }
+        { "sigla": "UPC-FNB", "termini": "babyestay" },
+        { "sigla": "DEMAURO", "termini": "stralletto", "url": "stralletto" }
       ]
     },
     {
@@ -1517,7 +1524,8 @@
         { "sigla": "RL", "termini": "obenquillo" },
         { "sigla": "GLN", "termini": "bas-hauban, sartia bassa" },
         { "sigla": "MF", "termini": "lower shroud, sartia bassa", "url": "inglita.htm" },
-        { "sigla": "TRE", "termini": "sartia, sartie alte, sartie intermedie, sartie basse (sartia bassa)", "url": "sartia/" }
+        { "sigla": "TRE", "termini": "sartia, sartie alte, sartie intermedie, sartie basse (sartia bassa)", "url": "sartia/" },
+        { "sigla": "TLFI", "termini": "bas-hauban", "url": "bas-hauban" }
       ]
     },
     {
@@ -1543,7 +1551,8 @@
         { "sigla": "MSB", "termini": "barre de flèche" },
         { "sigla": "GLN", "termini": "barre de flèche, crocetta" },
         { "sigla": "RD875", "termini": "crucetas; distancia de la baluma a la cruceta" },
-        { "sigla": "UPC-FNB", "termini": "cruceta" }
+        { "sigla": "UPC-FNB", "termini": "cruceta" },
+        { "sigla": "RD935", "termini": "crucetas (cruceta)" }
       ]
     },
     {
@@ -1859,7 +1868,8 @@
         { "sigla": "GLN", "termini": "point d'écoute, punto di scotta" },
         { "sigla": "MW", "termini": "clew", "url": "clew" },
         { "sigla": "RD875", "termini": "puño de escota" },
-        { "sigla": "UPC-FNB", "termini": "puño de escota" }
+        { "sigla": "UPC-FNB", "termini": "puño de escota" },
+        { "sigla": "RD935", "termini": "puño de escota" }
       ]
     },
     {
@@ -1890,7 +1900,8 @@
         { "sigla": "GLN", "termini": "point d'amure, punto di mura" },
         { "sigla": "MW", "termini": "tack", "url": "tack" },
         { "sigla": "RD875", "termini": "puño de amura" },
-        { "sigla": "UPC-FNB", "termini": "puño de amura" }
+        { "sigla": "UPC-FNB", "termini": "puño de amura" },
+        { "sigla": "RD935", "termini": "puño de amura" }
       ]
     },
     {
@@ -1964,7 +1975,8 @@
         { "sigla": "MF", "termini": "borosa, reefing line", "url": "inglita.htm" },
         { "sigla": "MSB", "termini": "bosse de ris" },
         { "sigla": "FFV-REV", "termini": "bosse de ris" },
-        { "sigla": "SW", "termini": "reef line" }
+        { "sigla": "SW", "termini": "reef line" },
+        { "sigla": "HARKEN", "termini": "reef lines (reef line)", "url": "https://harken.brandbits.com/flipbooks/oagr/inc/pdf/oagr.pdf#page=72" }
       ]
     },
     {
@@ -2031,7 +2043,9 @@
         { "sigla": "RL", "termini": "pajarín" },
         { "sigla": "RFEV-REV", "termini": "pajarín, outhaul" },
         { "sigla": "GLN", "termini": "bosse de bordure ou d'empointure, tesabugna" },
-        { "sigla": "MW", "termini": "outhaul", "url": "outhaul" }
+        { "sigla": "MW", "termini": "outhaul", "url": "outhaul" },
+        { "sigla": "RD935", "termini": "pajarín" },
+        { "sigla": "HARKEN", "termini": "pajarín", "url": "https://develoopproyectos-equipyacht.odoo.com/document/download/8/afe97205-4b73-4756-9dd2-02d7f07b6fe5/13#page=5" }
       ]
     },
     {
@@ -2048,14 +2062,16 @@
         { "sigla": "RL", "termini": "cunningham" },
         { "sigla": "MSB", "termini": "cunningham" },
         { "sigla": "RD875", "termini": "pajarito, cunningham, carro de mayor y trapa" },
-        { "sigla": "UPC-FNB", "termini": "cunningham" }
+        { "sigla": "UPC-FNB", "termini": "cunningham" },
+        { "sigla": "RD935", "termini": "cunningham" },
+        { "sigla": "HARKEN", "termini": "cunningham", "url": "https://harken.brandbits.com/flipbooks/oagr/inc/pdf/oagr.pdf#page=67" }
       ]
     },
     {
       "id": "vang",
       "categoria": "attrezzatura",
       "eng": [{ "t": "vang" }, { "t": "boom vang" }, { "t": "kicker" }],
-      "esp": [{ "t": "contra de la botavara", "g": "f" }],
+      "esp": [{ "t": "contra de la botavara", "g": "f" }, { "t": "trapa", "g": "f" }],
       "fra": [{ "t": "hale-bas de bôme", "g": "m" }],
       "ita": [{ "t": "vang", "g": "m" }, { "t": "ritenuta del boma", "g": "f" }],
       "definizione": "Paranco o pistone tra boma e base dell'albero che tira il boma verso il basso e controlla la forma della randa.",
@@ -2068,7 +2084,11 @@
         { "sigla": "USCG", "termini": "boom vang, contra de la botavara", "url": "English-Spanish-Glossary-Nautical-Terms.pdf" },
         { "sigla": "GLN", "termini": "hale-bas de bôme, vang" },
         { "sigla": "WW", "termini": "paranco del boma, ritenuta del boma, vang" },
-        { "sigla": "BARTON", "termini": "boom vang systems", "url": "catalogue/towable-genoa-car-20mm/" }
+        { "sigla": "RD935", "termini": "trapa" },
+        { "sigla": "RD875", "termini": "trapa" },
+        { "sigla": "ORC", "termini": "trapa" },
+        { "sigla": "INCUAL", "termini": "trapa" },
+        { "sigla": "FFV-ESP", "termini": "trapa" }
       ]
     },
     {
@@ -2169,7 +2189,8 @@
         { "sigla": "RD875", "termini": "viento real, relativo y aparente" },
         { "sigla": "FIV-RRS", "termini": "vento reale" },
         { "sigla": "FFV-CAS", "termini": "vent réel" },
-        { "sigla": "UPC-FNB", "termini": "viento real" }
+        { "sigla": "UPC-FNB", "termini": "viento real" },
+        { "sigla": "RD935", "termini": "viento real" }
       ]
     },
     {
@@ -2196,7 +2217,8 @@
         { "sigla": "PER", "termini": "viento aparente" },
         { "sigla": "BOW", "termini": "apparent wind" },
         { "sigla": "RD875", "termini": "viento aparente y viento real" },
-        { "sigla": "UPC-FNB", "termini": "viento aparente" }
+        { "sigla": "UPC-FNB", "termini": "viento aparente" },
+        { "sigla": "IHO-S32", "termini": "viento aparente", "url": "engEspView.php?page=11" }
       ]
     },
     {
@@ -2287,7 +2309,8 @@
         { "sigla": "MSB", "termini": "allure" },
         { "sigla": "GLN", "termini": "allures, andature, allure, andatura" },
         { "sigla": "FIV-RRS", "termini": "andatura di bolina" },
-        { "sigla": "YM", "termini": "point of sail" }
+        { "sigla": "YM", "termini": "point of sail" },
+        { "sigla": "RD935", "termini": "rumbo" }
       ]
     },
     {
@@ -2312,7 +2335,8 @@
         { "sigla": "MF", "termini": "andatura al traverso, beam reach", "url": "itaing.htm" },
         { "sigla": "GLN", "termini": "vent de travers, vento al traverso" },
         { "sigla": "PER", "termini": "ceñir, través, a un largo, en popa" },
-        { "sigla": "UPC-FNB", "termini": "de través" }
+        { "sigla": "UPC-FNB", "termini": "de través" },
+        { "sigla": "RD935", "termini": "través" }
       ]
     },
     {
@@ -2362,7 +2386,8 @@
         { "sigla": "FFV-GBR", "termini": "grand largue, broad reach" },
         { "sigla": "LF", "termini": "gran lasco, broad reach" },
         { "sigla": "DLE", "termini": "viento a un largo", "url": "viento" },
-        { "sigla": "GLN", "termini": "grand largue, gran lasco" }
+        { "sigla": "GLN", "termini": "grand largue, gran lasco" },
+        { "sigla": "RD935", "termini": "largo" }
       ]
     },
     {
@@ -2487,7 +2512,8 @@
         { "sigla": "FFV-ESP", "termini": "roue, rueda del timón" },
         { "sigla": "PER", "termini": "rueda del timón" },
         { "sigla": "AHD", "termini": "steering wheel", "url": "search.html?q=steering%20wheel" },
-        { "sigla": "UPC-FNB", "termini": "rueda del timón" }
+        { "sigla": "UPC-FNB", "termini": "rueda del timón" },
+        { "sigla": "DEMAURO", "termini": "ruota del timone", "url": "ruota-del-timone" }
       ]
     },
     {
@@ -2576,7 +2602,8 @@
         { "sigla": "GLN", "termini": "écoute de spi, scotta dello spinnaker" },
         { "sigla": "WIKI-EN", "termini": "spinnaker sheet", "url": "Sheet_(sailing)" },
         { "sigla": "UPF", "termini": "escota de spinnaker, escota de spi", "url": "es/shop/escota-de-spinnaker-12mm-x-35m-gottifredi-maffioli-easycruise-cabo-de-vela-preempalmado-kh-sssc12x35-gr-333539" },
-        { "sigla": "UPC-FNB", "termini": "escota de spinnaker, escota de spi" }
+        { "sigla": "UPC-FNB", "termini": "escota de spinnaker, escota de spi" },
+        { "sigla": "HARKEN", "termini": "spinnaker sheets (spinnaker sheet)", "url": "https://harken.brandbits.com/flipbooks/oagr/inc/pdf/oagr.pdf#page=10" }
       ]
     },
     {
@@ -2652,7 +2679,8 @@
         { "sigla": "USCG", "termini": "roller furling, enrollador de vela", "url": "English-Spanish-Glossary-Nautical-Terms.pdf" },
         { "sigla": "USCG", "termini": "roller furling, enrouleur", "url": "English-French-Glossary-Nautical-Terms.pdf" },
         { "sigla": "RD875", "termini": "enrollador de génova" },
-        { "sigla": "UPC-FNB", "termini": "enrollador de velas" }
+        { "sigla": "UPC-FNB", "termini": "enrollador de velas" },
+        { "sigla": "DEMAURO", "termini": "avvolgifiocco", "url": "avvolgifiocco" }
       ]
     },
     {
@@ -2676,7 +2704,8 @@
         { "sigla": "MF", "termini": "falchetta, toerail", "url": "itaing.htm" },
         { "sigla": "DEI", "termini": "regala", "url": "es/lema/regala" },
         { "sigla": "TC-NAU", "termini": "regala, top rail, liston" },
-        { "sigla": "RD875", "termini": "borda, regala" }
+        { "sigla": "RD875", "termini": "borda, regala" },
+        { "sigla": "HARKEN", "termini": "toerail", "url": "https://harken.brandbits.com/flipbooks/oagr/inc/pdf/oagr.pdf#page=82" }
       ]
     },
     {
@@ -3292,7 +3321,8 @@
         { "sigla": "MF", "termini": "cavo d'ormeggio, mooring rope", "url": "itaing.htm" },
         { "sigla": "FFV-ESP", "termini": "amarre, estacha, amarra" },
         { "sigla": "PER", "termini": "amarra" },
-        { "sigla": "DLE", "termini": "amarra (1.a)", "url": "amarra" }
+        { "sigla": "DLE", "termini": "amarra (1.a)", "url": "amarra" },
+        { "sigla": "TLFI", "termini": "amarre", "url": "amarre" }
       ]
     },
     {
@@ -3475,7 +3505,10 @@
         { "sigla": "USCG", "termini": "mooring buoy, boa di ormeggio", "url": "English-Italian-Glossary-Nautical-Terms.pdf" },
         { "sigla": "USCG", "termini": "mooring buoy, boya de amarre", "url": "English-Spanish-Glossary-Nautical-Terms.pdf" },
         { "sigla": "FFV-ESP", "termini": "coffre d'amarrage, corps-mort, boya de amarre, muerto" },
-        { "sigla": "MW", "termini": "mooring buoy", "url": "mooring%20buoy" }
+        { "sigla": "MW", "termini": "mooring buoy", "url": "mooring%20buoy" },
+        { "sigla": "TLFI", "termini": "coffre", "url": "coffre" },
+        { "sigla": "IHO-S32", "termini": "boya de amarre", "url": "engEspView.php?page=30" },
+        { "sigla": "IHO-S32", "termini": "coffre", "url": "engFreView.php?page=30" }
       ]
     },
     {
@@ -3639,7 +3672,8 @@
         { "sigla": "MSB", "termini": "vent debout" },
         { "sigla": "RD875", "termini": "navegar proa al viento" },
         { "sigla": "WS-RRS", "termini": "head to wind" },
-        { "sigla": "UPC-FNB", "termini": "proa al viento" }
+        { "sigla": "UPC-FNB", "termini": "proa al viento" },
+        { "sigla": "RD935", "termini": "proa al viento" }
       ]
     },
     {
@@ -3698,7 +3732,8 @@
         { "sigla": "USCG", "termini": "channel (nav.), chenal", "url": "English-French-Glossary-Nautical-Terms.pdf" },
         { "sigla": "PER", "termini": "canal" },
         { "sigla": "BOW", "termini": "channel" },
-        { "sigla": "DLE", "termini": "canal (6)", "url": "canal" }
+        { "sigla": "DLE", "termini": "canal (6)", "url": "canal" },
+        { "sigla": "DEMAURO", "termini": "canale", "url": "canale" }
       ]
     },
     {
@@ -3720,7 +3755,8 @@
         { "sigla": "MW", "termini": "shoal", "url": "shoal" },
         { "sigla": "BOW", "termini": "shoal" },
         { "sigla": "DLE", "termini": "bajío (1.b)", "url": "baj%C3%ADo" },
-        { "sigla": "DIMAR", "termini": "bajío", "url": "?page=4" }
+        { "sigla": "DIMAR", "termini": "bajío", "url": "?page=4" },
+        { "sigla": "TLFI", "termini": "haut-fond", "url": "haut-fond" }
       ]
     },
     {
@@ -3739,7 +3775,10 @@
         { "sigla": "FFV-ITA", "termini": "route sur le fond" },
         { "sigla": "PER", "termini": "rumbo de fondo, llamado antiguamente rumbo efectivo" },
         { "sigla": "BOW", "termini": "course over ground (track)" },
-        { "sigla": "RD875", "termini": "rumbo efectivo y velocidad efectiva" }
+        { "sigla": "RD875", "termini": "rumbo efectivo y velocidad efectiva" },
+        { "sigla": "IHO-S32", "termini": "rumbo efectivo", "url": "engEspView.php?page=282" },
+        { "sigla": "IHO-S32", "termini": "course over ground", "url": "engEspView.php?page=56" },
+        { "sigla": "IHO-S32", "termini": "route sur le fond", "url": "engFreView.php?page=56" }
       ]
     },
     {
@@ -3776,7 +3815,8 @@
         { "sigla": "PER", "termini": "anuario de mareas" },
         { "sigla": "BOW", "termini": "tide tables" },
         { "sigla": "RD875", "termini": "anuario de mareas" },
-        { "sigla": "MW", "termini": "tide table", "url": "tide%20table" }
+        { "sigla": "MW", "termini": "tide table", "url": "tide%20table" },
+        { "sigla": "RD935", "termini": "tablas de mareas" }
       ]
     },
     {
@@ -3863,7 +3903,9 @@
         { "sigla": "MW", "termini": "course", "url": "course" },
         { "sigla": "BOW", "termini": "course" },
         { "sigla": "WW", "termini": "rotta, course" },
-        { "sigla": "FFV-CAS", "termini": "route" }
+        { "sigla": "FFV-CAS", "termini": "route" },
+        { "sigla": "TLFI", "termini": "route", "url": "route" },
+        { "sigla": "IHO-S32", "termini": "route", "url": "engFreView.php?page=56" }
       ]
     },
     {
@@ -3887,7 +3929,10 @@
         { "sigla": "BOW", "termini": "heading" },
         { "sigla": "RD875", "termini": "rumbo verdadero, magnético y de aguja" },
         { "sigla": "DLE", "termini": "rumbo (1.a)", "url": "rumbo" },
-        { "sigla": "FFV-CAS", "termini": "cap" }
+        { "sigla": "FFV-CAS", "termini": "cap" },
+        { "sigla": "TLFI", "termini": "cap", "url": "cap" },
+        { "sigla": "DEMAURO", "termini": "prora", "url": "prora" },
+        { "sigla": "IHO-S32", "termini": "cap", "url": "engFreView.php?page=112" }
       ]
     },
     {
@@ -3960,7 +4005,8 @@
         { "sigla": "LF", "termini": "svergolare, to twist; svergolamento della balumina" },
         { "sigla": "FFV-GBR", "termini": "dévers d'une voile, twist of a sail" },
         { "sigla": "BATEAUX", "termini": "vrillage", "url": "article/31441/reglage-de-grand-voile-le-vrillage-et-l-incidence" },
-        { "sigla": "NS", "termini": "twist progresivo", "url": "consejo-north-sails-37" }
+        { "sigla": "NS", "termini": "twist progresivo", "url": "consejo-north-sails-37" },
+        { "sigla": "RD935", "termini": "twist" }
       ]
     },
     {
@@ -3978,7 +4024,8 @@
         { "sigla": "FFV-GBR", "termini": "écoulement laminaire, laminar flow" },
         { "sigla": "IATE", "termini": "natural laminar flow, flujo laminar natural, écoulement laminaire naturel, flusso laminare naturale", "url": "entry/result/1566697" },
         { "sigla": "TRE", "termini": "moto laminare, regime laminare (moto (o regime) l.)", "url": "laminare1/" },
-        { "sigla": "WW", "termini": "scorrimento laminare; il flusso dell'aria nelle vele con il vento di bolina-traverso è di tipo laminare" }
+        { "sigla": "WW", "termini": "scorrimento laminare; il flusso dell'aria nelle vele con il vento di bolina-traverso è di tipo laminare" },
+        { "sigla": "RD935", "termini": "flujo laminar" }
       ]
     },
     {
@@ -4031,9 +4078,9 @@
         { "sigla": "FFV-MON", "termini": "moniteur" },
         { "sigla": "LAR", "termini": "moniteur", "url": "moniteur/52224" },
         { "sigla": "FIV-RRS", "termini": "istruttore" },
-        { "sigla": "RYA", "termini": "instructor" },
         { "sigla": "RFEV-DIC", "termini": "monitor, moniteur, instructor" },
-        { "sigla": "RL", "termini": "monitor, moniteur, instructor, istruttore" }
+        { "sigla": "RL", "termini": "monitor, moniteur, instructor, istruttore" },
+        { "sigla": "RD935", "termini": "monitor" }
       ]
     },
     {
@@ -4050,7 +4097,6 @@
         { "sigla": "OQLF-GDT", "termini": "poulie, block", "url": "fiche-gdt/fiche/8881024/poulie" },
         { "sigla": "TRE", "termini": "bozzelli (bozzello)", "url": "bozzello/" },
         { "sigla": "WS-ERS", "termini": "blocks (block)" },
-        { "sigla": "BARTON", "termini": "blocks (block)", "url": "catalogue/towable-genoa-car-20mm/" },
         { "sigla": "DIMAR", "termini": "motón, motones (motón)", "url": "?name=4" },
         { "sigla": "FFV-REV", "termini": "poulies (poulie)" },
         { "sigla": "MSB", "termini": "poulie, poulies (poulie)" },
@@ -4089,15 +4135,15 @@
         { "sigla": "FFV-CAS", "termini": "course" },
         { "sigla": "FIV-RRS", "termini": "regata, regate (regata)" },
         { "sigla": "HEO", "termini": "course, courses (course)" },
-        { "sigla": "MSB", "termini": "courses (course), course, régates (régate)" },
+        { "sigla": "MSB", "termini": "course" },
         { "sigla": "ORC", "termini": "regatas (regata), regata" },
         { "sigla": "RFEV-RRV", "termini": "regata, regatas (regata)" },
-        { "sigla": "RYA", "termini": "race" },
         { "sigla": "UPC-FNB", "termini": "regatas (regata), regata" },
         { "sigla": "WW", "termini": "regata, race, regatta, sailing race" },
         { "sigla": "MF", "termini": "regatta, regata, race", "url": "inglita.htm" },
         { "sigla": "MF", "termini": "regata, race, regatta", "url": "itaing.htm" },
-        { "sigla": "RL", "termini": "regata, course, épreuve, régate, serie, race, regatta, heat, series" }
+        { "sigla": "RL", "termini": "regata, course, épreuve, régate, serie, race, regatta, heat, series" },
+        { "sigla": "RD935", "termini": "regata, regatas (regata)" }
       ]
     }
   ]

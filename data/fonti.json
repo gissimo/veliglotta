@@ -70,6 +70,11 @@
     { "sigla": "FFV-MON", "pesi": {"fra": "B"}, "titolo": "Fédération Française de Voile, Diplôme Moniteur FFVoile, fiche référentielle descriptive", "url": "https://formation.ffvoile.fr/media/cf5nlirp/diplome_moniteur-voile.pdf" },
     { "sigla": "ANTAL", "pesi": {"fra": "B", "ita": "B"}, "titolo": "Antal, catalogo online in italiano, francese e inglese", "url": "https://antal.it/" },
     { "sigla": "SPINLOCK", "pesi": {"eng": "B"}, "titolo": "Spinlock, online catalogue", "url": "https://www.spinlock.co.uk/" },
-    { "sigla": "UPC-FNB", "pesi": {"esp": "B"}, "titolo": "Universitat Politècnica de Catalunya, Facultat de Nàutica de Barcelona, Jordi Torralbo Gavilán, Tema 3: Nomenclatura náutica de vela, apuntes de Inspección Técnica de Embarcaciones de Recreo", "url": "https://upcommons.upc.edu/server/api/core/bitstreams/1577b1cd-a8ac-4d5b-9934-0ee367c0f83b/content" }
+    { "sigla": "UPC-FNB", "pesi": {"esp": "B"}, "titolo": "Universitat Politècnica de Catalunya, Facultat de Nàutica de Barcelona, Jordi Torralbo Gavilán, Tema 3: Nomenclatura náutica de vela, apuntes de Inspección Técnica de Embarcaciones de Recreo", "url": "https://upcommons.upc.edu/server/api/core/bitstreams/1577b1cd-a8ac-4d5b-9934-0ee367c0f83b/content" },
+    { "sigla": "RD935", "pesi": {"esp": "B"}, "titolo": "Real Decreto 935/2010, de 23 de julio, por el que se establecen los títulos de Técnico Deportivo en vela con aparejo fijo y Técnico Deportivo en vela con aparejo libre, texto consolidado (BOE)", "url": "https://www.boe.es/buscar/pdf/2010/BOE-A-2010-13564-consolidado.pdf" },
+    { "sigla": "HARKEN", "pesi": {"eng": "B", "esp": "B"}, "titolo": "Harken Marine", "link": [{"testo": "Suplemento del Catálogo 2025", "url": "https://develoopproyectos-equipyacht.odoo.com/document/download/8/afe97205-4b73-4756-9dd2-02d7f07b6fe5/13"}, {"testo": "2026 Catalog", "url": "https://harken.brandbits.com/flipbooks/oagr/inc/pdf/oagr.pdf"}] },
+    { "sigla": "TLFI", "pesi": {"fra": "A"}, "titolo": "Trésor de la langue française informatisé (TLFi), ATILF-CNRS, sur le portail du CNRTL", "url": "https://www.cnrtl.fr/definition/" },
+    { "sigla": "DEMAURO", "pesi": {"ita": "A"}, "titolo": "Tullio De Mauro, Il Nuovo De Mauro, Internazionale", "url": "https://dizionario.internazionale.it/parola/" },
+    { "sigla": "IHO-S32", "pesi": {"eng": "A", "esp": "A", "fra": "A"}, "titolo": "Organización Hidrográfica Internacional, Diccionario Hidrográfico S-32", "url": "https://portal.iho.int/iho-ohi/S32/" }
   ]
 }
