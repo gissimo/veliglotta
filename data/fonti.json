@@ -75,6 +75,7 @@
     { "sigla": "HARKEN", "pesi": {"eng": "B", "esp": "B"}, "titolo": "Harken Marine", "link": [{"testo": "Suplemento del Catálogo 2025", "url": "https://develoopproyectos-equipyacht.odoo.com/document/download/8/afe97205-4b73-4756-9dd2-02d7f07b6fe5/13"}, {"testo": "2026 Catalog", "url": "https://harken.brandbits.com/flipbooks/oagr/inc/pdf/oagr.pdf"}] },
     { "sigla": "TLFI", "pesi": {"fra": "A"}, "titolo": "Trésor de la langue française informatisé (TLFi), ATILF-CNRS, sur le portail du CNRTL", "url": "https://www.cnrtl.fr/definition/" },
     { "sigla": "DEMAURO", "pesi": {"ita": "A"}, "titolo": "Tullio De Mauro, Il Nuovo De Mauro, Internazionale", "url": "https://dizionario.internazionale.it/parola/" },
-    { "sigla": "IHO-S32", "pesi": {"eng": "A", "esp": "A", "fra": "A"}, "titolo": "Organización Hidrográfica Internacional, Diccionario Hidrográfico S-32", "url": "https://portal.iho.int/iho-ohi/S32/" }
+    { "sigla": "IHO-S32", "pesi": {"eng": "A", "esp": "A", "fra": "A"}, "titolo": "Organización Hidrográfica Internacional, Diccionario Hidrográfico S-32", "url": "https://portal.iho.int/iho-ohi/S32/" },
+    { "sigla": "POGO", "pesi": {"fra": "B"}, "titolo": "Chantier naval Structures, Manuel du Pogo", "url": "https://www.pogostructures.com/wp-content/uploads/2021/01/Manuel-Pogo-1.pdf" }
   ]
 }

@@ -1306,13 +1306,14 @@
       "categoria": "coperta",
       "eng": [{ "t": "jib car" }, { "t": "jib lead car" }, { "t": "genoa car" }],
       "esp": [{ "t": "carro del génova", "g": "m" }],
-      "fra": [{ "t": "chariot d'écoute", "g": "m" }],
+      "fra": [{ "t": "chariot d'écoute", "g": "m" }, { "t": "chariot de génois", "g": "m" }],
       "ita": [{ "t": "carrello del fiocco", "g": "m" }],
       "definizione": "Bozzello montato su un carrello che scorre su una rotaia in coperta, e che decide il punto da cui la scotta del fiocco tira la vela.",
       "nota": "In inglese traveller indica di solito il carrello della randa (vedi carrello della randa).",
       "fonti": [
         { "sigla": "RL", "termini": "chariot d'écoute, carrello della scotta" },
         { "sigla": "RFEV-DIC", "termini": "chariot d'écoute" },
+        { "sigla": "POGO", "termini": "chariot de génois" },
         { "sigla": "BARTON", "termini": "genoa car", "url": "catalogue/towable-genoa-car-20mm/" },
         { "sigla": "YD", "termini": "carrello del fiocco", "url": "fiocco-carrello-riduzione/" },
         { "sigla": "HARKEN", "termini": "jib car, jib lead cars (jib lead car), genoa car", "url": "https://harken.brandbits.com/flipbooks/oagr/inc/pdf/oagr.pdf#page=96" }
@@ -2083,6 +2084,7 @@
         { "sigla": "USCG", "termini": "vang, vang", "url": "English-Italian-Glossary-Nautical-Terms.pdf" },
         { "sigla": "USCG", "termini": "boom vang, contra de la botavara", "url": "English-Spanish-Glossary-Nautical-Terms.pdf" },
         { "sigla": "GLN", "termini": "hale-bas de bôme, vang" },
+        { "sigla": "POGO", "termini": "hale-bas de bôme" },
         { "sigla": "WW", "termini": "paranco del boma, ritenuta del boma, vang" },
         { "sigla": "RD935", "termini": "trapa" },
         { "sigla": "RD875", "termini": "trapa" },
@@ -2104,6 +2106,7 @@
         { "sigla": "RL", "termini": "contra del tangón" },
         { "sigla": "RFEV-DIC", "termini": "contra (aparejo)" },
         { "sigla": "GLN", "termini": "hale-bas de tangon, caricabbasso del tangone" },
+        { "sigla": "POGO", "termini": "hale-bas de tangon" },
         { "sigla": "FFV-GBR", "termini": "halebas de spi, spinnaker foreguy; downhaul of spinnaker pole" },
         { "sigla": "MW", "termini": "foreguy", "url": "foreguy" }
       ],
@@ -2446,6 +2449,7 @@
       "nota": "Lavora in coppia con il caricabbasso del tangone (vedi caricabasso). Da non confondere con l'amantiglio del boma (vedi amantiglio), che in inglese ha lo stesso nome, topping lift.",
       "fonti": [
         { "sigla": "GLN", "termini": "balancine de tangon, amantiglio del tangone" },
+        { "sigla": "POGO", "termini": "balancine de tangon" },
         { "sigla": "LF", "termini": "carica alto, uphaul" },
         { "sigla": "RL", "termini": "amantillo del tangón" },
         { "sigla": "YM", "termini": "spinnaker pole topping lift" }
@@ -2462,6 +2466,7 @@
       "nota": "In inglese si dice soprattutto pushpit.",
       "fonti": [
         { "sigla": "GLN", "termini": "balcon arrière, pulpito di poppa" },
+        { "sigla": "POGO", "termini": "balcon arrière" },
         { "sigla": "LF", "termini": "pulpito di poppa, stern pulpit" },
         { "sigla": "USCG", "termini": "pushpits, púlpito de popa", "url": "English-Spanish-Glossary-Nautical-Terms.pdf" },
         { "sigla": "FFV-ESP", "termini": "balcon arrière, púlpito de popa" },
@@ -2694,6 +2699,7 @@
       "nota": "Il francese pavois e l'inglese bulwark indicano piuttosto la murata alta che sporge sopra la coperta. In spagnolo regala è propriamente il bordo superiore della murata.",
       "fonti": [
         { "sigla": "GLN", "termini": "pavois, rail de fargue, falchetta" },
+        { "sigla": "POGO", "termini": "rail de fargue" },
         { "sigla": "TRE", "termini": "falchetta", "url": "falchetta/" },
         { "sigla": "LF", "termini": "falchetta, toe rail" },
         { "sigla": "WW", "termini": "falchetta, toerail" },

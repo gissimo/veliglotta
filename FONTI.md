@@ -101,6 +101,7 @@ Quali voci usano ciascuna fonte si ricava dal campo `fonti` di `data/voci.json`.
 | TLFI | Trésor de la langue française informatisé (TLFi), sul portale del CNRTL |  |  | A |  | Dizionario monolingue con marca MAR. Ha winch, bas-hauban, amarre, coffre, haut-fond, cap, route. Pochi termini di più parole. |
 | DEMAURO | Tullio De Mauro, Il Nuovo De Mauro, Internazionale |  |  |  | A | Dizionario monolingue con marca "TS mar.". Ha avvolgifiocco, linea di galleggiamento, prora, ruota del timone, stralletto, canale. |
 | IHO-S32 | Organizzazione Idrografica Internazionale, Dizionario idrografico S-32 | A | A | A |  | Glossario normativo di un ente intergovernativo, con definizioni in inglese, spagnolo e francese: course over ground, boya de amarre, viento aparente, rumbo efectivo, route, cap, route sur le fond, coffre. Non copre l'italiano. |
+| POGO | Chantier naval Structures, Manuel du Pogo |  |  | B |  | Manuale di bordo e di montaggio del Pogo 6.50, scritto dal cantiere, senza definizioni: hale-bas de bôme, hale-bas de tangon, balancine de tangon, balcon arrière, rail de fargue, bloqueur. Qualche refuso (hâle-bas, cokpit, farge). |
 
 ## Fonti valide solo per una parte del vocabolario
 
@@ -129,6 +130,7 @@ Il peso per lingua non dice in quale ambito una fonte è affidabile. Prima di ci
 - **TLFI**: citare solo le accezioni con marca MAR. o MARINE, e controllare che la pagina sia davvero del TLFi: per alcune parole il portale mostra un altro dizionario (*pendille* è del Dictionnaire de l'Académie, 9ª edizione, quindi non è citabile come TLFI). Senso diverso: *bau* è la trave trasversale, non la larghezza massima; *garde* è il paranco della corna; *trinquette* è riferita alla vela del trinchetto dei velieri; *équipement* in senso marinaro è antiquato.
 - **DEMAURO**: citare solo le accezioni "TS mar.". Senso diverso: *trimmer* è il timone ausiliario, *trappa* il cavo per abbattere in carena, *bulbo* il bulbo di prua, *svergolamento* la deformazione dello scafo o la forma dell'elica, *bracciare* e *braccio* riguardano i pennoni, *stopper* rimanda ad *arrestatoio*.
 - **IHO-S32**: solo navigazione, idrografia e ormeggio alle boe. Senso diverso: *braza* è l'unità di misura, *rumbo* come lemma è la lossodromia, *spring* la marea viva, *tensor* un attrezzo topografico, *flujo laminar* è il flusso di un fluido in generale.
+- **POGO**: solo attrezzatura di coperta e armamento di una piccola barca da regata. Falsi riscontri: *garcette* è la legatura delle draglie, non il matafione; *travers* è una posizione a bordo, non l'andatura; *route* compare in "feu de route"; *rails* nell'elenco delle manovre correnti sono le cime di regolazione dei carrelli.
 
 ## Fonti consigliate per lingua
 
@@ -157,6 +159,7 @@ Il peso per lingua non dice in quale ambito una fonte è affidabile. Prima di ci
   - francese-inglese (luglio 1999): http://www.ffvoile.fr/ffv/web/services/international/documents/dico_FRA_GBR.PDF, stato letto. Elenco alfabetico di un altro autore, con lessico corrente. Peso B per la coppia francese-inglese.
 - **FFVoile, *Enseigner la voile***, estratto delle pagine 33-42: https://formation.ffvoile.fr/media/uk5ho5ga/enseignerlavoile_33-42.pdf, stato letto il 15 novembre 2026. Manuale per gli istruttori, senza definizioni, che usa *près bon plein*. Peso B.
 - **Bateaux.com**, rivista online: https://www.bateaux.com/article/31441/reglage-de-grand-voile-le-vrillage-et-l-incidence, stato letto il 15 novembre 2026 per *vrillage*. Peso C.
+- **Chantier naval Structures, *Manuel du Pogo***: https://www.pogostructures.com/wp-content/uploads/2021/01/Manuel-Pogo-1.pdf, stato letto il 21 novembre 2026, sigla POGO. Manuale di 47 pagine del Pogo 6.50, con piano di coperta, elenco dell'attrezzatura e guida alla regolazione dell'albero. Peso B per il francese. Parte del testo del PDF ha una codifica alterata: il file `.txt` in `fonti scaricate/POGO/` è decodificato, e alcune righe restano illeggibili.
 - *Dévers d'étai*: compare in una scheda di regolazione delle vele ospitata su hisse-et-oh.com (https://apps.hisse-et-oh.com/store/medias/sailing/5dd/2ec/553/original/5dd2ec5539819f3668ebef6c.pdf, stato letto), nel senso della flessione dello strallo che va accordata con la curva dell'inferitura del fiocco. Lo stesso documento usa *dévers latéral* per la randa. Yacht.de in francese dice *flèche d'étai*. Nessuna fonte di peso A o B.
 
 ### ESP
@@ -209,7 +212,7 @@ Il peso per lingua non dice in quale ambito una fonte è affidabile. Prima di ci
 - Confermare a mano gli indirizzi delle singole voci di Garzanti, Oxford e Merriam-Webster.
 - Inglese: con il Regolamento di Regata (WS-RRS) e l'American Heritage Dictionary (AHD) manovre e andature di regata sono coperte, e Merriam-Webster copre close reach, ma per l'ormeggio (slip line, lazy line, stern-to, bows-to, raft up, mooring line) e per beam reach e broad reach non c'è ancora nessuna fonte di peso A: mancano in MW, AHD e WS-RRS. La RYA non pubblica un glossario.
 - Ruoli dell'equipaggio: per il trimmer ci sono TERMCAT Copa Amèrica e il Livre des cas; per tattico e pianista nessuna fonte di peso A o B, salvo Treccani per tattico e HEO per tacticien (Granlasco, per drizzista, vale C); in inglese bowman c'è solo in MW.
-- Attrezzatura di coperta: per lo stopper ci sono Antal (stopper, bloqueurs) e Spinlock (rope clutch); mancano fonti di peso A o B per carrello del fiocco in spagnolo, francese e italiano, per bloqueur al singolare, e per il gancio dei terzaroli fuori dal francese.
+- Attrezzatura di coperta: per lo stopper ci sono Antal (stopper, bloqueurs) e Spinlock (rope clutch); mancano fonti di peso A o B per carrello del fiocco in spagnolo e italiano e per chariot d'écoute in francese (POGO dà chariot de génois), e per il gancio dei terzaroli fuori dal francese. Bloqueur al singolare è in POGO.
 - Termini proposti il 15 novembre 2026 e non creati: *dévers d'étai* (mancano l'italiano e lo spagnolo).
 - Voci del lessico dei Glénans non create perché manca una fonte in una lingua: virata mancata, false mure, sovrainvelato, atlante delle correnti e cappa secca (spagnolo), vela cazzata a piatto (inglese).
 - Regolamento di Regata 2025-2028: trovati il testo inglese (WS-RRS), la traduzione spagnola (RFEV-RRV) e quella italiana (FIV-RRS). Il testo francese integrale non è scaricabile (solo in abbonamento Omnibook): in francese ci sono il Livre des cas (FFV-CAS) e le Règles d'Équipement (FFV-REV).
