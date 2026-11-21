@@ -81,6 +81,25 @@ Istruzioni per Claude:
 - Eseguire `python3 scripts/valida.py` prima di ogni commit: controlla JSON, `id` univoci, categorie, generi, fonti e sigle del catalogo. Lo stesso controllo gira su GitHub a ogni push che tocca `data/` o `scripts/`.
 - Segnalare nella nota i termini polisemici e i falsi amici. La confidenza si legge dal punteggio, non si commenta nella nota.
 
+## Script
+
+- `scripts/valida.py`: controlla i dati. Con `--punteggi` stampa il punteggio di ogni voce.
+- `scripts/prepara.py`: prepara una voce nuova a partire da un termine e dalle fonti in archivio.
+- `scripts/sfoltisci.py`: trova le citazioni doppie. Con `--rimuovi` toglie quelle sicure, con `--dettagli` elenca i casi da valutare.
+
+Una voce nuova si prepara così:
+
+```
+python3 scripts/prepara.py cerca TERMINE LINGUA     # ricerca locale, non scrive nulla
+python3 scripts/prepara.py scarica TERMINE LINGUA   # salva le pagine dei dizionari online
+python3 scripts/prepara.py pagina SIGLA URL         # salva una pagina trovata a mano
+python3 scripts/prepara.py crea TERMINE LINGUA      # scrive schede/ID.json
+/rivedi ID                                          # in Claude Code: valuta citazioni e voce
+python3 scripts/prepara.py aggiungi ID              # inserisce la voce in data/voci.json
+```
+
+`LINGUA` è `eng`, `esp`, `fra` o `ita`. Le schede stanno in `schede/` e non vengono pubblicate. `aggiungi` rifiuta una scheda con citazioni non confermate, dati mancanti, termini senza fonte o errori di validazione. I download rispettano `robots.txt`, anche quando una pagina rinvia a un altro indirizzo, e non salvano file oltre 100 MB.
+
 ## Pubblicazione
 
 Il sito è pensato per GitHub Pages: Settings, Pages, Source "Deploy from a branch", branch `main`, cartella `/ (root)`. Gli indirizzi sono relativi, quindi funziona anche sotto un sottopercorso come `utente.github.io/veliglotta`.

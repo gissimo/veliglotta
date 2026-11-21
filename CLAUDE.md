@@ -5,7 +5,7 @@ Dizionario velico multilingue (ENG, ESP, FRA, ITA), sito statico pubblicato con 
 ## Aggiungere o correggere voci
 
 - Si modifica solo `data/voci.json`, rispettando lo schema del README. Ogni citazione in `fonti` ha la `sigla` di un'opera di `data/fonti.json`: una fonte nuova va aggiunta anche lì, con sigla, pesi per lingua, titolo e url.
-- Veliglotta è uno strumento pratico: si registrano i termini velici in uso oggi, non sensi storici o termini tradizionali in disuso. Le note servono a chiarire il significato a chi va in barca o traduce: falsi amici, polisemie che creano errori, differenze d'uso tra paesi. Non commentano le fonti: niente "xxx viene da yyy", "poche fonti", "fonte debole", "senza fonte" o "bassa confidenza", perché si legge già dai pallini e dall'elenco delle fonti.
+- Veliglotta è uno strumento pratico: si registrano i termini velici in uso oggi, non sensi storici o termini tradizionali in disuso. Le note servono a chiarire il significato a chi va in barca: falsi amici, polisemie che creano errori, differenze d'uso tra paesi. Non commentano le fonti: niente "xxx viene da yyy", "poche fonti", "fonte debole", "senza fonte" o "bassa confidenza", perché si legge già dai pallini e dall'elenco delle fonti.
 - Il primo termine di ogni lingua è il preferito, gli altri sono sinonimi.
 - In ogni voce le chiavi delle lingue stanno in ordine alfabetico del codice: `eng`, `esp`, `fra`, `ita`. Lo stesso ordine vale nell'interfaccia. `scripts/valida.py` segnala un ordine diverso con un avviso, che non è un errore ma va corretto.
 - Prima di proporre le traduzioni, cerca fonti sul web. Preferisci dizionari monolingui con marca nautica, federazioni di vela, banche terminologiche come IATE e OQLF, cataloghi dei produttori. Considera i blog e i forum come fonti deboli.
@@ -18,6 +18,7 @@ Dizionario velico multilingue (ENG, ESP, FRA, ITA), sito statico pubblicato con 
 - Definizioni e note sono scritte da zero, mai copiate dalle fonti.
 - Segnala sempre nelle note i termini polisemici e i falsi amici.
 - Non cambiare mai un `id` esistente. Una nuova categoria va aggiunta in `app.js` (costante `CATEGORIE`) e in `scripts/valida.py`.
+- Per una voce nuova si usa `scripts/prepara.py` con la skill `/rivedi`, come descritto nella sezione "Script" del README. L'inserimento con `prepara.py aggiungi` spetta all'utente. Le schede stanno in `schede/`, che non è pubblicata.
 
 ## Controlli prima di ogni commit
 
