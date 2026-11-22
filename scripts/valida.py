@@ -92,7 +92,8 @@ def controlla_url(nome, sigla, url):
 def piega(s):
     """Minuscolo, senza accenti, con trattini e apostrofi come spazi (come fold in app.js)."""
     s = unicodedata.normalize("NFD", s.replace("-", " ").replace("'", " ").replace("’", " "))
-    return "".join(c for c in s if not unicodedata.combining(c)).lower()
+    s = "".join(c for c in s if not unicodedata.combining(c)).lower()
+    return s.replace('œ', 'oe').replace('æ', 'ae')
 
 
 def livelli(voce, catalogo):

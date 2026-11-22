@@ -76,7 +76,12 @@ function fold(s) {
   for (let i = 0; i < s.length; i++) {
     let c = s[i];
     if (c === "-" || c === "'" || c === "’") c = " ";
-    const f = c.normalize("NFD").replace(/\p{M}/gu, "").toLowerCase();
+    const f = c
+      .normalize("NFD")
+      .replace(/\p{M}/gu, "")
+      .toLowerCase()
+      .replace("œ", "oe")
+      .replace("æ", "ae");
     for (let k = 0; k < f.length; k++) {
       str += f[k];
       map.push(i);
@@ -193,7 +198,7 @@ function scheda(voce, q) {
     for (const t of voce[l.codice] || []) {
       const li = nodo("li");
       const sp = nodo("span", "termine");
-      sp.append(conEvidenza(t.t, q));
+      sp.append(conEvidenza(t.t, stato.lingua === "tutte" || stato.lingua === l.codice ? q : ""));
       li.append(sp);
       if (t.g) li.append(nodo("span", "genere", GENERE[t.g] || t.g));
       ul.append(li);

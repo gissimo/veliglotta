@@ -39,7 +39,7 @@ self.addEventListener("fetch", (e) => {
   e.respondWith(
     caches.open(CACHE).then(async (cache) => {
       const inCache = await cache.match(req);
-      const rete = fetch(req)
+      const rete = fetch(req, { cache: "no-cache" })
         .then((res) => {
           if (res.ok) cache.put(req, res.clone());
           return res;
